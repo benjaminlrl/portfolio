@@ -1,0 +1,417 @@
+CRITICAL - 2025-09-13 12:18:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "c_home/head.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('c_home/head.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('c_home/head', [], true)
+ 3 APPPATH\Controllers\c_home.php(10): view('c_home/head')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 12:18:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "c_home/head.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('c_home/head.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('c_home/head', [], true)
+ 3 APPPATH\Controllers\c_home.php(10): view('c_home/head')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 12:20:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "c_home/head.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('c_home/head.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('c_home/head', [], true)
+ 3 APPPATH\Controllers\c_home.php(10): view('c_home/head')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 12:20:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "c_home/head.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('c_home/head.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('c_home/head', [], true)
+ 3 APPPATH\Controllers\c_home.php(10): view('c_home/head')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 12:22:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "c_home/v_head.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('c_home/v_head.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('c_home/v_head', [], true)
+ 3 APPPATH\Controllers\c_home.php(10): view('c_home/v_head')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 12:23:22 --> ErrorException: Undefined variable $titre_page
+[Method: GET, Route: /]
+in APPPATH\Views\v_head.php on line 20.
+ 1 APPPATH\Views\v_head.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titre_page', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_head.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_head.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_head', [], true)
+ 5 APPPATH\Controllers\c_home.php(10): view('v_head')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 12:25:08 --> ErrorException: Undefined variable $titre_page
+[Method: GET, Route: /]
+in APPPATH\Views\v_head.php on line 20.
+ 1 APPPATH\Views\v_head.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titre_page', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_head.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_head.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_head', [], true)
+ 5 APPPATH\Controllers\c_home.php(10): view('v_head')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 12:25:48 --> ErrorException: Undefined variable $langue
+[Method: GET, Route: /]
+in APPPATH\Views\v_header.php on line 10.
+ 1 APPPATH\Views\v_header.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $langue', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_header.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_header', [], true)
+ 5 APPPATH\Controllers\c_home.php(12): view('v_header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 13:25:49 --> ErrorException: Undefined variable $logoHTML5
+[Method: GET, Route: /]
+in APPPATH\Views\v_competences.php on line 19.
+ 1 APPPATH\Views\v_competences.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoHTML5', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_competences', [], true)
+ 5 APPPATH\Controllers\c_home.php(18): view('v_competences')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 13:25:50 --> ErrorException: Undefined variable $logoHTML5
+[Method: GET, Route: /]
+in APPPATH\Views\v_competences.php on line 19.
+ 1 APPPATH\Views\v_competences.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoHTML5', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_competences', [], true)
+ 5 APPPATH\Controllers\c_home.php(18): view('v_competences')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 13:26:17 --> ErrorException: Undefined variable $logoHTML5
+[Method: GET, Route: /]
+in APPPATH\Views\v_competences.php on line 19.
+ 1 APPPATH\Views\v_competences.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoHTML5', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_competences', [], true)
+ 5 APPPATH\Controllers\c_home.php(18): view('v_competences')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 13:26:19 --> ErrorException: Undefined variable $logoHTML5
+[Method: GET, Route: /]
+in APPPATH\Views\v_competences.php on line 19.
+ 1 APPPATH\Views\v_competences.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoHTML5', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_competences', [], true)
+ 5 APPPATH\Controllers\c_home.php(18): view('v_competences')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 13:26:53 --> ErrorException: Undefined variable $logoHTML5
+[Method: GET, Route: /]
+in APPPATH\Views\v_competences.php on line 19.
+ 1 APPPATH\Views\v_competences.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoHTML5', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_competences', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_competences')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 13:28:12 --> ErrorException: Undefined variable $logoHTML5
+[Method: GET, Route: /]
+in APPPATH\Views\v_competences.php on line 19.
+ 1 APPPATH\Views\v_competences.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoHTML5', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_competences', [], true)
+ 5 APPPATH\Controllers\c_home.php(79): view('v_competences')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 13:28:30 --> ErrorException: Undefined variable $logoHTML5
+[Method: GET, Route: /]
+in APPPATH\Views\v_competences.php on line 19.
+ 1 APPPATH\Views\v_competences.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoHTML5', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_competences', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_competences')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 13:28:32 --> ErrorException: Undefined variable $logoHTML5
+[Method: GET, Route: /]
+in APPPATH\Views\v_competences.php on line 19.
+ 1 APPPATH\Views\v_competences.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoHTML5', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_competences', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_competences')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 13:28:33 --> ErrorException: Undefined variable $logoHTML5
+[Method: GET, Route: /]
+in APPPATH\Views\v_competences.php on line 19.
+ 1 APPPATH\Views\v_competences.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoHTML5', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_competences', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_competences')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 13:28:33 --> ErrorException: Undefined variable $logoHTML5
+[Method: GET, Route: /]
+in APPPATH\Views\v_competences.php on line 19.
+ 1 APPPATH\Views\v_competences.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logoHTML5', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php', 19)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_competences.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_competences', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_competences')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 14:00:11 --> ErrorException: Array to string conversion
+[Method: GET, Route: projets]
+in APPPATH\Views\v_projets.php on line 89.
+ 1 APPPATH\Views\v_projets.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 89)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_projets.php(15): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_projets->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_projets))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 14:05:12 --> ErrorException: Array to string conversion
+[Method: GET, Route: projets]
+in APPPATH\Views\v_projets.php on line 89.
+ 1 APPPATH\Views\v_projets.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 89)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_projets.php(15): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_projets->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_projets))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 14:05:13 --> ErrorException: Array to string conversion
+[Method: GET, Route: projets]
+in APPPATH\Views\v_projets.php on line 89.
+ 1 APPPATH\Views\v_projets.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 89)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_projets.php(15): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_projets->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_projets))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 14:05:20 --> ErrorException: Array to string conversion
+[Method: GET, Route: projets]
+in APPPATH\Views\v_projets.php on line 89.
+ 1 APPPATH\Views\v_projets.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 89)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_projets.php(15): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_projets->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_projets))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 14:07:21 --> ErrorException: Array to string conversion
+[Method: GET, Route: projets]
+in APPPATH\Views\v_projets.php on line 89.
+ 1 APPPATH\Views\v_projets.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 89)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_projets.php(15): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_projets->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_projets))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 15:31:28 --> ErrorException: require(header.php): Failed to open stream: No such file or directory
+[Method: GET, Route: contact]
+in APPPATH\Views\v_contact.php on line 2.
+ 1 APPPATH\Views\v_contact.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(header.php): Failed to open stream: No such file or directory', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_contact.php', 2)
+ 2 APPPATH\Views\v_contact.php(2): require()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_contact.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_contact', [], true)
+ 6 APPPATH\Controllers\c_contact.php(15): view('v_contact')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_contact->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_contact))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 15:46:45 --> ErrorException: ini_set(): Session ini settings cannot be changed when a session is active
+[Method: GET, Route: connexion]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\wamp64\\www\\portfolio\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'C:\\wamp64\\www\\portfolio\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(702): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\Common.php(968): service('session')
+11 SYSTEMPATH\CodeIgniter.php(1064): session()
+12 SYSTEMPATH\CodeIgniter.php(540): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 15:46:46 --> ErrorException: ini_set(): Session ini settings cannot be changed when a session is active
+[Method: GET, Route: connexion]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\wamp64\\www\\portfolio\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'C:\\wamp64\\www\\portfolio\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(702): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\Common.php(968): service('session')
+11 SYSTEMPATH\CodeIgniter.php(1064): session()
+12 SYSTEMPATH\CodeIgniter.php(540): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 15:46:47 --> ErrorException: ini_set(): Session ini settings cannot be changed when a session is active
+[Method: GET, Route: connexion]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\wamp64\\www\\portfolio\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'C:\\wamp64\\www\\portfolio\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(702): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\Common.php(968): service('session')
+11 SYSTEMPATH\CodeIgniter.php(1064): session()
+12 SYSTEMPATH\CodeIgniter.php(540): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 15:46:49 --> ErrorException: ini_set(): Session ini settings cannot be changed when a session is active
+[Method: GET, Route: connexion]
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\wamp64\\www\\portfolio\\system\\Session\\Handlers\\FileHandler.php', 74)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(74): ini_set('session.save_path', 'C:\\wamp64\\www\\portfolio\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(702): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\Session), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('session')
+10 SYSTEMPATH\Common.php(968): service('session')
+11 SYSTEMPATH\CodeIgniter.php(1064): session()
+12 SYSTEMPATH\CodeIgniter.php(540): CodeIgniter\CodeIgniter->storePreviousURL(Object(CodeIgniter\HTTP\SiteURI))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-13 15:47:08 --> ErrorException: Undefined variable $langue
+[Method: GET, Route: projets]
+in APPPATH\Views\v_header.php on line 10.
+ 1 APPPATH\Views\v_header.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $langue', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_header.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_header.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_header', [], true)
+ 5 APPPATH\Controllers\c_projets.php(13): view('v_header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_projets->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_projets))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

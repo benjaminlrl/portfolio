@@ -1,0 +1,84 @@
+/* Tailles de texte responsive */
+.text--xxl {
+    font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+    /* Mobile: 40px → Desktop: 64px */
+}
+
+.text--xl {
+    font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+    /* Mobile: 32px → Desktop: 56px */
+}
+
+.text--l {
+    font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
+    /* Mobile: 28px → Desktop: 48px */
+}
+
+.text--m {
+    font-size: clamp(1.25rem, 2vw + 0.5rem, 2rem);
+    /* Mobile: 20px → Desktop: 32px */
+}
+
+.text--s {
+    font-size: clamp(1.1rem, 1.5vw + 0.25rem, 1.5rem);
+    /* Mobile: 16px → Desktop: 24px */
+}
+
+.text--xs {
+    font-size: clamp(1rem, 1vw + 0.25rem, 1.125rem);
+    /* Mobile: 14px → Desktop: 18px */
+}
+
+.text--xxs {
+    font-size: clamp(0.85rem, 0.5vw + 0.5rem, 1rem);
+    /* Mobile: 12px → Desktop: 16px */
+}
+
+.text--opacity-900{
+    opacity: .9;
+}
+.text--secondary{
+    color: var(--text-secondary);
+}
+
+.text--900{
+    font-weight: 900;
+}
+.text--800{
+    font-weight: 800;
+}
+.text--700{
+    font-weight: 700;
+}
+.text--600{
+    font-weight: 600;
+}
+.text--500{
+    font-weight: 500;
+}
+.text--400{
+    font-weight: 400;
+}
+.text--300{
+    font-weight: 300;
+}
+
+.text--center{
+    text-align: center;
+}
+
+.text--start{
+    text-align: start;
+}
+
+.text--end{
+    text-align: end;
+}
+
+.text--justify{
+    text-align: justify;
+}
+
+.text-white{
+    color: var(--text-white);
+}

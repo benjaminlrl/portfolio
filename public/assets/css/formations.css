@@ -1,0 +1,149 @@
+/**
+Fichier gère
+ */
+
+#section__formations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cell__content--column{
+    display: flex;
+    flex-direction: column;
+}
+
+#grid__formation .grid__cell{
+    display: grid;
+    grid-template-areas:
+            "date"
+            "formation";
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+    position: relative;
+    border-radius: 15px;
+    gap: 5px;
+    padding: 10px;
+    background: var(--white);
+    box-shadow: -5px 5px 15px var(--shadow-card);
+}
+
+#grid__formation{
+    row-gap: 2rem;
+}
+
+#grid__formation .grid__cell-formation{
+    color: var(--text-black);
+    display: grid;
+    grid-template-areas:
+            "diplomes"
+            "description"
+            "logos";
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    margin-left: auto;
+    align-items: center;
+    border-radius: 15px;
+    gap: 8px;
+    grid-area: formation;
+    transition: .3s ease-in-out;
+}
+
+#grid__formation .grid__cell-formation:hover{
+    transform: translateY(-5px);
+    box-shadow: -5px 5px 20px var(--shadow-card);
+}
+
+.grid__cell-formation .cell__logos{
+    padding: 10px 0;
+    grid-area: logos;
+    display: flex;
+    flex-direction: row;
+}
+
+#grid__formation .grid__cell-date{
+    color: var(--text-primary);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: date;
+}
+.grid__cell-formation .cell__logos-logo{
+    height: 60px;
+    background: var(--text-white);
+}
+
+.separator__formation-date{
+    display : none;
+}
+
+.grid__cell-date .cell__content{
+    display: flex;
+    align-items: center;
+}
+
+.grid__cell-date .cell__content i{
+    color: var(--accent-primary);
+}
+
+.formation__date{
+    padding: 10px 15px;
+    background: var(--accent-primary-500);
+    color: var(--accent-primary);
+    border-radius: 50px;
+}
+
+@media (min-width: 1200px) {
+    #grid__formation .grid__cell{
+        grid-template-areas:
+            "formation separator date";
+        grid-template-columns:1fr auto 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        background: none;
+        box-shadow: none;
+    }
+
+    .separator__formation-date{
+        display: flex;
+        height: calc(100% + 1rem);
+        width: 5px;
+        background: linear-gradient(var(--accent-primary) 0%, var(--text-primary-0) 100%);
+        position: absolute;
+        top: 70px;
+        grid-area : separator;
+    }
+
+    #grid__formation .grid__cell-formation{
+        display: grid;
+        grid-template-areas:
+            "logos diplomes"
+            "logos description";
+        grid-template-columns:auto;
+        grid-template-rows: 1fr;
+        width: 90%;
+        justify-items: end;
+        box-shadow: -5px 5px 15px var(--shadow-card);
+        background: var(--white);
+        padding: 15px;
+    }
+
+    .grid__cell:last-of-type .separator__formation-date {
+        height: 0;
+        width: 0;
+    }
+
+    #grid__formation{
+        row-gap: 6rem;
+    }
+
+    .grid__cell-formation .cell__logos{
+        padding: 10px 0;
+        grid-area: logos;
+        display: flex;
+        flex-direction: column;
+    }
+
+}

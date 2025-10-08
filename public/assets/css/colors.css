@@ -1,0 +1,138 @@
+/**
+Ce fichier représente l'atribution des couleurs utilisés par le site;
+1. Approche sémantique (Recommandée)
+--color-primary, --color-secondary
+--text-primary, --text-secondary
+--bg-primary, --bg-secondary
+
+2. Conventions de nommage
+Kebab-case : --color-primary (pas --colorPrimary)
+Préfixes cohérents : --color-, --bg-, --text-, --shadow-
+Suffixes descriptifs : -light, -dark, -hover, -active
+
+3. Hiérarchie des nuances
+Numérique : --gray-100, --gray-200, --gray-300
+Descriptive : --gray-light, --gray-medium, --gray-dark
+
+4. Éviter
+X Noms de couleurs littérales : --red, --blue
+X Noms non-descriptifs : --troisiemeCouleur
+X Mélange de langues : --colorPrimaire
+
+*
+@author Benjamin Lorieul <benjamin.lorieul.pro@gmail.com>
+@package Cyber4all
+@since 1.0.0
+
+*/
+
+/* Valeurs par défaut (thème sombre par défaut) */
+:root {
+    /* Couleurs de fond */
+    --bg-primary: #02001a;
+    --bg-secondary: #030021;
+    --bg-footer: #8d2394;
+    --bg-card-front: #100f25;
+    --bg-card-back: #171638;
+    --bg-avatar: #FFFFFF98;
+
+    /* Couleurs de texte */
+    --text-primary: #fff;
+    --text-primary-0: #FFFFF00;
+    --text-secondary: #c8c8c8;
+    --text-white: #fefbef;
+    --text-black: #000000DD;
+    --text-placeholder: #dededea3;
+
+    /* Couleur d'accent */
+    --accent-primary: #5d1c61;
+    --accent-primary-300: #5d1c6177;
+    --accent-primary-500: #5d1c6150;
+
+    /* Ombres */
+    --shadow-primary: #ffffff39;
+    --shadow-card: #ffffff39;
+    --shadow-white: transparent;
+    --shadow-black: transparent;
+    --shadow-footer: transparent;
+
+    /* Couleurs spécifiques aux composants */
+    --linear-color: #000;
+    --thumb-color: #5b1061;
+
+    --white: #ffffff;
+}
+
+/* Valeurs par défaut (thème sombre par défaut) */
+:root[data-theme="dark"] {
+    /* Couleurs de fond */
+    --bg-primary: #02001a;
+    --bg-secondary: #030021;
+    --bg-footer: #8d2394;
+    --bg-card-front: #100f25;
+    --bg-card-back: #171638;
+    --bg-avatar: #B3B3B399;
+
+    /* Couleurs de texte */
+    --text-primary: #fff;
+    --text-primary-0: #ffffff00;
+    --text-secondary: #c8c8c8;
+    --text-white: #fefbef;
+    --text-black: #000000DD;
+    --text-placeholder: #dededea3;
+
+    /* Couleur d'accent */
+    --accent-primary: #5d1c61;
+    --accent-primary-600: #5d1c6160;
+    --accent-primary-500: #5d1c6150;
+
+    /* Ombres */
+    --shadow-primary: #ffffff39;
+    --shadow-card: #ffffff50;
+    --shadow-white: transparent;
+    --shadow-black: transparent;
+    --shadow-footer: transparent;
+
+    /* Couleurs spécifiques aux composants */
+    --linear-color: #000;
+    --thumb-color: #5b1061;
+
+    --white: #ffffff;
+}
+
+:root[data-theme="light"] {
+    /* Couleurs de fond */
+    --bg-primary: #eeeeee;
+    --bg-secondary: #ffffff;
+    --bg-footer: #aa28b3;
+    --bg-card-front: #dcdbdb;
+    --bg-card-back: #9A9A9AD6;
+    --bg-avatar: rgba(53, 53, 53, 0.84);
+
+    /* Couleurs de texte */
+    --text-primary: #02001ad5;
+    --text-primary-0: #02001a00;
+    --text-secondary: #191919d0;
+    --text-white: #fefbef;
+    --text-black: #000000DD;
+    --text-placeholder: #00000092;
+
+
+    /* Couleur d'accent */
+    --accent-primary: #9f2ea6;
+    --accent-primary-600: #9f2ea660;
+    --accent-primary-500: #9f2ea650;
+
+    /* Ombres */
+    --shadow-primary: #00000043;
+    --shadow-card: #00000043;
+    --shadow-white: #ffffffc7;
+    --shadow-black: rgba(0, 0, 0, 0.2);
+    --shadow-footer: #00000098;
+
+    /* Couleurs spécifiques aux composants */
+    --linear-color: #000;
+    --thumb-color: #711277;
+
+    --white: #ffffff;
+}

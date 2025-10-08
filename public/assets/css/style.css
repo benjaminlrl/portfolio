@@ -1,0 +1,85 @@
+@import "colors.css";
+@import "header.css";
+@import "home.css";
+@import "button.css";
+@import "grid.css";
+@import "text_size.css";
+@import "presentation.css";
+@import "formations.css";
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--background);
+    margin: 0 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+    border-radius: 3px;
+    transition: ease-in-out .3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d144db;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5rem;
+    overflow-x: hidden;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.section__container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.section__container--center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+.my-5-vh{
+    margin: 5vh 0;
+}
+
+@media (min-width: 1200px) {
+    .section__container{
+        max-width: 1200px;
+        padding: 2rem;
+    }
+}

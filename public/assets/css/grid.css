@@ -1,0 +1,135 @@
+.grid {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.cell__logos{
+    display: flex;
+    justify-content: space-around;
+    gap:15px;
+}
+
+.cell__logos-logo{
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.cell__content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 600;
+}
+
+.cell__content--center{
+    justify-content: center;
+}
+
+.cell_content--row{
+    flex-direction: row;
+}
+
+.cell__content--start{
+    justify-content: start;
+}
+
+.cell__content--end{
+    justify-content: end;
+}
+
+.cell__header{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.grid__cell{
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+.grid__cell--footer{
+    margin-top: 20px;
+}
+
+.grid__cell--center{
+    align-items: center;
+}
+
+.grid__cell--middle{
+    justify-content: center;
+}
+
+.cell__images {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cell__image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+}
+
+.cell__images--bg-blur{
+    backdrop-filter: blur(100px);
+    position: relative;
+}
+
+.cell__images--bg-blur::before {
+    content: '';
+    position: absolute;
+    width: 85%; /* Ajustez la taille */
+    height: 85%;
+    background: var(--bg-avatar); /* Couleur du fond */
+    border-radius: 50%; /* Rond */
+    filter: blur(40px); /* Effet de flou */
+    z-index: 0;
+}
+
+/* Tailles de grid responsive */
+.grid--xxl {
+    height: 650px;
+}
+
+.grid--xl {
+    height: 600px;
+}
+
+.grid--l {
+    height: 550px;
+}
+
+.grid--m {
+    height: 500px;
+}
+
+.grid--s {
+    height: 450px;
+}
+
+.grid--xs {
+    height: 400px;
+}
+
+.grid--xxs {
+    height: 350px;
+}
+
+.grid--fit {
+    height: fit-content;
+}
