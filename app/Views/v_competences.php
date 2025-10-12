@@ -51,6 +51,105 @@ $langagesBack = [
                         "title"=>"Logo MySql"]
         ]
 ];
+
+$langagesFramework = [
+        [
+                "titre" => "CodeIgniter 4",
+                "description" => "Framework PHP MVC",
+                "img" => ["src"=>"images/logos/CodeIgniter_Logo.png",
+                        "alt"=>"Logo CodeIgniter",
+                        "class"=>"cell__logo",
+                        "title"=>"Logo CodeIgniter"]
+        ],
+        [
+                "titre" => "Joomla",
+                "description" => "Système de gestion de contenu",
+                "img" => ["src"=>"images/logos/Joomla_Logo.png",
+                        "alt"=>"Logo Joomla",
+                        "class"=>"cell__logo",
+                        "title"=>"Logo Joomla"]
+        ]
+];
+
+$langagesAutres = [
+        [
+                "titre" => "Linux",
+                "description" => "Système d'exploitation open source",
+                "img" => ["src"=>"images/logos/Linux_Logo.png",
+                        "alt"=>"Logo Linux",
+                        "class"=>"cell__logo",
+                        "title"=>"Logo Linux"]
+        ],
+        [
+                "titre" => "Git",
+                "description" => "Logiciel de gestion de versions décentralisé",
+                "img" => ["src"=>"images/logos/Git_Logo.png",
+                        "alt"=>"Logo Git",
+                        "class"=>"cell__logo",
+                        "title"=>"Logo Git"]
+        ],
+        [
+                "titre" => "Vs Code",
+                "description" => "Environnement de développement",
+                "img" => ["src"=>"images/logos/VsCode_Logo.png",
+                        "alt"=>"Logo VsCode",
+                        "class"=>"cell__logo",
+                        "title"=>"Logo VsCode"]
+        ],
+        [
+                "titre" => "VsC Community",
+                "description" => "Environnement de développement",
+                "img" => ["src"=>"images/logos/Visual_Studio_Logo.png",
+                        "alt"=>"Logo Visual Studio Community",
+                        "class"=>"cell__logo",
+                        "title"=>"Logo Visual Studio Community"]
+        ],
+        [
+                "titre" => "PHP Storm",
+                "description" => "Environnement de développement",
+                "img" => ["src"=>"images/logos/Phpstorm_Logo.svg",
+                        "alt"=>"Logo PHP Storm Jetbrain",
+                        "class"=>"cell__logo",
+                        "title"=>"Logo PHP Storm Jetbrain"]
+        ],
+        [
+                "titre" => "Virtual Box",
+                "description" => "Logiciel de virtualisation",
+                "img" => ["src"=>"images/logos/VirtualBox_Logo.png",
+                        "alt"=>"Logo Virtual Box",
+                        "class"=>"cell__logo",
+                        "title"=>"Logo Virtual Box"]
+        ]
+];
+
+function afficherCompetences(string $titre, array $competences): string {
+    $html = '<div class="section__container">
+        <div class="section__title">
+            <h2 class="text--m">' . $titre . '</h2>
+        </div>
+        <div class="langages" id="langages_1">';
+
+    $index = 1;
+    foreach ($competences as $competence):
+        $html .= '<div class="langage__container langage__container--competence" id="langage_front_' . $index . '">
+                <div class="container__header my-0">
+                    <div class="container__logos container__logos--competence">'
+                . img($competence["img"]) .
+                '</div>
+                </div>
+                <div class="langage__container langage__container--center">
+                    <h1 class="text--s text--800">' . $competence["titre"] . '</h1>
+                    <p class="text--xs text--400 text--opacity-900">' . $competence["description"] . '</p>
+                </div>
+            </div>';
+        $index++;
+    endforeach;
+
+    $html .= '</div>
+    </div>';
+
+    return $html;
+}
 ?>
 
 
@@ -60,49 +159,8 @@ $langagesBack = [
             <h2 class="text--m">💻&nbsp;Compétences</h2>
         </div>
     </div>
-    <div class="section__container p-0">
-        <div class="section__title">
-            <h2 class="text--m">🎨&nbsp;Front-end</h2>
-        </div>
-        <div class="langages" id="langages_1">
-            <?php $index = 1;
-            foreach ($langagesFront as $langage): ?>
-            <div class="langage__container langage__container--competence" id="langage_front_<?= $index ?>">
-                <div class="container__header my-0">
-                    <div class="container__logos container__logos--competence">
-                        <?= img($langage['img']) ?>
-                    </div>
-                </div>
-                <div class="langage__container langage__container--center">
-                    <h1 class="text--s text--800"><?= $langage['titre'] ?></h1>
-                    <p class="text--xs text--400 text--opacity-900"><?= $langage['description'] ?></p>
-                </div>
-            </div>
-            <?php $index++;
-            endforeach; ?>
-        </div>
-    </div>
-
-    <div class="section__container p-0">
-        <div class="section__title">
-            <h2 class="text--m">🗄️&nbsp;Back-end</h2>
-        </div>
-        <div class="langages" id="langages_2">
-            <?php $index = 1;
-            foreach ($langagesBack as $langage): ?>
-                <div class="langage__container langage__container--competence" id="langage_front_<?= $index ?>">
-                    <div class="container__header my-0">
-                        <div class="container__logos container__logos--competence">
-                            <?= img($langage['img']) ?>
-                        </div>
-                    </div>
-                    <div class="langage__container langage__container--center">
-                        <h1 class="text--s text--800"><?= $langage['titre'] ?></h1>
-                        <p class="text--xs text--400 text--opacity-900"><?= $langage['description'] ?></p>
-                    </div>
-                </div>
-                <?php $index++;
-            endforeach; ?>
-        </div>
-    </div>
+    <?= afficherCompetences("🎨&nbsp;Front-end", $langagesFront) ?>
+    <?= afficherCompetences("🗄️&nbsp;Back-end", $langagesBack) ?>
+    <?= afficherCompetences("🏗️&nbsp;Framework & CMS", $langagesFramework) ?>
+    <?= afficherCompetences("🧩&nbsp;Complémentaires", $langagesAutres) ?>
 </section>

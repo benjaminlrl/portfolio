@@ -35,7 +35,7 @@
     flex-wrap: nowrap;
     flex-direction: column;
     gap: .5rem;
-    padding: 0 2rem;
+    padding: 0;
 }
 
 .langage__container--competence{
@@ -78,6 +78,7 @@
 
     .langage__container--competence{
         width: max-content;
+        min-width: 300px;
     }
     #section__title-skills {
         width: 30%;
