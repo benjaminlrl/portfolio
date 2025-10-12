@@ -13,12 +13,12 @@
                 <?= anchor(base_url(),
                         "Accueil",
                         'class="header__nav-link"'); ?>
-                <?= anchor(base_url().'projets',
+                <?= anchor(base_url(),
                         "Projets", 'class="header__nav-link"'); ?>
-                <?= anchor(base_url().'entreprise',
+                <?= anchor(base_url(),
                         "Entreprise",
                         'class="header__nav-link"'); ?>
-                <?= anchor(base_url().'connexion',
+                <?= anchor(base_url(),
                         isset($_SESSION['user_email'])?"Se déconnecter":"Se connecter",
                         'class="header__nav-link"'); ?>
             </div>

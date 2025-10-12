@@ -2,7 +2,7 @@
     width: 100%;
     display: grid;
     justify-items: center;
-    align-items: center;
+    align-content: center;
 }
 
 .cell__logos{
@@ -21,12 +21,37 @@
 .cell__content{
     display: flex;
     flex-direction: column;
-    gap: 12px;
     font-weight: 600;
+}
+
+.cell__content--gutter--xxl{
+    gap:35px;
+}
+.cell__content--gutter--xl{
+    gap:30px;
+}
+.cell__content--gutter--l{
+    gap:25px;
+}
+.cell__content--gutter--m{
+    gap:20px;
+}
+.cell__content--gutter--s{
+    gap:15px;
+}
+.cell__content--gutter--xs{
+    gap:10px;
+}
+.cell__content--gutter--xxs{
+    gap:5px;
 }
 
 .cell__content--center{
     justify-content: center;
+}
+
+.cell_content--nogap{
+    gap: 0;
 }
 
 .cell_content--row{
@@ -103,23 +128,23 @@
 
 /* Tailles de grid responsive */
 .grid--xxl {
-    height: 650px;
+    max-width: 1200px;
 }
 
 .grid--xl {
-    height: 600px;
+    max-width: 1000px;
 }
 
 .grid--l {
-    height: 550px;
+    max-width: 900px;
 }
 
 .grid--m {
-    height: 500px;
+    max-width: 800px;
 }
 
 .grid--s {
-    height: 450px;
+    max-width: 600px;
 }
 
 .grid--xs {

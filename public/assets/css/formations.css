@@ -22,10 +22,11 @@ Fichier gère
     grid-template-rows: auto;
     position: relative;
     border-radius: 15px;
+    width: 95%;
     gap: 5px;
     padding: 10px;
-    background: var(--white);
-    box-shadow: -5px 5px 15px var(--shadow-card);
+    box-shadow: none;
+    background: var(--bg-card-front);
 }
 
 #grid__formation{
@@ -33,7 +34,7 @@ Fichier gère
 }
 
 #grid__formation .grid__cell-formation{
-    color: var(--text-black);
+    color: var(--text-primary);
     display: grid;
     grid-template-areas:
             "diplomes"
@@ -48,6 +49,7 @@ Fichier gère
     gap: 8px;
     grid-area: formation;
     transition: .3s ease-in-out;
+    background: var(--bg-card-front);
 }
 
 #grid__formation .grid__cell-formation:hover{
@@ -90,8 +92,8 @@ Fichier gère
 
 .formation__date{
     padding: 10px 15px;
-    background: var(--accent-primary-500);
-    color: var(--accent-primary);
+    background: var(--accent-primary-300);
+    color: var(--accent-secondary);
     border-radius: 50px;
 }
 
@@ -103,7 +105,6 @@ Fichier gère
         grid-template-rows: auto;
         gap: 20px;
         background: none;
-        box-shadow: none;
     }
 
     .separator__formation-date{
@@ -126,7 +127,6 @@ Fichier gère
         width: 90%;
         justify-items: end;
         box-shadow: -5px 5px 15px var(--shadow-card);
-        background: var(--white);
         padding: 15px;
     }
 

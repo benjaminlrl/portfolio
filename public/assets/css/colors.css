@@ -48,6 +48,7 @@ X Mélange de langues : --colorPrimaire
     --accent-primary: #5d1c61;
     --accent-primary-300: #5d1c6177;
     --accent-primary-500: #5d1c6150;
+    --accent-secondary: #5d1c61;
 
     /* Ombres */
     --shadow-primary: #ffffff39;
@@ -55,6 +56,9 @@ X Mélange de langues : --colorPrimaire
     --shadow-white: transparent;
     --shadow-black: transparent;
     --shadow-footer: transparent;
+    --box-shadow: #FFFFFF30;
+    --box-shadow-300: #735173D7;
+
 
     /* Couleurs spécifiques aux composants */
     --linear-color: #000;
@@ -85,6 +89,9 @@ X Mélange de langues : --colorPrimaire
     --accent-primary: #5d1c61;
     --accent-primary-600: #5d1c6160;
     --accent-primary-500: #5d1c6150;
+    --accent-secondary: #98289EFF;
+
+
 
     /* Ombres */
     --shadow-primary: #ffffff39;
@@ -92,6 +99,8 @@ X Mélange de langues : --colorPrimaire
     --shadow-white: transparent;
     --shadow-black: transparent;
     --shadow-footer: transparent;
+    --box-shadow: rgba(255, 255, 255, 0.25);
+    --box-shadow-300: #735173D7;
 
     /* Couleurs spécifiques aux composants */
     --linear-color: #000;
@@ -105,9 +114,9 @@ X Mélange de langues : --colorPrimaire
     --bg-primary: #eeeeee;
     --bg-secondary: #ffffff;
     --bg-footer: #aa28b3;
-    --bg-card-front: #dcdbdb;
+    --bg-card-front: #FFFFFF;
     --bg-card-back: #9A9A9AD6;
-    --bg-avatar: rgba(53, 53, 53, 0.84);
+    --bg-avatar: rgba(53, 53, 53, 0.55);
 
     /* Couleurs de texte */
     --text-primary: #02001ad5;
@@ -122,6 +131,7 @@ X Mélange de langues : --colorPrimaire
     --accent-primary: #9f2ea6;
     --accent-primary-600: #9f2ea660;
     --accent-primary-500: #9f2ea650;
+    --accent-secondary: #9f2ea6;
 
     /* Ombres */
     --shadow-primary: #00000043;
@@ -129,6 +139,8 @@ X Mélange de langues : --colorPrimaire
     --shadow-white: #ffffffc7;
     --shadow-black: rgba(0, 0, 0, 0.2);
     --shadow-footer: #00000098;
+    --box-shadow: #000000E6;
+    --box-shadow-300: rgba(60, 60, 60, 0.76);
 
     /* Couleurs spécifiques aux composants */
     --linear-color: #000;

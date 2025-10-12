@@ -6,6 +6,7 @@
 @import "text_size.css";
 @import "presentation.css";
 @import "formations.css";
+@import "competences.css";
 
 html {
     scroll-behavior: smooth;
@@ -21,7 +22,7 @@ html {
 
 ::-webkit-scrollbar {
     width: 12px;
-    height: 50px;
+    height: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -64,7 +65,7 @@ section {
 .section__container{
     max-width: 1200px;
     margin: auto;
-    padding: 1rem;
+    padding: 0 2rem;
 }
 
 .section__container--center{
@@ -73,13 +74,35 @@ section {
     align-items: center;
  }
 
+.section__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+
 .my-5-vh{
     margin: 5vh 0;
 }
 
+.my-2-vh{
+    margin: 2vh 0;
+}
+
+.p-0{
+    padding: 0;
+}
+
+.my-0{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 @media (min-width: 1200px) {
     .section__container{
         max-width: 1200px;
-        padding: 2rem;
+        padding: 0 2rem;
     }
 }

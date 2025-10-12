@@ -20,14 +20,14 @@ $formations=[
 ?>
 <section id="section__formations">
     <div class="section__container section__container--center">
-        <h2 class="text--l">Formation</h2>
+        <h2 class="text--l">🎓&nbsp;Formation</h2>
         <p class="text--s text--600">Mes formations académiques</p>
         <div class="grid grid--xl my-5-vh" id="grid__formation">
             <?php $index = 1;
             foreach($formations as $formation): ?>
                 <div class="grid__cell grid__cell--middle">
                     <div class="grid__cell-formation" id="formation_cell_<?= $index ?>">
-                        <div class="cell__logos cell__content--column">
+                        <div class="cell__logos cell__content--column cell__content--gutter--s">
                             <?php if(!empty($formation['etablissementLogo'])):
                                 $imgEtablissement = ["src"=>"images/logos/".$formation['etablissementLogo'],
                                         "alt"=>"Logo ".$formation['etablissementLogo'],
@@ -44,14 +44,14 @@ $formations=[
                                 echo img($imgEntreprises);
                             endif; ?>
                         </div>
-                        <div class="cell__content cell__content--center">
-                            <h4 class="text--m text--opacity-900"><?= $formation['diplome']?></h4>
-                            <p class="text--xs text--400 text--opacity-900"><?= $formation['description']?></p>
+                        <div class="cell__content cell__content--center cell__content--gutter--s">
+                            <h4 class="text--m"><?= $formation['diplome']?></h4>
+                            <p class="text--xxs text--400 text--opacity-900"><?= $formation['description']?></p>
                         </div>
                     </div>
                     <span class="separator__formation-date"></span>
                     <div class="grid__cell-date" id="formation_cell_<?= $index ?>_bis">
-                        <div class="cell__content cell__content-start cell_content--row">
+                        <div class="cell__content cell__content-start cell_content--row cell__content--gutter--s">
                             <?= $index===1?'<i class="fa-solid fa-spinner-scale text--m"></i>':
                             '<i class="fa-solid fa-calendars text--m"></i>' ?>
                             <p class="text--xs text--opacity-900 formation__date"><?= $formation['annee']?></p>

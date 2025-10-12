@@ -22,7 +22,7 @@ $portrait = ["src"=>"images/portrait_illustration.png",
                 <div class="cell__header">
                     <h1 class="text--xxl">Benjamin Lorieul</h1>
                 </div>
-                <div class="cell__content cell__content--center">
+                <div class="cell__content cell__content--center cell__content--gutter--xs">
                     <p class="text--l text--opacity-900">Apprenti développeur web</p>
                     <p class="text--m text--opacity-900">BTS SIO SLAM 2<sup class="text--s">ème</sup> année</p>
                     <p class="text--xs text--secondary">ISCB / Ministère des Armées DRHAT</p>
