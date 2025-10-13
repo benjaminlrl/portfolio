@@ -15,8 +15,9 @@ class c_home extends BaseController
             view('v_home').
             view('v_presentation').
             view('v_formations').
-            view('v_competences')
-            //view('v_langues').
+            view('v_competences').
+            view('v_langues').
+            view('v_projets')
             //view('v_certifications').
             //view('v_footer-contact')
             ;

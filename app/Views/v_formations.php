@@ -3,25 +3,25 @@ $formations=[
         ['etablissementLogo' => 'iscb.jpg',
                 'diplome'=>'BTS SIO - En cours',
                 'annee'=>'2024 - 2026',
-                'description'=>'Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers (SLAM)',
+                'description'=>'Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers (SLAM) réalisé en alternance.',
                 'entrepriseLogo'=>'Ministère_des_Armées.png'
         ],
         ['etablissementLogo' => 'LEGTA_logo.png',
                 'diplome'=>'BAC GENERAL',
                 'annee'=>'2021 - 2024',
-                'description'=>'Bac général mention ASSEZ BIEN option mathématiques et biologie/écologie au lycée agricole de Fondettes'
+                'description'=>'Bac général mention ASSEZ BIEN option mathématiques et biologie/écologie au lycée agricole de Fondettes.'
         ],
         ['etablissementLogo' => '',
                 'diplome'=>'Diplôme Nationale du Brevet',
                 'annee'=>'2018 - 2021',
-                'description'=>'Obtention du DNB au collège Lucie et Raymond Aubrac de Luynes'
+                'description'=>'Obtention du DNB au collège Lucie et Raymond Aubrac de Luynes.'
         ]
 ];
 ?>
 <section id="section__formations">
     <div class="section__container section__container--center">
         <h2 class="text--l">🎓&nbsp;Formation</h2>
-        <p class="text--s text--600">Mes formations académiques</p>
+        <p class="text--xs text--600 text--opacity-900 my-2-vh">Mes formations académiques</p>
         <div class="grid grid--xl my-5-vh" id="grid__formation">
             <?php $index = 1;
             foreach($formations as $formation): ?>
@@ -51,7 +51,7 @@ $formations=[
                     </div>
                     <span class="separator__formation-date"></span>
                     <div class="grid__cell-date" id="formation_cell_<?= $index ?>_bis">
-                        <div class="cell__content cell__content-start cell_content--row cell__content--gutter--s">
+                        <div class="cell__content cell__content-start cell__content--row cell__content--gutter--s">
                             <?= $index===1?'<i class="fa-solid fa-spinner-scale text--m"></i>':
                             '<i class="fa-solid fa-calendars text--m"></i>' ?>
                             <p class="text--xs text--opacity-900 formation__date"><?= $formation['annee']?></p>
@@ -60,6 +60,34 @@ $formations=[
                 </div>
                 <?php $index++;
             endforeach; ?>
+        </div>
+    </div>
+</section>
+<?php
+$illustration = ["src"=>"images/illustration_devenir.png",
+        "alt"=>"Illustration du portrait de Benjamin Lorieul",
+        "class"=>"cell__image cell_image--avatar",
+        "title"=>"Portrait de Benjamin Lorieul"];
+?>
+<section id="section__devenir">
+    <div class="section__container">
+        <div class="grid grid--fit" id="grid__devenir">
+            <div class="grid__cell" id="formation__cell_1">
+                <div class="cell__content cell__content--center">
+                    <div class="cell__images">
+                        <?= img($illustration)?>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__cell" id="formation__cell_2">
+                <div class="cell__header" id="devenir__title">
+                    <h2 class="text--xl text--start">Devenir</h2>
+                </div
+                <div class="cell__content cell__content--center">
+                    <p class="text--xs text--600 text--justify text--opacity-900">A la suite de l'obtention de mon BTS SIO SLAM, je souhaiterais intégrer une école d'ingénieur en alternance dans le domaine de la cybersécurité orienté développement web.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>

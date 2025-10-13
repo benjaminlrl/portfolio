@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.dataset.theme = savedTheme;
 });
 
+window.addEventListener('scroll', function() {
+    afficherBoutonTop();
+});
+
 /**
  * afficherElement permet d'attribuer de la visibilité du menu avec le bouton hamburger.
  *
@@ -67,3 +71,172 @@ function changerTheme(idBtn) {
         }
     });
 }
+
+
+/**
+ * afficherBoutonTop gère l'affichage du bouton de retour en haut de page.
+ *
+ * @author Benjamin Lorieul
+ * @since 1.0.0
+ */
+function afficherBoutonTop(){
+    const bouton = document.getElementById("button_to_top");
+
+    // Calcule 120% de la hauteur de l'écran
+    const seuilScroll = window.innerHeight;
+
+    // Position actuelle du scroll
+    const scrollActuel = window.scrollY;
+
+    // Affiche/cache le bouton
+    scrollActuel >= seuilScroll ?
+        bouton.classList.add("visible") :
+        bouton.classList.remove("visible");
+}
+
+
+/// Système de chargement progressif des projets
+document.addEventListener('DOMContentLoaded', function() {
+    const gridProjets = document.getElementById('grid__projets');
+    const btnVoirPlus = document.querySelector('#section__projets .button--tertiaire');
+    const projets = gridProjets.querySelectorAll('#section__projets .grid__cell');
+
+    let currentState = 'initial'; // initial, intermediate, all
+
+    // Configuration responsive
+    function getDisplayConfig() {
+        const width = window.innerWidth;
+
+        if (width < 900) {
+            // Mobile : affichage par 2 projets
+            return {
+                initial: 2,
+                increment: 2,
+                type: 'items'
+            };
+        } else if (width < 1200) {
+            // Tablette : affichage par ligne (2 projets par ligne)
+            return {
+                initial: 3,  // 2 lignes = 4 projets
+                increment: 3, // +1 ligne = 2 projets
+                type: 'rows'
+            };
+        } else {
+            // Desktop : affichage par ligne (3 projets par ligne)
+            return {
+                initial: 4,  // 2 lignes = 6 projets
+                increment: 4, // +1 ligne = 3 projets
+                type: 'rows'
+            };
+        }
+    }
+
+    // Initialiser l'affichage
+    function initDisplay() {
+        const config = getDisplayConfig();
+        currentState = 'initial';
+
+        // Cacher tous les projets
+        projets.forEach((projet, index) => {
+            if (index < config.initial) {
+                projet.style.display = 'flex';
+                projet.classList.add('visible');
+            } else {
+                projet.style.display = 'none';
+                projet.classList.remove('visible');
+            }
+        });
+
+        // Mettre à jour le bouton
+        updateButton();
+    }
+
+    // Mettre à jour le texte du bouton
+    function updateButton() {
+        const visibleCount = document.querySelectorAll('#grid__projets .grid__cell.visible').length;
+
+        if (currentState === 'initial') {
+            btnVoirPlus.innerHTML = 'Voir&nbsp;plus';
+        } else if (currentState === 'intermediate') {
+            btnVoirPlus.innerHTML = 'Voir&nbsp;tous&nbsp;les&nbsp;projets';
+        } else if (currentState === 'all') {
+            btnVoirPlus.innerHTML = 'Cacher&nbsp;les&nbsp;projets';
+        }
+
+        // Afficher le bouton seulement s'il y a des projets cachés ou si tous sont visibles
+        if (visibleCount >= projets.length && currentState !== 'all') {
+            btnVoirPlus.style.display = 'none';
+        } else {
+            btnVoirPlus.style.display = 'inline-block';
+        }
+    }
+
+    // Afficher plus de projets
+    function showMore() {
+        const config = getDisplayConfig();
+        const visibleProjets = document.querySelectorAll('#grid__projets .grid__cell.visible');
+        const visibleCount = visibleProjets.length;
+
+        if (currentState === 'initial') {
+            // Première étape : afficher les projets suivants
+            let toShow = config.increment;
+            let shown = 0;
+
+            projets.forEach((projet, index) => {
+                if (index >= visibleCount && index < visibleCount + toShow) {
+                    projet.style.display = 'flex';
+                    projet.classList.add('visible');
+
+                    // Animation d'apparition
+                    setTimeout(() => {
+                        projet.style.animation = 'fadeInUp 0.5s ease-out';
+                    }, shown * 100);
+
+                    shown++;
+                }
+            });
+
+            currentState = 'intermediate';
+            updateButton();
+        } else if (currentState === 'intermediate') {
+            // Deuxième étape : afficher TOUS les projets restants
+            let shown = 0;
+            projets.forEach((projet, index) => {
+                if (index >= visibleCount) {
+                    projet.style.display = 'flex';
+                    projet.classList.add('visible');
+
+                    // Animation d'apparition
+                    setTimeout(() => {
+                        projet.style.animation = 'fadeInUp 0.5s ease-out';
+                    }, shown * 100);
+
+                    shown++;
+                }
+            });
+
+            currentState = 'all';
+            updateButton();
+        } else if (currentState === 'all') {
+            // Troisième étape : cacher les projets (retour à l'état initial)
+            initDisplay();
+        }
+    }
+
+    // Event listener unique sur le bouton
+    btnVoirPlus.addEventListener('click', showMore);
+
+    // Réinitialiser au redimensionnement
+    let resizeTimeout;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            initDisplay();
+        }, 250);
+    });
+
+    // Initialisation
+    initDisplay();
+});
+
+document.head.appendChild(style);

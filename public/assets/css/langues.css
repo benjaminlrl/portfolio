@@ -1,0 +1,7 @@
+#grid__langues {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+#grid__langues .grid__cell{
+    display: flex;
+}

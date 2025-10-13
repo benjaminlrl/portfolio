@@ -1,6 +1,21 @@
-/**
-Fichier gère
- */
+#section__devenir{
+    position: relative;
+    display: block;
+    filter: drop-shadow(0px 0px 10px var(--box-shadow));
+    color: var(--text-white);
+}
+
+#section__devenir::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--accent-primary);
+    clip-path: polygon(0 0, 100% 25px, 100% 100% , 0 calc(100% - 25px));
+    z-index: -1;
+}
 
 #section__formations{
     display: flex;

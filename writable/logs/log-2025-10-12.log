@@ -1,0 +1,112 @@
+CRITICAL - 2025-10-12 20:14:45 --> ErrorException: Undefined variable $logo_ISCB
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 17.
+ 1 APPPATH\Views\v_projets.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $logo_ISCB', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-12 20:25:50 --> ErrorException: Undefined variable $portrait
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 24.
+ 1 APPPATH\Views\v_projets.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $portrait', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-12 20:25:51 --> ErrorException: Undefined variable $portrait
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 24.
+ 1 APPPATH\Views\v_projets.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $portrait', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-12 20:25:56 --> ErrorException: Undefined variable $portrait
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 24.
+ 1 APPPATH\Views\v_projets.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $portrait', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-12 20:29:41 --> ErrorException: Undefined variable $portrait
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 24.
+ 1 APPPATH\Views\v_projets.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $portrait', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-12 20:29:42 --> ErrorException: Undefined variable $portrait
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 24.
+ 1 APPPATH\Views\v_projets.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $portrait', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-12 20:29:47 --> ErrorException: Undefined variable $portrait
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 24.
+ 1 APPPATH\Views\v_projets.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $portrait', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 24)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-12 22:28:06 --> ErrorException: Undefined array key "logoLangages"
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 132.
+ 1 APPPATH\Views\v_projets.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logoLangages"', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 132)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(19): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

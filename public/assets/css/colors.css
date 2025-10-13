@@ -49,6 +49,7 @@ X Mélange de langues : --colorPrimaire
     --accent-primary-300: #5d1c6177;
     --accent-primary-500: #5d1c6150;
     --accent-secondary: #5d1c61;
+    --accent-gradient: linear-gradient(90deg, #9f2ea6, #5b1061);
 
     /* Ombres */
     --shadow-primary: #ffffff39;
@@ -61,7 +62,7 @@ X Mélange de langues : --colorPrimaire
 
 
     /* Couleurs spécifiques aux composants */
-    --linear-color: #000;
+    --linear-color: #02001a;
     --thumb-color: #5b1061;
 
     --white: #ffffff;
@@ -90,7 +91,7 @@ X Mélange de langues : --colorPrimaire
     --accent-primary-600: #5d1c6160;
     --accent-primary-500: #5d1c6150;
     --accent-secondary: #98289EFF;
-
+    --accent-gradient: linear-gradient(90deg, #9f2ea6, #5b1061);
 
 
     /* Ombres */
@@ -103,7 +104,7 @@ X Mélange de langues : --colorPrimaire
     --box-shadow-300: #735173D7;
 
     /* Couleurs spécifiques aux composants */
-    --linear-color: #000;
+    --linear-color: #02001a;
     --thumb-color: #5b1061;
 
     --white: #ffffff;
@@ -132,6 +133,7 @@ X Mélange de langues : --colorPrimaire
     --accent-primary-600: #9f2ea660;
     --accent-primary-500: #9f2ea650;
     --accent-secondary: #9f2ea6;
+    --accent-gradient: linear-gradient(90deg, #9f2ea6, #5b1061);
 
     /* Ombres */
     --shadow-primary: #00000043;
@@ -143,7 +145,7 @@ X Mélange de langues : --colorPrimaire
     --box-shadow-300: rgba(60, 60, 60, 0.76);
 
     /* Couleurs spécifiques aux composants */
-    --linear-color: #000;
+    --linear-color: #02001a;
     --thumb-color: #711277;
 
     --white: #ffffff;

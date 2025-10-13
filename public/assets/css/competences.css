@@ -9,19 +9,18 @@
 #section__title-skills{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
+#devenir__title,
 #section__title-skills h2{
     filter: drop-shadow(0px 0px 10px var(--box-shadow));
     color: var(--text-white);
     opacity: 90%;
 }
-
-
 #section__title-skills::before {
     content: '';
     position: absolute;
-    left: -25%;
-    width: 150%;
+    width: 110%;
     height: 100%;
     background: var(--box-shadow-300);
     filter: blur(40px);
@@ -79,8 +78,5 @@
     .langage__container--competence{
         width: max-content;
         min-width: 300px;
-    }
-    #section__title-skills {
-        width: 30%;
     }
 }

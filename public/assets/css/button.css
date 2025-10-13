@@ -1,47 +1,90 @@
+.button,
 button{
     padding: 5px 15px;
     border-radius: 30px;
     font-weight: 600;
     font-size: 1.5rem;
     transition: ease-in-out .3s;
+    text-decoration: none;
 }
 
+.button:hover,
 button:hover{
     cursor: pointer;
 }
 
 .button--primary:hover {
-    background-color: var(--accent-primary);
+    background: var(--accent-gradient);
     color: var(--text-primary);
 }
 
 .button--primary {
     border: 2px solid var(--accent-primary);
     color: var(--accent-primary);
-    background-color: var(--bg-primary);
+    background: var(--bg-primary);
 }
 
 .button--secondary:hover {
     color: var(--accent-primary);
-    background-color: var(--bg-primary);
+    background: var(--bg-primary);
 }
 
 .button--secondary {
     border: 2px solid var(--accent-primary);
-    background-color: var(--accent-primary);
+    background: var(--accent-primary);
     color: var(--text-primary);
 }
 
 .button--tertiaire:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .button--tertiaire {
     border: 2px solid var(--accent-primary);
-    background-color: var(--accent-primary);
+    background: var(--accent-gradient);
     color: var(--text-white);
 }
 
 .button--scale:hover{
     transform: scale(1.05);
+}
+
+.button--to-top{
+    background-color: var(--accent-primary-500);
+    color: var(--text-primary);
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: center;
+    z-index: 10000;
+    transition: ease-in-out .3s;
+    animation: opacity 1s ease-in-out;
+}
+
+.button--to-top.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.button--to-top:hover{
+    background-color: var(--accent-primary);
+    transform: scale(1.05);
+}
+
+.button--more{
+    color: var(--text-primary);
+}
+
+.button--more:hover{
+    text-decoration: underline;
+    color: var(--accent-primary);
 }

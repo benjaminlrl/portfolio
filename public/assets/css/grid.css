@@ -50,11 +50,11 @@
     justify-content: center;
 }
 
-.cell_content--nogap{
+.cell__content--nogap{
     gap: 0;
 }
 
-.cell_content--row{
+.cell__content--row{
     flex-direction: row;
 }
 
@@ -157,4 +157,18 @@
 
 .grid--fit {
     height: fit-content;
+}
+
+.cell__logos--between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cell__logos--start{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }

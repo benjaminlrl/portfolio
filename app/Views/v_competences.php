@@ -89,22 +89,6 @@ $langagesAutres = [
                         "title"=>"Logo Git"]
         ],
         [
-                "titre" => "Vs Code",
-                "description" => "Environnement de développement",
-                "img" => ["src"=>"images/logos/VsCode_Logo.png",
-                        "alt"=>"Logo VsCode",
-                        "class"=>"cell__logo",
-                        "title"=>"Logo VsCode"]
-        ],
-        [
-                "titre" => "VsC Community",
-                "description" => "Environnement de développement",
-                "img" => ["src"=>"images/logos/Visual_Studio_Logo.png",
-                        "alt"=>"Logo Visual Studio Community",
-                        "class"=>"cell__logo",
-                        "title"=>"Logo Visual Studio Community"]
-        ],
-        [
                 "titre" => "PHP Storm",
                 "description" => "Environnement de développement",
                 "img" => ["src"=>"images/logos/Phpstorm_Logo.svg",
@@ -119,6 +103,30 @@ $langagesAutres = [
                         "alt"=>"Logo Virtual Box",
                         "class"=>"cell__logo",
                         "title"=>"Logo Virtual Box"]
+        ],
+        [
+                "titre" => "PhpMyAdmin",
+                "description" => "Système de gestion de bases de données",
+                "img" => ["src"=>"images/logos/PhpMyAdmin_Logo.png",
+                        "alt"=>"Logo PhpMyAdmin",
+                        "class"=>"cell__logo",
+                        "title"=>"Logo PhpMyAdmin"]
+        ],
+        [
+                "titre" => "Vs Code",
+                "description" => "Environnement de développement",
+                "img" => ["src"=>"images/logos/VsCode_Logo.png",
+                        "alt"=>"Logo VsCode",
+                        "class"=>"cell__logo",
+                        "title"=>"Logo VsCode"]
+        ],
+        [
+                "titre" => "Vs Community",
+                "description" => "Environnement de développement",
+                "img" => ["src"=>"images/logos/Visual_Studio_Logo.png",
+                        "alt"=>"Logo Visual Studio Community",
+                        "class"=>"cell__logo cell__logo--xs",
+                        "title"=>"Logo Visual Studio Community"]
         ]
 ];
 
@@ -127,7 +135,7 @@ function afficherCompetences(string $titre, array $competences): string {
         <div class="section__title">
             <h2 class="text--m">' . $titre . '</h2>
         </div>
-        <div class="langages" id="langages_1">';
+        <div class="langages">';
 
     $index = 1;
     foreach ($competences as $competence):
@@ -153,14 +161,19 @@ function afficherCompetences(string $titre, array $competences): string {
 ?>
 
 
-<section id="section__competences">
+<section id="section__competences" class="my-5-vh">
     <div class="section__container section__container--center">
         <div class="section__title" id="section__title-skills">
             <h2 class="text--m">💻&nbsp;Compétences</h2>
+            <p class="text--xs text--600 text--opacity-900 my-2-vh">Découvrez mes compétences acquises</p>
         </div>
     </div>
     <?= afficherCompetences("🎨&nbsp;Front-end", $langagesFront) ?>
     <?= afficherCompetences("🗄️&nbsp;Back-end", $langagesBack) ?>
     <?= afficherCompetences("🏗️&nbsp;Framework & CMS", $langagesFramework) ?>
     <?= afficherCompetences("🧩&nbsp;Complémentaires", $langagesAutres) ?>
+    <div class="section__container section__container--center">
+        <a href="<?= base_url("/images/portefeuilledecompetense.pdf")?>" target="_blank"
+           class="button button--tertiaire text--xs p-2-vh my-5-vh" title="Voir mon portefeuille de compétences - nouvelle fenêtre"><i class="fa-solid fa-table"></i>&nbsp;Portefeuille&nbsp;de&nbsp;compétences</a>
+    </div>
 </section>

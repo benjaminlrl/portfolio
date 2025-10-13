@@ -18,21 +18,23 @@
 }
 
 @media (min-width: 810px) {
-    #grid__home{
-        grid-template:
-                'home_cell_1 home_cell_2'
-                'home_cell_footer home_cell_footer';
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, auto);
-    }
-}
-@media (min-width: 810px) {
     #grid__home .cell__logos{
         justify-content: start;
         gap: 3rem;
     }
     #grid__home .cell__content{
         align-items: flex-end;
+    }
+    #grid__home{
+        grid-template:
+                'home_cell_1 home_cell_2'
+                'home_cell_footer home_cell_footer';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        align-items: center;
+    }
+    #grid__home .cell__header{
+        margin-bottom: 0;
     }
 }
 
