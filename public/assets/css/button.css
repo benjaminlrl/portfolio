@@ -26,13 +26,14 @@ button:hover{
 
 .button--secondary:hover {
     color: var(--accent-primary);
-    background: var(--bg-primary);
+    background: var(--text-white);
+    transform: scale(1.1);
 }
 
 .button--secondary {
-    border: 2px solid var(--accent-primary);
-    background: var(--accent-primary);
-    color: var(--text-primary);
+    border: 2px solid var(--text-white);
+    color: var(--text-white);
+    background: transparent;
 }
 
 .button--tertiaire:hover {
@@ -87,4 +88,12 @@ button:hover{
 .button--more:hover{
     text-decoration: underline;
     color: var(--accent-primary);
+}
+
+.button:disabled:hover,
+.button:disabled{
+    background: var(--grey);
+    color: var(--text-black);
+    cursor:not-allowed;
+    transform: none;
 }

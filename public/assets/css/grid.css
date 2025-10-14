@@ -70,6 +70,10 @@
     justify-content: end;
 }
 
+.cell__content--between{
+    justify-content: space-between;
+}
+
 .cell__header{
     margin-bottom: 25px;
     text-align: center;

@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     afficherElement("header__btn--hamburger","header__responsive");
     afficherElement("header__language-toggle","header__language-dropdown");
+    //afficherModal("dialog__contact");
+    afficherModal();
     changerTheme("header__btn--theme-toggle");
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.dataset.theme = savedTheme;
@@ -238,3 +240,59 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialisation
     initDisplay();
 });
+
+function afficherModal() {
+    const form = document.getElementById("form__contact");
+    const modal = document.getElementById("dialog__contact");
+
+    const openModalBtn = document.querySelector('[aria-controls="dialog__contact"]'); // bouton principal
+    const modalSubmitBtn = document.getElementById("dialog__submit"); // bouton dans la modale
+    const modalCloseBtn = modal.querySelector(".button--close");
+
+    if (!form || !modal || !openModalBtn || !modalSubmitBtn || !modalCloseBtn) {
+        console.error("Un ou plusieurs éléments sont manquants");
+        return;
+    }
+
+    // Fonction utilitaire : récupérer tous les champs requis dans un conteneur donné
+    const getRequiredFields = container => 
+        Array.from(container.querySelectorAll("input[required], textarea[required], select[required]"));
+
+    const isValid = container => getRequiredFields(container).every(field => field.checkValidity());
+
+    // Met à jour l'état des boutons
+    function updateButtonsState() {
+        openModalBtn.disabled = !isValid(form);
+        modalSubmitBtn.disabled = !isValid(modal);
+    }
+
+    // Ouvrir la modale
+    openModalBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        modal.showModal();
+    });
+
+    // Fermer la modale
+    modalCloseBtn.addEventListener("click", () => {
+        modal.close();
+    });
+
+    // Soumission réelle du formulaire
+    modalSubmitBtn.addEventListener("click", () => {
+        if (isValid(modal)) {
+            modal.close();
+            form.submit();
+        } else {
+            alert("Veuillez remplir tous les champs requis dans la modale.");
+        }
+    });
+
+    // Mettre à jour les boutons à chaque interaction
+    document.addEventListener("input", updateButtonsState);
+    document.addEventListener("change", updateButtonsState);
+
+    // Initialiser les boutons à l'ouverture
+    updateButtonsState();
+}
+
+document.addEventListener("DOMContentLoaded", afficherModal);

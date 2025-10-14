@@ -19,7 +19,7 @@ class c_home extends BaseController
             view('v_langues').
             view('v_projets').
             //view('v_certifications').
-            view('v_footer-contact')
+            view('v_contact')
             ;
     }
 }

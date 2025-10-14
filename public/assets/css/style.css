@@ -12,12 +12,7 @@ Règles pour les blocks:
 - Réutilisable : peut être utilisé plusieurs fois
 - Pas de géométrie : pas de margin/position absolue
 - Nom descriptif : décrit ce que c'est, pas comment ça apparaît
-
 */
-
-
-
-
 
 
 /* ------------------------- */
@@ -34,7 +29,8 @@ Règles pour les blocks:
 @import "competences.css";
 @import "projets.css";
 @import "langues.css";
-@import "footer.css";
+@import "contact.css";
+@import "form.css";
 
 /* ------------------------- */
 /* --------BASE - CSS------- */
@@ -88,6 +84,10 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* ------------------------- */
@@ -148,6 +148,26 @@ section {
 .py-100{
     padding-top: 100px;
 }
+
+/* ------------------------- */
+/* -----------Gap----------- */
+/* ------------------------- */
+.g-0{
+    gap: 0;
+}
+
+.g-1{
+    gap: 1rem;
+}
+
+.g-2{
+    gap: 2rem;
+}
+
+.g-4{
+    gap: 4rem;
+}
+
 
 /* ------------------------- */
 /* --------RESPONSIVE------- */

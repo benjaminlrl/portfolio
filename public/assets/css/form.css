@@ -1,0 +1,74 @@
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: none;
+    width: 100%;
+}
+
+.fieldset--row{
+    flex-direction: row;
+}
+label{
+    margin-bottom: 3px;
+}
+fieldset input, 
+fieldset textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    z-index: 1;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    box-shadow: 0 0 3px var(--accent-primary);
+}
+
+fieldset input:focus,
+fieldset textarea:focus{
+    border: 2px solid var(--accent-primary);
+    outline: none;
+}
+fieldset textarea{
+    resize: vertical;
+    min-height: 4.5rem; /*3lignes*/
+    font-family: "Poppins", sans-serif;
+}
+
+input[type="checkbox"]{
+    width: 10px;
+    height: 10px;
+}
+
+input[type="checkbox"]::checkmark{
+    background: var(--accent-primary);
+}
+
+#dialog__contact {
+  width: 90%;
+  max-width: 500px;
+  padding: 3rem 2rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(30, 30, 30, 0.95); /* couleur sombre semi-transparente */
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+
+  /* Centrage vertical & horizontal */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* flouter l’arrière-plan */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+#grid__dialog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
