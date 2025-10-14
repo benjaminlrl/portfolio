@@ -238,5 +238,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialisation
     initDisplay();
 });
-
-document.head.appendChild(style);

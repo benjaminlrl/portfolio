@@ -1,4 +1,4 @@
-<!-- HEADER -->
+<!-- Section header -->
 <header id="header">
     <button class="header__btn header__btn--hamburger" id="header__btn--hamburger" aria-controls="header-responsive"
         type="button">
@@ -13,10 +13,10 @@
                 <?= anchor(base_url(),
                         "Accueil",
                         'class="header__nav-link"'); ?>
-                <?= anchor(base_url(),
+                <?= anchor(base_url("#section__projets"),
                         "Projets", 'class="header__nav-link"'); ?>
-                <?= anchor(base_url(),
-                        "Entreprise",
+                <?= anchor(base_url("#section__competences"),
+                        "Compétences",
                         'class="header__nav-link"'); ?>
                 <?= anchor(base_url(),
                         isset($_SESSION['user_email'])?"Se déconnecter":"Se connecter",

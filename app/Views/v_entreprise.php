@@ -1,3 +1,4 @@
+<!-- Section entreprise actuelle -->
 <div class='grid__cell' id='formation_cell_1'>
     <div class='cell__logos'>
         <?= img($logo_ISCB)?>

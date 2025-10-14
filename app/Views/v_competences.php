@@ -160,12 +160,12 @@ function afficherCompetences(string $titre, array $competences): string {
 }
 ?>
 
-
-<section id="section__competences" class="my-5-vh">
+<!-- Section compétences -->
+<section id="section__competences" class="my-5-vh py-100">
     <div class="section__container section__container--center">
         <div class="section__title" id="section__title-skills">
-            <h2 class="text--m">💻&nbsp;Compétences</h2>
-            <p class="text--xs text--600 text--opacity-900 my-2-vh">Découvrez mes compétences acquises</p>
+            <h2 class="text--m text--white">💻&nbsp;Compétences</h2>
+            <p class="text--xs text--600 text--white text--opacity-900 my-2-vh">Découvrez mes compétences acquises</p>
         </div>
     </div>
     <?= afficherCompetences("🎨&nbsp;Front-end", $langagesFront) ?>

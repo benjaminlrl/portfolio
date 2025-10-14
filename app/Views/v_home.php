@@ -14,7 +14,9 @@ $logo_ISCB = ["src"=>"images/logos/iscb.jpg",
 $portrait = ["src"=>"images/portrait_illustration.png",
         "alt"=>"Illustration",
         "class"=>"cell__image cell_image--avatar",
-        "title"=>"Portrait de Benjamin Lorieul"];?>
+        "title"=>"Portrait de Benjamin Lorieul"];
+?>
+<!-- Section accueil -->
 <section id="section__home">
     <div class="section__container">
         <div class="grid my-5-vh" id="grid__home">
@@ -42,9 +44,9 @@ $portrait = ["src"=>"images/portrait_illustration.png",
             </div>
             <div class="grid__cell grid__cell--footer grid__cell--center" id="home_cell_footer">
                 <div class="cell__content cell__content--center">
-                    <button type="button" class="button--tertiaire button--scale">
+                    <a href="#section__presentation" class="button button--tertiaire button--scale">
                         Me découvrir <i class="fa-solid fa-hand-point-down"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

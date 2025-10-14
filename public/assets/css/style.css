@@ -1,3 +1,28 @@
+/*
+Convention CSS:
+- Créer un fichier css par block et l'importer dans le fichier style.css
+- Commenter la première ligne du fichier par le rôle de la section associée
+- Syntaxe BEM:
+    block { }
+    block__element {}
+    block--modifier
+    block__element--modifier {}
+Règles pour les blocks:
+- Autonome : doit fonctionner indépendamment
+- Réutilisable : peut être utilisé plusieurs fois
+- Pas de géométrie : pas de margin/position absolue
+- Nom descriptif : décrit ce que c'est, pas comment ça apparaît
+
+*/
+
+
+
+
+
+
+/* ------------------------- */
+/* ----------IMPORT--------- */
+/* ------------------------- */
 @import "colors.css";
 @import "header.css";
 @import "home.css";
@@ -9,7 +34,11 @@
 @import "competences.css";
 @import "projets.css";
 @import "langues.css";
+@import "footer.css";
 
+/* ------------------------- */
+/* --------BASE - CSS------- */
+/* ------------------------- */
 html {
     scroll-behavior: smooth;
 }
@@ -20,6 +49,7 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ::-webkit-scrollbar {
@@ -60,6 +90,9 @@ body {
     position: relative;
 }
 
+/* ------------------------- */
+/* ---------SECTION--------- */
+/* ------------------------- */
 section {
     width: 100%;
     padding: 2rem 0;
@@ -85,29 +118,40 @@ section {
     width: fit-content;
 }
 
-.my-5-vh{
-    margin: 5vh 0;
+/* ------------------------- */
+/* ----------MARGIN--------- */
+/* ------------------------- */
+.my-0{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .my-2-vh{
     margin: 2vh 0;
 }
 
+.my-5-vh{
+    margin: 5vh 0;
+}
+
+/* ------------------------- */
+/* ----------PADDING-------- */
+/* ------------------------- */
 .p-0{
     padding: 0;
 }
-
-.my-0{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 
 .p-2-vh{
     padding: 2vh 2vh;
 }
 
+.py-100{
+    padding-top: 100px;
+}
 
+/* ------------------------- */
+/* --------RESPONSIVE------- */
+/* ------------------------- */
 @media (min-width: 1200px) {
     .section__container{
         max-width: 1200px;

@@ -209,9 +209,8 @@ $projets = [
         ]
 ];
 ?>
-
-
-<section id="section__projets">
+<!-- Section projets -->
+<section id="section__projets" class="py-100">
     <div class="section__container section__container--center">
         <h2 class="text--m">🚀&nbsp;Projets</h2>
         <p class="text--xs text--600 text--opacity-900 my-2-vh">Découvrez mes projets réalisés depuis mes débuts</p>

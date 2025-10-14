@@ -1,28 +1,32 @@
-<div class="footer">
-    <div class="content">
-            <form action="#" method="POST" class="form-contact">
-                <h1>Me contacter</h1>
-                <div class="container-input-box-meContacter">
-                    <div class="input-box-meContacter email">
-                        <input type="email" name="email" placeholder="votre@email.fr" value="<?php if(isset($_SESSION["user_email"])){echo $_SESSION["user_email"];}?>" required>
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <div class="input-box-meContacter username">
-                        <input type="text" name="userName" placeholder="Nom Prénom" required>
-                        <i class="fa-solid fa-address-card"></i>
-                    </div>
+<!-- Section footer -->
+<section class="py-100" id="section__footer">
+    <div class="section__container section__container--center">
+        <form action="#" method="POST" class="grid grid__cell--center" id="form__contact">
+            <h1 class="text--center text--m text--white"><i class="fa-solid fa-messages"></i> Me contacter</h1>
+            <div class="grid__cell grid__cell--row">
+                <div class="cell__content">
+                    <fieldset>
+                        <label for="input__name">Nom et Prénom</label>
+                        <input type="text" id="input__name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="input__email">Email</label>
+                        <input type="email" id="input__email">
+                    </fieldset>
                 </div>
-                <div class="input-box-meContacter message">
-                    <textarea name="message" placeholder="Votre message..." rows="8" required></textarea>
+            </div>
+            <div class="grid__cell">
+                <div class="cell_content">
+                    <fieldset>
+                        <label for="input__message">V</label>
+                    </fieldset>
                 </div>
-                <input type="text" name="honeypot" style="display:none;">
-                <div class="confidentialite-check">
-                    <input type="checkbox" name="confidentialite-check" id="confidentialite-check">
-                    <p>J'accepte que mon adresse email soit récupérée afin de pouvoir être contacté en retour.</p>
-                </div>
-                <button type="submit" class="btn-submit-meContacter">Envoyer  <i class="fa-solid fa-paper-plane"></i></button>
-            </form>
+            </div>
+            <div class="grid__cell">
+
+            </div>
+        </form>
     </div>
-</div>
+</section>
 </body>
 </html>

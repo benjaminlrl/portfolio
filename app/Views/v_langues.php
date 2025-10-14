@@ -56,6 +56,7 @@ function afficherLangue(string $langue, string $niveau, string $langueImage): st
     return $html;
 }
 ?>
+<!-- Section langues -->
 <section id="section__langues" class="my-5-vh">
     <div class="section__container section__container--center">
         <div class="section__title my-5-vh">

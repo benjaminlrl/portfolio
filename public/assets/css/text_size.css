@@ -79,6 +79,6 @@
     text-align: justify;
 }
 
-.text-white{
+.text--white{
     color: var(--text-white);
 }

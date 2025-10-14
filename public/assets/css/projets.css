@@ -42,6 +42,10 @@
     transition: transform 0.4s ease;
 }
 
+.grid__cell circle{
+    filter: drop-shadow(0px 0px 5px var(--box-shadow));
+}
+
 #grid__projets .grid__cell:hover .cell__header img {
     transform: scale(1.08);
 }
@@ -87,7 +91,7 @@
 }
 
 .cell__logos-langage{
-    min-width: 40px;
+    min-width: 35px;
     height: 40px;
 }
 

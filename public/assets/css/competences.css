@@ -4,7 +4,6 @@
 
 #section__competences .section__title{
     padding: 1rem;
-    color: var(--text-primary);
 }
 #section__title-skills{
     display: flex;
@@ -14,7 +13,6 @@
 #devenir__title,
 #section__title-skills h2{
     filter: drop-shadow(0px 0px 10px var(--box-shadow));
-    color: var(--text-white);
     opacity: 90%;
 }
 #section__title-skills::before {

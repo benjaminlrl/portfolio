@@ -5,6 +5,10 @@
     align-content: center;
 }
 
+.grid__cell--row{
+    flex-direction: row;
+}
+
 .cell__logos{
     display: flex;
     justify-content: space-around;
