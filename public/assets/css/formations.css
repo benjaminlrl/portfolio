@@ -107,7 +107,7 @@
 
 .formation__date{
     padding: 10px 15px;
-    background: var(--accent-primary-300);
+    background: var(--accent-gradient-500);
     color: var(--accent-secondary);
     border-radius: 50px;
 }

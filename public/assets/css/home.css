@@ -17,13 +17,18 @@
     grid-area: home_cell_footer;
 }
 
+.cell__content--md-end{
+    justify-content: center;
+    align-items: center;
+}
 @media (min-width: 810px) {
     #grid__home .cell__logos{
         justify-content: start;
         gap: 3rem;
     }
-    #grid__home .cell__content{
-        align-items: flex-end;
+    .cell__content--md-end{
+        justify-content: flex-end;
+        align-items: end;
     }
     #grid__home{
         grid-template:

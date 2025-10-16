@@ -65,10 +65,15 @@ function afficherLangue(string $langue, string $niveau, string $langueImage): st
         </div>
         <div class="grid my-5-vh" id="grid__langues">
             <?php foreach ($langues as $langue): ?>
-            <div class="grid__cell grid__cell--center">
+            <div class="grid__cell grid__cell--center grid__cell--column">
                 <?= afficherLangue($langue['langue'], $langue['niveau'], $langue['image']); ?>
             </div>
             <?php endforeach; ?>
         </div>
+    </div>
+    <div class="section__container section__container--center">
+        <a href="<?= base_url("/images/certifications/Attestations_de_competence_en_langues_vivantes_V1.pdf")?>" target="_blank"
+           class="button button--tertiaire text--xs p-2-vh my-5-vh" title="Voir mon portefeuille de compétences - nouvelle fenêtre"><i class="fa-solid fa-table"></i>&nbsp;Certificat de langues
+        </a>
     </div>
 </section>

@@ -1,4 +1,5 @@
 /* Grid des projets */
+#grid__certifications,
 #grid__projets {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -7,6 +8,7 @@
 }
 
 /* Cellule de projet */
+#grid__certifications .grid__cell,
 #grid__projets .grid__cell {
     background: var(--bg-primary);
     border-radius: 15px;
@@ -17,6 +19,7 @@
     box-shadow: 5px 5px 15px var(--shadow-card);
 }
 
+#grid__certifications .grid__cell:hover,
 #grid__projets .grid__cell:hover {
     transform: translateY(-8px);
     border-color: var(--accent-primary);
@@ -25,6 +28,7 @@
 }
 
 /* Header de la cellule (image + titre) */
+#grid__certifications .grid__cell .cell__header,
 #grid__projets .grid__cell .cell__header {
     position: relative;
     overflow: hidden;
@@ -41,15 +45,20 @@
     display: block;
     transition: transform 0.4s ease;
 }
+#grid__certifications .grid__cell .cell__header img{
+    object-position: center center;
+}
 
 .grid__cell circle{
     filter: drop-shadow(0px 0px 5px var(--box-shadow));
 }
 
+#grid__certifications .grid__cell:hover .cell__header img,
 #grid__projets .grid__cell:hover .cell__header img {
     transform: scale(1.08);
 }
 
+#grid__certifications .cell__header h3,
 #grid__projets .cell__header h3 {
     position: absolute;
     bottom: 0;
@@ -68,6 +77,7 @@
 }
 
 /* Contenu de la cellule */
+#grid__certifications .cell__content,
 #grid__projets .cell__content {
     padding: .5rem 1.5rem;
     flex: 1;
@@ -75,13 +85,13 @@
     flex-direction: column;
     gap: 1rem;
 }
-
+#grid__certifications .cell__content p,
 #grid__projets .cell__content p {
     margin: 0;
     flex: 1;
     color: var(--text-secondary);
 }
-
+#grid__certifications .cell__content--footer,
 #grid__projets .cell__content--footer {
     display: flex;
     flex-direction: row;
@@ -109,7 +119,7 @@
         transform: translateY(0);
     }
 }
-
+#grid__certifications .grid__cell,
 #grid__projets .grid__cell {
     animation: none;
 }

@@ -9,26 +9,33 @@ fieldset{
 .fieldset--row{
     flex-direction: row;
 }
+
+.fieldset--center{
+    align-items: center;
+}
+
 label{
     margin-bottom: 3px;
 }
+
 fieldset input, 
 fieldset textarea{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: none;
     z-index: 1;
+    border: 2px solid transparent;
     background: var(--bg-primary);
     color: var(--text-primary);
-    box-shadow: 0 0 3px var(--accent-primary);
+    backdrop-filter: drop-shadow(0 0 3px var(--accent-primary));
 }
 
 fieldset input:focus,
 fieldset textarea:focus{
-    border: 2px solid var(--accent-primary);
     outline: none;
+    border: 2px solid var(--text-white);
 }
+
 fieldset textarea{
     resize: vertical;
     min-height: 4.5rem; /*3lignes*/
@@ -36,12 +43,14 @@ fieldset textarea{
 }
 
 input[type="checkbox"]{
-    width: 10px;
-    height: 10px;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    cursor: pointer;
 }
 
-input[type="checkbox"]::checkmark{
-    background: var(--accent-primary);
+input[type="checkbox"]:checked{
+    accent-color: var(--accent-primary);
 }
 
 #dialog__contact {
@@ -71,4 +80,31 @@ dialog::backdrop {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+}
+h5{
+    display: flex;
+    align-items: center;
+}
+.valide{
+    display: block;
+    content:'';
+    width: .5rem;
+    height: .5rem;
+    padding: .5rem;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: green;
+    animation: opacityVariation infinite;
+}
+
+@keyframes opacityVariation {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
 }

@@ -1,0 +1,51 @@
+#section__footer{
+    background: var(--bg-footer);
+}
+
+#section__footer a:hover{
+    color: var(--bg-input);
+}
+
+#grid__footer{
+    grid-template-areas:
+        "profil"
+        "navigation"
+        "contact"
+        "reglementation"
+        "copyright";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+#footer__cell_1{
+    grid-area: profil;
+}
+#footer__cell_2{
+    grid-area: navigation;
+}
+#footer__cell_3{
+    grid-area: contact;
+}
+#footer__cell_4{
+    grid-area: reglementation;
+}
+#footer__cell_5{
+    grid-area: copyright;
+}
+
+.separator__reglement{
+    width: 2px;
+    height: 1rem;
+    background: var(--white);
+}
+
+@media (min-width: 600px){
+    #grid__footer{
+        grid-template-areas:
+        "profil navigation contact"
+        "reglementation reglementation reglementation"
+        "copyright copyright copyright";
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+    }
+}

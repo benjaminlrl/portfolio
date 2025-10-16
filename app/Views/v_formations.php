@@ -4,17 +4,23 @@ $formations=[
                 'diplome'=>'BTS SIO - En cours',
                 'annee'=>'2024 - 2026',
                 'description'=>'Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers (SLAM) réalisé en alternance.',
-                'entrepriseLogo'=>'Ministère_des_Armées.png'
+                'entrepriseLogo'=>'Ministère_des_Armées.png',
+                'lien'=>'https://www.iscb.fr/',
+                'entrepriseLien'=>'https://www.defense.gouv.fr/'
         ],
         ['etablissementLogo' => 'LEGTA_logo.png',
                 'diplome'=>'BAC GENERAL',
                 'annee'=>'2021 - 2024',
-                'description'=>'Bac général mention ASSEZ BIEN option mathématiques et biologie/écologie au lycée agricole de Fondettes.'
+                'description'=>'Bac général mention ASSEZ BIEN option mathématiques et biologie/écologie au lycée agricole de Fondettes.',
+                'lien'=>'https://www.tours-fondettes-agrocampus.fr/',
+                'entrepriseLien'=>''
         ],
         ['etablissementLogo' => '',
                 'diplome'=>'Diplôme Nationale du Brevet',
                 'annee'=>'2018 - 2021',
-                'description'=>'Obtention du DNB au collège Lucie et Raymond Aubrac de Luynes.'
+                'description'=>'Obtention du DNB au collège Lucie et Raymond Aubrac de Luynes.',
+                'lien'=>'',
+                'entrepriseLien'=>''
         ]
 ];
 ?>
@@ -29,6 +35,7 @@ $formations=[
                 <div class="grid__cell grid__cell--middle">
                     <div class="grid__cell-formation" id="formation_cell_<?= $index ?>">
                         <div class="cell__logos cell__content--column cell__content--gutter--s">
+                            <a href="<?= !empty($formation['lien'])? $formation['lien']:''; ?>">
                             <?php if(!empty($formation['etablissementLogo'])):
                                 $imgEtablissement = ["src"=>"images/logos/".$formation['etablissementLogo'],
                                         "alt"=>"Logo ".$formation['etablissementLogo'],
@@ -36,7 +43,8 @@ $formations=[
                                         "title"=>"Logo ".$formation['etablissementLogo']];
                                 echo img($imgEtablissement);
                             endif; ?>
-
+                            </a>
+                            <a href="<?= !empty($formation['entrepriseLien'])? $formation['entrepriseLien']:''; ?>">
                             <?php if(isset($formation['entrepriseLogo']) && !empty($formation['entrepriseLogo'])):
                                 $imgEntreprises = ["src"=>"images/logos/".$formation['entrepriseLogo'],
                                         "alt"=>"Logo ".$formation['entrepriseLogo'],
@@ -44,6 +52,7 @@ $formations=[
                                         "title"=>"Logo ".$formation['entrepriseLogo']];
                                 echo img($imgEntreprises);
                             endif; ?>
+                            </a>
                         </div>
                         <div class="cell__content cell__content--center cell__content--gutter--s">
                             <h4 class="text--m"><?= $formation['diplome']?></h4>

@@ -19,4 +19,3 @@
     <title><?= isset($titre_page)? $titre_page:''; ?></title>
 </head>
 <body id="top">
-<a href="#top" class="button button--to-top" id="button_to_top" title="Remontez en haut de la page"><i class="fa-solid fa-arrow-up text--m"></i></a>

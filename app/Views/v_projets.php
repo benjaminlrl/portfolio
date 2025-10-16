@@ -1,6 +1,29 @@
 <?php
 $projets = [
         [
+                "titre" => "RH-Terre",
+                "description" => "Refonte du site RH-Terre aux normes DSFR pour le ministère des Armées.",
+                "img" => ["src"=>"images/projets/rh-terre_home.png",
+                        "alt"=>"Capture d'écran du site RH-Terre",
+                        "class"=>"cell__projet",
+                        "title"=>""],
+                "logoLangages" => [
+                        ["src"=>"images/logos/PHP_Logo.png",
+                                "alt"=>"Logo PHP",
+                                "class"=>"cell__logos-langage",
+                                "title"=>"Logo PHP"],
+                        ["src"=>"images/logos/JavaScript_Logo.png",
+                                "alt"=>"Logo JavaScript",
+                                "class"=>"cell__logos-langage",
+                                "title"=>"Logo JavaScript"]
+                ],
+                "logoContexte" => ["src"=>"images/logos/Ministère_des_Armées.png",
+                        "alt"=>"ministère des Armées",
+                        "class"=>"cell__logos-logo logo--xs",
+                        "title"=>"Projet professionnel"],
+                "lien" => "#"
+        ],
+        [
                 "titre" => "Cyber4all",
                 "description" => "Glossaire dynamique sur la cybersécurité avec système d'administration et de vote.",
                 "img" => ["src"=>"images/projets/cyber4all.png",
@@ -45,29 +68,6 @@ $projets = [
                         "class"=>"cell__logos-logo logo--xs",
                         "title"=>"Projet personnel"],
                 "lien" => "https://github.com/benjaminlrl/portfolio"
-        ],
-        [
-                "titre" => "RH-Terre",
-                "description" => "Refonte du site RH-Terre aux normes DSFR pour le ministère des Armées.",
-                "img" => ["src"=>"images/projets/rh-terre_home.png",
-                        "alt"=>"Capture d'écran du site RH-Terre",
-                        "class"=>"cell__projet",
-                        "title"=>""],
-                "logoLangages" => [
-                        ["src"=>"images/logos/PHP_Logo.png",
-                                "alt"=>"Logo PHP",
-                                "class"=>"cell__logos-langage",
-                                "title"=>"Logo PHP"],
-                                ["src"=>"images/logos/JavaScript_Logo.png",
-                                        "alt"=>"Logo JavaScript",
-                                        "class"=>"cell__logos-langage",
-                                        "title"=>"Logo JavaScript"]
-                        ],
-                "logoContexte" => ["src"=>"images/logos/Ministère_des_Armées.png",
-                        "alt"=>"ministère des Armées",
-                        "class"=>"cell__logos-logo logo--xs",
-                        "title"=>"Projet professionnel"],
-                "lien" => "#"
         ],
         [
                 "titre" => "Plugin cron",
@@ -221,7 +221,7 @@ $projets = [
                     <?= img($projet["img"]) ?>
                     <h3 class="text--s"> <?= $projet["titre"] ?></h3>
                 </div>
-                <div class="cell__content cell__content--center">
+                <div class="cell__content cell__content--start">
                     <p class="text--xxs text--opacity-900 text--500"> <?= $projet["description"] ?></p>
                     <div class="cell__logos cell__logos--start">
                         <?php foreach($projet["logoLangages"] as $lang):?>

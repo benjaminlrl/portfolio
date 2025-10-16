@@ -31,6 +31,7 @@ Règles pour les blocks:
 @import "langues.css";
 @import "contact.css";
 @import "form.css";
+@import "footer.css";
 
 /* ------------------------- */
 /* --------BASE - CSS------- */
@@ -118,6 +119,14 @@ section {
     width: fit-content;
 }
 
+.section--separator{
+    width: min(90%,800px);
+    height: 1px;
+    display: block;
+    background-color: var(--text-white);
+    opacity: .6;
+    margin: 0 auto 3rem auto;
+}
 /* ------------------------- */
 /* ----------MARGIN--------- */
 /* ------------------------- */
@@ -145,8 +154,15 @@ section {
     padding: 2vh 2vh;
 }
 
+.p-2-5-vh{
+    padding: 2vh 5vh;
+}
 .py-100{
     padding-top: 100px;
+}
+
+.p-1-rem{
+    padding: 1rem;
 }
 
 /* ------------------------- */
@@ -155,6 +171,11 @@ section {
 .g-0{
     gap: 0;
 }
+
+.g-0-2{
+    gap: .2rem;
+}
+
 
 .g-1{
     gap: 1rem;

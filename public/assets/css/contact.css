@@ -1,7 +1,6 @@
 #section__contact{
     position: relative;
     display: block;
-    filter: drop-shadow(0px 0px 10px var(--box-shadow));
 }
 
 #section__contact::before {
@@ -10,8 +9,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: var(--accent-primary-500);
+    height: calc(100% + 1px);
+    background: var(--bg-footer);
     clip-path: polygon(0 25px, 100% 0, 100% 100%, 0 100%);
     z-index: -1;
 }
@@ -19,7 +18,9 @@
 #grid__contact{
     grid-template-areas: 
             "contact"
-            "social";
+            "social"
+            "recherche"
+            "cv";
     grid-template-columns: 1fr;
 }
 
@@ -31,11 +32,19 @@
     grid-area: social; 
     height: fit-content;
 }
+#contact__cell_3{
+    grid-area: recherche;
+    height: fit-content;
+}
+#contact__cell_4{
+    grid-area: cv;
+    height: fit-content;
+}
 
 .grid__cell--contact{
-    background: var(--bg-card-back);
-    padding: 2rem;
     border-radius: 15px;
+    padding: 2rem;
+    background: var(--bg-cell-contact);
 }
 
 .item--social{
@@ -46,26 +55,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-primary);
     transition: .3s ease-in-out;
 }
 
-
 .item--social:hover{
-    /* box-shadow: 0px 0px 5px var(--accent-primary-500); */
-    background: var(--accent-primary-200);
-    color: var(--accent-primary);
-    border-color: var(--accent-primary);
-    transform: scale(1.05);
+    transform: scale(1.025);
+    color: var(--bg-input);
 }
 #form__contact{
     grid-template-areas: 
         "title"
         "name"
         "email"
+        "sujet"
         "message"
-        "footer"
-        ;
+        "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 24px;
@@ -77,24 +81,40 @@
 #form__contact__cell_2{
     grid-area: name;
 }
-
 #form__contact__cell_3{
     grid-area: email;
 }
 #form__contact__cell_4{
-    grid-area: message;
+    grid-area: sujet;
 }
 #form__contact__cell_5{
+    grid-area: message;
+}
+#form__contact__cell_6{
     grid-area: footer;
 }
 
 @media (min-width: 950px){
     #grid__contact{
         grid-template-areas: 
-            "contact social";
+            "contact social"
+            "contact recherche"
+            "contact cv";
         grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto minmax(100px, 1fr);
     }
     #form__contact__cell_2 .cell__content{     
         flex-direction: row;
+    }
+    #form__contact{
+        grid-template-areas:
+        "title title"
+        "name email"
+        "sujet sujet"
+        "message message"
+        "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 24px;
     }
 }

@@ -97,3 +97,7 @@ button:hover{
     cursor:not-allowed;
     transform: none;
 }
+
+.button--fit{
+    width: fit-content;
+}

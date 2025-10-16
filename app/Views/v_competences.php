@@ -174,6 +174,7 @@ function afficherCompetences(string $titre, array $competences): string {
     <?= afficherCompetences("🧩&nbsp;Complémentaires", $langagesAutres) ?>
     <div class="section__container section__container--center">
         <a href="<?= base_url("/images/portefeuilledecompetense.pdf")?>" target="_blank"
-           class="button button--tertiaire text--xs p-2-vh my-5-vh" title="Voir mon portefeuille de compétences - nouvelle fenêtre"><i class="fa-solid fa-table"></i>&nbsp;Portefeuille&nbsp;de&nbsp;compétences</a>
+           class="button button--tertiaire text--xs p-2-vh my-5-vh" title="Voir mon portefeuille de compétences - nouvelle fenêtre"><i class="fa-solid fa-table"></i>&nbsp;Portefeuille&nbsp;de&nbsp;compétences
+        </a>
     </div>
 </section>
