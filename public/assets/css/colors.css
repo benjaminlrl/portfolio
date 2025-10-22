@@ -1,210 +1,246 @@
 /**
-Ce fichier représente l'atribution des couleurs utilisés par le site;
-1. Approche sémantique (Recommandée)
---color-primary, --color-secondary
---text-primary, --text-secondary
---bg-primary, --bg-secondary
+ * Charte graphique Rose/Bleu Pastel Premium
+ * Design doux, apaisant et professionnel pour portfolio
+ * @author Benjamin Lorieul
+ */
 
-2. Conventions de nommage
-Kebab-case : --color-primary (pas --colorPrimary)
-Préfixes cohérents : --color-, --bg-, --text-, --shadow-
-Suffixes descriptifs : -light, -dark, -hover, -active
-
-3. Hiérarchie des nuances
-Numérique : --gray-100, --gray-200, --gray-300
-Descriptive : --gray-light, --gray-medium, --gray-dark
-
-4. Éviter
-X Noms de couleurs littérales : --red, --blue
-X Noms non-descriptifs : --troisiemeCouleur
-X Mélange de langues : --colorPrimaire
-
-*
-@author Benjamin Lorieul <benjamin.lorieul.pro@gmail.com>
-@package Cyber4all
-@since 1.0.0
-
-*/
-
-/* Valeurs par défaut (thème sombre par défaut) */
+/* Valeurs par défaut (Dark mode) */
 :root {
     /* Couleurs de fond (dark mode) */
-    --bg-primary: #0b0f19;
-    --bg-secondary: #111827;
-    --bg-footer: #1f2937;
-    --bg-card-front: #1c2333;
-    --bg-card-back: #2a3248;
-    --bg-avatar: rgba(255, 255, 255, 0.05);
-    --bg-input: #1c2333;
-    --bg-cell-contact: rgba(59, 130, 246, 0.15);
+    --bg-primary: #0f0d1a;
+    --bg-secondary: #1a1825;
+    --bg-footer: #08070f;
+    --bg-card-front: #1a1825;
+    --bg-card-back: #221f33;
+    --bg-avatar: rgba(217, 144, 233, 0.08);
+    --bg-input: #221f33;
+    --bg-cell-contact: linear-gradient(135deg, #ba68c8 0%, #7986cb 100%);
 
     /* Couleurs de texte */
-    --text-primary: #f9fafb;
-    --text-primary-0: #f9fafb00;
-    --text-secondary: #cbd5e1;
+    --text-primary: #f5f3f9;
+    --text-primary-0: #f5f3f900;
+    --text-secondary: #c4b5d6;
     --text-white: #ffffff;
-    --text-black: rgba(0, 0, 0, 0.87);
-    --text-placeholder: rgba(156, 163, 175, 0.7);
+    --text-black: #0f0d1a;
+    --text-placeholder: rgba(196, 181, 214, 0.5);
 
-    /* Couleurs d'accent */
-    --accent-primary: #3b82f6;        /* Bleu tech – trust & modern */
-    --accent-primary-600: #2563eb;
-    --accent-primary-500: #60a5fa;
-    --accent-primary-200: #bfdbfe;
-    --accent-secondary: #6366f1;      /* Violet doux complémentaire */
-    --accent-gradient: linear-gradient(90deg, #3b82f6, #6366f1);
-    --accent-gradient-500: linear-gradient(90deg, #2563eb50, #6366f150);
+    /* Couleurs d'accent - Rose/Bleu doux */
+    --accent-primary: #ba68c8;
+    --accent-primary-600: #ab47bc;
+    --accent-primary-500: #ce93d8;
+    --accent-primary-200: #e1bee7;
+    --accent-secondary: #7986cb;
+    --accent-gradient: linear-gradient(135deg, #ba68c8 0%, #7986cb 100%);
+    --accent-gradient-500: linear-gradient(135deg, #ba68c850, #7986cb50);
 
     /* Ombres */
-    --shadow-primary: rgba(0, 0, 0, 0.2);
-    --shadow-card: rgba(0, 0, 0, 0.3);
-    --shadow-white: rgba(255, 255, 255, 0.1);
-    --shadow-black: rgba(0, 0, 0, 0.3);
-    --shadow-footer: rgba(0, 0, 0, 0.6);
-    --box-shadow: rgba(0, 0, 0, 0.25);
-    --box-shadow-300: rgba(30, 41, 59, 0.6);
+    --shadow-primary: rgba(186, 104, 200, 0.2);
+    --shadow-card: rgba(198, 132, 209, 0.42);
+    --shadow-white: rgba(255, 255, 255, 0.05);
+    --shadow-black: rgba(0, 0, 0, 0.6);
+    --shadow-footer: rgba(0, 0, 0, 0.5);
+    --box-shadow: rgba(0, 0, 0, 0.3);
+    --box-shadow-300: rgba(0, 0, 0, 0.5);
 
     /* Composants */
-    --linear-color: #0b0f19;
-    --thumb-color: #3b82f6;
+    --linear-color: #0f0d1a;
+    --thumb-color: #ba68c8;
 
     /* Couleurs neutres */
     --white: #ffffff;
-    --white-700: rgba(255, 255, 255, 0.5);
-    --grey: #9ca3af;
+    --white-700: rgba(255, 255, 255, 0.06);
+    --grey: #9e9aab;
 }
 
-/* Thème light pro (optionnel) */
+/* ============================================ */
+/* THÈME LIGHT - Rose/Bleu pastel apaisant */
+/* ============================================ */
 :root[data-theme="light"] {
-    --bg-primary: #f3f4f6;
-    --bg-secondary: #ffffff;
-    --bg-footer: #e5e7eb;
+    /* Backgrounds - Tons très clairs et doux */
+    --bg-primary: #eaeaea;
+    --bg-secondary: #f8f8f8;
+    --bg-footer: #2a1f3e;
     --bg-card-front: #ffffff;
-    --bg-card-back: #f9fafb;
-    --bg-avatar: rgba(0, 0, 0, 0.05);
+    --bg-card-back: #f7f4fb;
+    --bg-avatar: rgba(84, 48, 90, 0.35);
     --bg-input: #ffffff;
-    --bg-cell-contact: rgba(59, 130, 246, 0.1);
+    --bg-cell-contact: linear-gradient(135deg, rgba(186, 104, 200, 0.6) 0%, rgba(121, 134, 203, 0.6) 100%);
 
-    --text-primary: #111827;
-    --text-primary-0: #11182700;
-    --text-secondary: #4b5563;
+    /* Textes - Contraste doux mais lisible */
+    --text-primary: #1f1733;
+    --text-primary-0: #1f173300;
+    --text-secondary: #5e5470;
     --text-white: #ffffff;
-    --text-black: #000000;
-    --text-placeholder: rgba(107, 114, 128, 0.7);
+    --text-black: #1f1733;
+    --text-placeholder: rgba(94, 84, 112, 0.6);
 
-    --accent-primary: #2563eb;
-    --accent-primary-600: #1d4ed8;
-    --accent-primary-500: #3b82f6;
-    --accent-primary-200: #bfdbfe;
-    --accent-secondary: #6366f1;
-    --accent-gradient: linear-gradient(90deg, #2563eb, #6366f1);
-    --accent-gradient-500: linear-gradient(90deg, #2563eb50, #6366f150);
+    /* Accents - Rose/Bleu pastel élégant */
+    --accent-primary: #ba68c8;
+    --accent-primary-600: #ab47bc;
+    --accent-primary-500: #ce93d8;
+    --accent-primary-200: #f3e5f5;
+    --accent-secondary: #9fa8da;
+    --accent-gradient: linear-gradient(135deg, rgba(186, 104, 200, 0.6) 0%, rgba(121, 134, 203, 0.6) 100%);
+    --accent-gradient-500: linear-gradient(135deg, #ce93d850, #c5cae950);
 
-    --shadow-primary: rgba(0, 0, 0, 0.1);
-    --shadow-card: rgba(0, 0, 0, 0.1);
-    --shadow-white: rgba(255, 255, 255, 0.7);
-    --shadow-black: rgba(0, 0, 0, 0.2);
-    --shadow-footer: rgba(0, 0, 0, 0.1);
-    --box-shadow: rgba(0, 0, 0, 0.1);
-    --box-shadow-300: rgba(107, 114, 128, 0.3);
+    /* Ombres - Subtiles et élégantes */
+    --shadow-primary: rgba(186, 104, 200, 0.12);
+    --shadow-card: rgba(198, 132, 209, 0.42);
+    --shadow-white: rgba(255, 255, 255, 0.95);
+    --shadow-black: rgba(31, 23, 51, 0.18);
+    --shadow-footer: rgba(0, 0, 0, 0.25);
+    --box-shadow: rgba(31, 23, 51, 0.1);
+    --box-shadow-300: rgba(176, 92, 216, 0.40);
 
+    /* Éléments UI */
     --linear-color: #ffffff;
-    --thumb-color: #2563eb;
+    --thumb-color: #ba68c8;
 
+    /* Utilitaires */
     --white: #ffffff;
-    --white-700: rgba(0, 0, 0, 0.3);
-    --grey: #6b7280;
+    --white-700: rgba(31, 23, 51, 0.3);
+    --grey: #9e9aab;
 }
-/* Valeurs par défaut (thème sombre par défaut) */
+
+/* ============================================ */
+/* THÈME DARK - Rose/Bleu profond apaisant */
+/* ============================================ */
 :root[data-theme="dark"] {
-    /* Couleurs de fond */
-    --bg-primary: #02001a;
-    --bg-secondary: #030021;
-    --bg-footer: #701c75;
-    --bg-card-front: #100f25;
-    --bg-card-back: #171638;
-    --bg-avatar: #B3B3B399;
-    --bg-input: #030021;
-    --bg-cell-contact: #ab0ea26b;
+    /* Backgrounds - Sombres avec nuances douces */
+    --bg-primary: #0f0d1a;
+    --bg-secondary: #1a1825;
+    --bg-footer: #08070f;
+    --bg-card-front: #1a1825;
+    --bg-card-back: #221f33;
+    --bg-avatar: rgba(217, 144, 233, 0.08);
+    --bg-input: #221f33;
+    --bg-cell-contact: linear-gradient(135deg, #ba68c850 0%, #7986cb50 100%);
 
-    /* Couleurs de texte */
-    --text-primary: #fff;
-    --text-primary-0: #ffffff00;
-    --text-secondary: #c8c8c8;
-    --text-white: #fefbef;
-    --text-black: #000000DD;
-    --text-placeholder: #dededea3;
+    /* Textes - Clairs avec excellente lisibilité */
+    --text-primary: #f5f3f9;
+    --text-primary-0: #f5f3f900;
+    --text-secondary: #c4b5d6;
+    --text-white: #ffffff;
+    --text-black: #0f0d1a;
+    --text-placeholder: rgba(196, 181, 214, 0.5);
 
-    /* Couleur d'accent */
-    --accent-primary: #5d1c61;
-    --accent-primary-600: #5d1c6160;
-    --accent-primary-500: #5d1c6150;
-    --accent-primary-200: #5d1c6120;
-    --accent-secondary: #98289EFF;
-    --accent-gradient: linear-gradient(90deg, #9f2ea6, #5b1061);
-    --accent-gradient-500: linear-gradient(90deg, #9f2ea650, #5b106150);
+    /* Accents - Rose/Bleu doux et lumineux */
+    --accent-primary: #ba68c8;
+    --accent-primary-600: #ab47bc;
+    --accent-primary-500: #ce93d8;
+    --accent-primary-200: #e1bee7;
+    --accent-secondary: #7986cb;
+    --accent-gradient: linear-gradient(135deg, #ba68c8 0%, #7986cb 100%);
+    --accent-gradient-500: linear-gradient(135deg, #ba68c850, #7986cb50);
 
-    /* Ombres */
-    --shadow-primary: #ffffff39;
-    --shadow-card: #ffffff50;
-    --shadow-white: transparent;
-    --shadow-black: transparent;
-    --shadow-footer: transparent;
-    --box-shadow: rgba(255, 255, 255, 0.25);
-    --box-shadow-300: #735173D7;
+    /* Ombres - Profondes avec lueur douce */
+    --shadow-primary: rgba(186, 104, 200, 0.2);
+    --shadow-card: rgba(198, 132, 209, 0.42);
+    --shadow-white: rgba(255, 255, 255, 0.05);
+    --shadow-black: rgba(0, 0, 0, 0.6);
+    --shadow-footer: rgba(0, 0, 0, 0.5);
+    --box-shadow: rgba(0, 0, 0, 0.3);
+    --box-shadow-300: rgba(176, 92, 216, 0.22);
 
-    /* Couleurs spécifiques aux composants */
-    --linear-color: #02001a;
-    --thumb-color: #5b1061;
 
+    /* Éléments UI */
+    --linear-color: #0f0d1a;
+    --thumb-color: #ba68c8;
+
+    /* Utilitaires */
     --white: #ffffff;
-    --white-700: #ffffff60;
-    --grey: #aaaaaa;
+    --white-700: rgba(255, 255, 255, 0.06);
+    --grey: #9e9aab;
 }
 
-:root[data-theme="light"] {
-    /* Couleurs de fond */
-    --bg-primary: #eeeeee;
-    --bg-secondary: #ffffff;
-    --bg-footer: #701c75;
-    --bg-card-front: #FFFFFF;
-    --bg-card-back: #9A9A9AD6;
-    --bg-avatar: rgba(53, 53, 53, 0.55);
-    --bg-input: #030021;
-    --bg-cell-contact: #ab0ea26b;
+/* ============================================ */
+/* AMÉLIORATIONS VISUELLES */
+/* ============================================ */
 
-    /* Couleurs de texte */
-    --text-primary: #02001ad5;
-    --text-primary-0: #02001a00;
-    --text-secondary: #191919d0;
-    --text-white: #fefbef;
-    --text-black: #000000DD;
-    --text-placeholder: #00000092;
+/* Transition douce entre les thèmes */
+:root,
+:root[data-theme="light"],
+:root[data-theme="dark"] {
+    color-scheme: light dark;
+}
 
+/* Scrollbar personnalisée avec gradient rose/bleu */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
 
-    /* Couleur d'accent */
-    --accent-primary: #9f2ea6;
-    --accent-primary-600: #9f2ea660;
-    --accent-primary-500: #9f2ea650;
-    --accent-primary-200: #9f2ea620;
-    --accent-secondary: #9f2ea6;
-    --accent-gradient: linear-gradient(90deg, #9f2ea6, #5b1061);
-    --accent-gradient-500: linear-gradient(90deg, #9f2ea650, #5b106150);
+::-webkit-scrollbar-track {
+    background-color: var(--bg-primary);
+    border-radius: 5px;
+}
 
-    /* Ombres */
-    --shadow-primary: #00000043;
-    --shadow-card: #00000043;
-    --shadow-white: #ffffffc7;
-    --shadow-black: rgba(0, 0, 0, 0.2);
-    --shadow-footer: #00000098;
-    --box-shadow: #000000E6;
-    --box-shadow-300: rgba(60, 60, 60, 0.76);
+::-webkit-scrollbar-thumb {
+    background: var(--accent-gradient);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
 
-    /* Couleurs spécifiques aux composants */
-    --linear-color: #02001a;
-    --thumb-color: #711277;
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary-600);
+    box-shadow: 0 0 10px var(--accent-primary);
+}
 
-    --white: #ffffff;
-    --white-700: #ffffff60;
-    --grey: #aaaaaa;
+/* Focus visible pour accessibilité */
+*:focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Bordure subtile pour les inputs */
+:root[data-theme="light"] fieldset input,
+:root[data-theme="light"] fieldset textarea {
+    border: 1px solid rgba(94, 84, 112, 0.15);
+    box-shadow: 0 1px 2px rgba(31, 23, 51, 0.05);
+}
+
+:root[data-theme="dark"] fieldset input,
+:root[data-theme="dark"] fieldset textarea {
+    border: 1px solid rgba(196, 181, 214, 0.1);
+}
+
+/* Amélioration des gradients de section */
+#section__presentation::before,
+#section__devenir::before {
+    backdrop-filter: blur(8px);
+}
+
+:root[data-theme="light"] #section__presentation::before,
+:root[data-theme="light"] #section__devenir::before {
+    opacity: 0.92;
+}
+
+:root[data-theme="dark"] #section__presentation::before,
+:root[data-theme="dark"] #section__devenir::before {
+    opacity: 0.75;
+}
+
+/* Boutons avec effet doux au hover */
+.button--tertiaire:hover {
+    box-shadow: 0 0 15px rgba(186, 104, 200, 0.3),
+    0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation subtile pour les cellules de contact */
+.grid__cell--contact {
+    transition: all 0.3s ease;
+}
+
+.grid__cell--contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow-primary);
+}
+
+/* Effet subtil sur le footer en dark */
+:root[data-theme="dark"] #section__footer {
+    background: linear-gradient(180deg,
+    var(--bg-footer) 0%,
+    rgba(186, 104, 200, 0.02) 50%,
+    var(--bg-footer) 100%);
 }

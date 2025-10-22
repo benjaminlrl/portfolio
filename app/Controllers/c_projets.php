@@ -7,7 +7,7 @@ use App\Controllers\BaseController;
 class c_projets extends BaseController
 {
     public function index():string{
-        $data['titre_page'] = 'Projets';
+        $data['titre_page'] = 'projets';
         $data['langue'] = 'fr';
 
         return view('v_head',$data).

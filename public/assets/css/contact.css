@@ -29,16 +29,13 @@
 }
 
 #contact__cell_2{
-    grid-area: social; 
-    height: fit-content;
+    grid-area: social;
 }
 #contact__cell_3{
     grid-area: recherche;
-    height: fit-content;
 }
 #contact__cell_4{
     grid-area: cv;
-    height: fit-content;
 }
 
 .grid__cell--contact{
@@ -60,7 +57,7 @@
 
 .item--social:hover{
     transform: scale(1.025);
-    color: var(--bg-input);
+    color: var(--accent-primary);
 }
 #form__contact{
     grid-template-areas: 
@@ -93,6 +90,17 @@
 #form__contact__cell_6{
     grid-area: footer;
 }
+@media (min-width: 600px){
+    #grid__contact{
+        grid-template-areas:
+            "contact contact"
+            "social recherche"
+            "cv cv";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto;
+    }
+
+}
 
 @media (min-width: 950px){
     #grid__contact{
@@ -101,7 +109,7 @@
             "contact recherche"
             "contact cv";
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto minmax(100px, 1fr);
+        grid-template-rows: auto minmax(100px, 1fr) 100px;
     }
     #form__contact__cell_2 .cell__content{     
         flex-direction: row;
@@ -116,5 +124,11 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         gap: 24px;
+    }
+
+    #contact__cell_2,
+    #contact__cell_3,
+    #contact__cell_4{
+        height: fit-content;
     }
 }

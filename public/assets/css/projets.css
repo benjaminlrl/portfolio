@@ -27,6 +27,12 @@
     0 0 20px var(--accent-primary-500);
 }
 
+#grid__projets .grid__cell.projet--important{
+    border-color: var(--accent-primary);
+    box-shadow: 0 10px 30px var(--shadow-card),
+    0 0 20px var(--accent-primary-500);
+}
+
 /* Header de la cellule (image + titre) */
 #grid__certifications .grid__cell .cell__header,
 #grid__projets .grid__cell .cell__header {

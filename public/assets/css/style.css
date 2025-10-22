@@ -89,6 +89,8 @@ body {
 
 a{
     text-decoration: none;
+    width: fit-content;
+    display: flex;
 }
 
 /* ------------------------- */
@@ -96,7 +98,7 @@ a{
 /* ------------------------- */
 section {
     width: 100%;
-    padding: 2rem 0;
+    padding: 100px 0 2rem 0;
 }
 
 .section__container{

@@ -245,7 +245,7 @@ header {
 }
 
 /* Tablet Portrait - 768px et moins (Menu hamburger activé) */
-@media (min-width: 810px) {
+@media (min-width: 890px) {
     header{
         flex-direction: row;
         padding: 0 10px;

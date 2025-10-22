@@ -51,10 +51,10 @@ $certifications = [
 ];
 ?>
 <!-- Section certifications -->
-<section id="section__certifications" class="py-100">
+<section id="section__certifications">
     <div class="section__container section__container--center">
         <h2 class="text--m">🎖️&nbsp;Certifications</h2>
-        <p class="text--xs text--600 text--opacity-900 my-2-vh">Diplômes et certifications obtenues au fil des années</p>
+        <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Diplômes et certifications obtenues au fil des années</p>
         <div class="grid my-5-vh" id="grid__certifications">
             <?php $index = 1;
             foreach ($certifications as $certification) :?><div class="grid__cell" id="projet_cell_<?= $index ?>">

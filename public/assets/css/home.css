@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
 }
-@media (min-width: 810px) {
+@media (min-width: 890px) {
     #grid__home .cell__logos{
         justify-content: start;
         gap: 3rem;
@@ -43,8 +43,8 @@
     }
 }
 
-@media (min-width: 1200px) {
-    section{
-        width: 100%;
+@media (min-width: 810px) {
+    #section__home{
+        padding: 5rem 0;
     }
 }

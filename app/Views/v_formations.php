@@ -25,7 +25,7 @@ $formations=[
 ];
 ?>
 <!-- Section formations -->
-<section id="section__formations" class="py-100">
+<section id="section__formations">
     <div class="section__container section__container--center">
         <h2 class="text--l">🎓&nbsp;Formation</h2>
         <p class="text--xs text--600 text--opacity-900 my-2-vh">Mes formations académiques</p>
@@ -89,12 +89,12 @@ $illustration = ["src"=>"images/illustration_devenir.png",
                     </div>
                 </div>
             </div>
-            <div class="grid__cell" id="formation__cell_2">
+            <div class="grid__cell g-2" id="formation__cell_2">
                 <div class="cell__header" id="devenir__title">
-                    <h2 class="text--xl text--start">Objectif&nbsp;professionnel</h2>
+                    <h2 class="text--l text--start">Objectifs professionnels</h2>
                 </div
                 <div class="cell__content cell__content--center">
-                    <p class="text--xs text--600 text--justify text--opacity-900">A la suite de l'obtention de mon BTS SIO SLAM, je souhaiterais intégrer une école d'ingénieur en alternance dans le domaine de la cybersécurité orienté développement web.
+                    <p class="text--xs text--600 text--start text--opacity-900">A la suite de l'obtention de mon BTS SIO SLAM, je souhaiterais intégrer une école d'ingénieur en alternance dans le domaine de la cybersécurité orienté développement web.
                     </p>
                 </div>
             </div>

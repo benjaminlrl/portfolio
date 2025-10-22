@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 increment: 2,
                 type: 'items'
             };
-        } else if (width < 1200) {
+        } else if (width < 1160) {
             // Tablette : affichage par ligne (2 projets par ligne)
             return {
                 initial: 3,  // 2 lignes = 4 projets

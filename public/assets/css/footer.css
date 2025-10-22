@@ -3,7 +3,7 @@
 }
 
 #section__footer a:hover{
-    color: var(--bg-input);
+    color: var(--accent-primary);
 }
 
 #grid__footer{

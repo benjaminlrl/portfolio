@@ -1,5 +1,11 @@
 <!-- Section contact -->
-<section class="py-100" id="section__contact">
+<section id="section__contact">
+    <div class="section__container section__container--center">
+        <div class="section__title my-5-vh">
+            <h2 class="text--m text--white">📧&nbsp;Contact</h2>
+            <p class="text--xs text--600 text--white text--center text--opacity-900 my-2-vh">Entrons en contact pour toutes demandes</p>
+        </div>
+    </div>
     <div class="section__container section__container--center">
         <div class="grid grid--xl g-2" id="grid__contact">
             <div class="grid__cell grid__cell--contact" id="contact__cell_1">
@@ -13,40 +19,77 @@
                     <div class="grid__cell grid__cell--start" id="form__contact__cell_2">
                         <div class="cell__content">
                             <fieldset>
-                                <label for="input__name" class="text--xxs text--white">Nom et Prénom</label>
-                                <input type="text" id="input__name" placeholder="Nom prénom" required>
+                                <?= form_label('Nom er Prénom', 'input_contact-name',
+                                        ['for'=>'input_contact-name',
+                                                'class' => 'text--xxs text--white']); ?>
+                                <?= form_input([
+                                        'type'=>'text',
+                                        'name' => 'name',
+                                        'id' => 'input_contact-name',
+                                        'placeholder' => 'Nom Prénom',
+                                        'value' => set_value('name'),
+                                        'required' => true]); ?>
                             </fieldset>
                         </div>
                     </div>
                     <div class="grid__cell" id="form__contact__cell_3">
                         <div class="cell__content">
                             <fieldset>
-                                <label for="input__email" class="text--xxs text--white">Adresse email</label>
-                                <input type="email" id="input__email" placeholder="exmple@domaine.fr" required>
+                                <?= form_label('Adresse email', 'input_contact-email',
+                                        ['for'=>'input_contact-email',
+                                                'class' => 'text--xxs text--white']); ?>
+                                <?= form_input([
+                                        'type'=>'email',
+                                        'name' => 'email',
+                                        'id' => 'input_contact-email',
+                                        'placeholder' => 'exmple@domaine.fr',
+                                        'value' => set_value('email'),
+                                        'required' => true]); ?>
                             </fieldset>
                         </div>
                     </div>
                     <div class="grid__cell" id="form__contact__cell_4">
                         <div class="cell__content">
                             <fieldset>
-                                <label for="input__sujet" class="text--xxs text--white">Sujet</label>
-                                <input type="text" id="input__sujet" placeholder="Sujet de votre message" required>
+                                <?= form_label('Sujet', 'input_contact-sujet',
+                                        ['for'=>'input_contact-sujet',
+                                        'class' => 'text--xxs text--white']); ?>
+                                <?= form_input(['name' => 'sujet',
+                                        'id' => 'input_contact-sujet',
+                                        'placeholder' => 'Sujet de votre message',
+                                        'value' => set_value('sujet'),
+                                        'required' => true]); ?>
                             </fieldset>
                         </div>
                     </div>
                     <div class="grid__cell" id="form__contact__cell_5">
                         <div class="cell__content">
                             <fieldset>
-                                <label for="input__message" class="text--xxs text--white">Votre message</label>
-                                <textarea id="input__message" placeholder="Votre message" required></textarea>
+                                <?= form_label('Message', 'input_contact-message',
+                                        ['for'=>'input_contact-message',
+                                                'class' => 'text--xxs text--white']); ?>
+                                <?= form_textarea(['name' => 'message',
+                                        'id' => 'input_contact-message',
+                                        'placeholder' => 'Votre message',
+                                        'value' => set_value('message'),
+                                        'rows' => 5,
+                                        'required' => true]); ?>
                             </fieldset>
                         </div>
                     </div>
                     <div class="grid__cell" id="form__contact__cell_6">
                         <div class="cell__content cell__content--container cell__content--center">
-                            <button type="button" class="button button--secondary button--fit text--xs" aria-controls="dialog__contact" disabled><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
+                            <?= form_button([
+                                    'name' => 'submit',
+                                    'id' => 'submit-button',
+                                    'type' => 'submit',
+                                    'class' => 'button button--secondary button--fit text--xs',
+                                    'content' => '<i class="fa-solid fa-paper-plane"></i> Envoyer',
+                                    'disabled' => 'disabled',
+                                    'aria-controls' => 'dialog__contact'
+                            ]); ?>
                         </div>
-                    </div>            
+                    </div>
                 </form>
             </div>
             <div class="grid__cell grid__cell--contact g-1" id="contact__cell_2">

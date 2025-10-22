@@ -16,13 +16,15 @@
                     <h2 class="text--m text--start text--white">Navigation</h2>
                 </div>
                 <div class="cell__content cell__content--start g-0-2">
-                    <a href="#" class="link--footer text--xxs text--white text--opacity-900">Accueil</a>
-                    <a href="#" class="link--footer text--xxs text--white text--opacity-900">Présentation</a>
-                    <a href="#" class="link--footer text--xxs text--white text--opacity-900">Formations</a>
-                    <a href="#" class="link--footer text--xxs text--white text--opacity-900">Compétences</a>
-                    <a href="#" class="link--footer text--xxs text--white text--opacity-900">Diplômes & Certifications</a>
-                    <a href="#" class="link--footer text--xxs text--white text--opacity-900">Projets</a>
-                    <a href="#" class="link--footer text--xxs text--white text--opacity-900">Contact</a>
+                    <a href="#section__home" class="link--footer text--xxs text--white text--opacity-900">Accueil</a>
+                    <a href="#section__presentation" class="link--footer text--xxs text--white text--opacity-900">Présentation</a>
+                    <a href="#section__formations" class="link--footer text--xxs text--white text--opacity-900">Formations</a>
+                    <a href="#section__competences" class="link--footer text--xxs text--white text--opacity-900">Compétences</a>
+                    <a href="#section__certifications" class="link--footer text--xxs text--white text--opacity-900">Diplômes & Certifications</a>
+                    <a href="#section__langues" class="link--footer text--xxs text--white text--opacity-900">Langues</a>
+                    <a href="#section__projets" class="link--footer text--xxs text--white text--opacity-900">Projets</a>
+                    <a href="#section__veille" class="link--footer text--xxs text--white text--opacity-900">Veille</a>
+                    <a href="#section__contact" class="link--footer text--xxs text--white text--opacity-900">Contact</a>
                 </div>
             </div>
             <div class="grid__cell" id="footer__cell_3">

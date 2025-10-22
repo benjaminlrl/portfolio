@@ -21,7 +21,8 @@ $projets = [
                         "alt"=>"ministère des Armées",
                         "class"=>"cell__logos-logo logo--xs",
                         "title"=>"Projet professionnel"],
-                "lien" => "#"
+                "lien" => "#",
+                "important"=> true
         ],
         [
                 "titre" => "Cyber4all",
@@ -44,7 +45,8 @@ $projets = [
                         "alt"=>"Logo ISCB",
                         "class"=>"cell__logos-logo logo--xs",
                         "title"=>"Projet scolaire"],
-                "lien" => "https://cyber4all.benjaminlorieul.fr/"
+                "lien" => "https://cyber4all.benjaminlorieul.fr/",
+                "important"=> true
         ],
         [
                 "titre" => "Portfolio",
@@ -67,7 +69,8 @@ $projets = [
                         "alt"=>"Avatar",
                         "class"=>"cell__logos-logo logo--xs",
                         "title"=>"Projet personnel"],
-                "lien" => "https://github.com/benjaminlrl/portfolio"
+                "lien" => "https://github.com/benjaminlrl/portfolio",
+                "important"=> false
         ],
         [
                 "titre" => "Plugin cron",
@@ -90,7 +93,8 @@ $projets = [
                         "alt"=>"Ministère des Armées",
                         "class"=>"cell__logos-logo logo--xs",
                         "title"=>"Projet professionnel"],
-                "lien" => ""
+                "lien" => "",
+                "important"=> false
         ],
         [
                 "titre" => "Encyclopédie d'Astérix",
@@ -113,7 +117,8 @@ $projets = [
                         "alt"=>"ISCB",
                         "class"=>"cell__logos-logo logo--xs",
                         "title"=>"Projet scolaire"],
-                "lien" => "https://github.com/benjaminlrl/Encyclopedie-Asterix"
+                "lien" => "https://github.com/benjaminlrl/Encyclopedie-Asterix",
+                "important"=> true
         ],
         [
                 "titre" => "Phishing",
@@ -140,7 +145,8 @@ $projets = [
                         "alt"=>"ISCB",
                         "class"=>"cell__logos-logo logo--xs",
                         "title"=>"Projet scolaire"],
-                "lien" => "https://github.com/benjaminlrl/Encyclopedie-Asterix"
+                "lien" => "https://github.com/benjaminlrl/Encyclopedie-Asterix",
+                "important"=> false
         ],
         [
                 "titre" => "Memory Game",
@@ -159,7 +165,8 @@ $projets = [
                         "alt"=>"ISCB",
                         "class"=>"cell__logos-logo logo--xs",
                         "title"=>"Projet scolaire"],
-                "lien" => "https://github.com/benjaminlrl/Encyclopedie-Asterix"
+                "lien" => "https://github.com/benjaminlrl/Encyclopedie-Asterix",
+                "important"=> false
         ],
         [
                 "titre" => "Social site",
@@ -182,7 +189,8 @@ $projets = [
                         "alt"=>"Avatar",
                         "class"=>"cell__logos-logo logo--xs",
                         "title"=>"Projet personnel"],
-                "lien" => "https://www.youtube.com/@grafikart"
+                "lien" => "https://www.youtube.com/@grafikart",
+                "important"=> false
         ],
         [
                 "titre" => "Flex site",
@@ -205,40 +213,43 @@ $projets = [
                         "alt"=>"Avatar",
                         "class"=>"cell__logos-logo cell__logo--xs",
                         "title"=>"Projet personnel"],
-                "lien" => "https://flexboxfroggy.com/"
+                "lien" => "https://flexboxfroggy.com/",
+                "important"=> false
         ]
 ];
 ?>
 <!-- Section projets -->
-<section id="section__projets" class="py-100">
+<section id="section__projets">
     <div class="section__container section__container--center">
         <h2 class="text--m">🚀&nbsp;Projets</h2>
-        <p class="text--xs text--600 text--opacity-900 my-2-vh">Découvrez mes projets réalisés depuis mes débuts</p>
+        <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Découvrez mes projets réalisés depuis mes débuts</p>
         <div class="grid my-5-vh" id="grid__projets">
             <?php $index = 1;
-            foreach ($projets as $projet) :?><div class="grid__cell" id="projet_cell_<?= $index ?>">
-                <div class="cell__header">
-                    <?= img($projet["img"]) ?>
-                    <h3 class="text--s"> <?= $projet["titre"] ?></h3>
-                </div>
-                <div class="cell__content cell__content--start">
-                    <p class="text--xxs text--opacity-900 text--500"> <?= $projet["description"] ?></p>
-                    <div class="cell__logos cell__logos--start">
-                        <?php foreach($projet["logoLangages"] as $lang):?>
-                            <?= img($lang) ?>
-                        <?php endforeach; ?>
+            foreach ($projets as $projet) :
+                ($projet["important"]===true)? $important = "projet--important": $important = ""; ?>
+                <div class="grid__cell <?= $important?>" id="projet_cell_<?= $index ?>">
+                    <div class="cell__header">
+                        <?= img($projet["img"]) ?>
+                        <h3 class="text--s"> <?= $projet["titre"] ?></h3>
+                    </div>
+                    <div class="cell__content cell__content--start">
+                        <p class="text--xxs text--opacity-900 text--500"> <?= $projet["description"] ?></p>
+                        <div class="cell__logos cell__logos--start">
+                            <?php foreach($projet["logoLangages"] as $lang):?>
+                                <?= img($lang) ?>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                    <div class="cell__content cell__content--footer">
+                        <div class="cell__logos cell__logos--start">
+                            <?= img($projet["logoContexte"]) ?>
+                        </div>
+                        <?php if(!empty($projet["lien"])):?>
+                        <a href="<?= $projet["lien"] ?>" class="button button--more text--xs text--end"
+                        target="_blank">Voir&nbsp;plus&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text--xs"></i></a>
+                        <?php endif; ?>
                     </div>
                 </div>
-                <div class="cell__content cell__content--footer">
-                    <div class="cell__logos cell__logos--start">
-                        <?= img($projet["logoContexte"]) ?>
-                    </div>
-                    <?php if(!empty($projet["lien"])):?>
-                    <a href="<?= $projet["lien"] ?>" class="button button--more text--xs text--end"
-                    target="_blank">Voir&nbsp;plus&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text--xs"></i></a>
-                    <?php endif; ?>
-                </div>
-            </div>
             <?php $index++;
             endforeach;?>
         </div>
