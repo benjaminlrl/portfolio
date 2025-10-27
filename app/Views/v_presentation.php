@@ -6,7 +6,7 @@ $illustration = ["src"=>"images/illustration_developpement_dos.png",
 ?>
 <!-- Section langues -->
 <section id="section__presentation">
-    <div class="section__container">
+    <div class="section__container p-1-rem">
         <div class="grid grid--fit" id="grid__presentation">
             <div class="grid__cell" id="presentation__cell_1">
                 <div class="cell__content cell__content--center">

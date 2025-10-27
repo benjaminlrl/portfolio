@@ -36,7 +36,7 @@ $formations=[
         <div class="grid grid--xl my-5-vh" id="grid__formation">
             <?php $index = 1;
             foreach($formations as $formation): ?>
-                <div class="grid__cell grid__cell--middle">
+                <div class="grid__cell grid__cell--middle p-1-rem">
                     <div class="grid__cell-formation" id="formation_cell_<?= $index ?>">
                         <div class="cell__logos cell__content--column cell__content--center cell__content--gutter--s">
                             <a href="<?= !empty($formation['lien'])? $formation['lien']:''; ?>">
@@ -84,7 +84,7 @@ $illustration = ["src"=>"images/illustration_devenir.png",
         "title"=>"Portrait de Benjamin Lorieul"];
 ?>
 <section id="section__devenir">
-    <div class="section__container">
+    <div class="section__container p-1-rem">
         <div class="grid grid--fit" id="grid__devenir">
             <div class="grid__cell" id="formation__cell_1">
                 <div class="cell__content cell__content--center">

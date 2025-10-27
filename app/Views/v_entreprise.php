@@ -1,7 +1,7 @@
 <!-- Section entreprise actuelle -->
 <?php
 $entreprise = [
-        "titre" => "Ministères des Armées / DRHAT",
+        "titre" => "Ministères des Armées /&nbsp;DRHAT",
         "missions"=>[
                 "mission1"=>[
                         "titre"=>'<i class="fa-light fa-laptop text--accent"></i>&nbsp;Refonte du site RH-Terre',
