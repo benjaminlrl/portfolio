@@ -65,7 +65,7 @@ $entreprise = [
                         <div class="cell__content">
                             <div class="grid g-2" id="grid__entreprise_header">
                                 <div class="grid__cell">
-                                    <div class="cell__logos cell__logos--column">
+                                    <div class="cell__logos">
                                         <?php foreach ($entreprise["logos"] as $logo): ?>
                                         <?= img($logo) ?>
                                         <?php endforeach; ?>

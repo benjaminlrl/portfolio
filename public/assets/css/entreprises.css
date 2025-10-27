@@ -15,8 +15,8 @@
 }
 
 #grid__entreprise_header{
-    grid-template-rows: auto;
-    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
     position: absolute;
 }
 
@@ -37,6 +37,7 @@
     height: 80px;
     width: auto;
     object-fit: contain;
+    flex-direction: row;
 }
 
 .cell__header .cell__header--content .cell__content{
@@ -79,5 +80,12 @@
     }
     .grid--competences-projets{
         grid-auto-columns: auto;
+    }
+    #grid__entreprise_header{
+        grid-template-rows: auto;
+        grid-template-columns: auto 1fr;
+    }
+    #grid__entreprise_header .grid__cell .cell__logos .cell__logos-logo{
+        flex-direction: column;
     }
 }
