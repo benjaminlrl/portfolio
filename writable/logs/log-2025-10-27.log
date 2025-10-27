@@ -1,0 +1,98 @@
+CRITICAL - 2025-10-27 14:33:07 --> ErrorException: Undefined array key "logos"
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 272.
+ 1 APPPATH\Views\v_projets.php(272): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "logos"', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 272)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(21): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-27 14:37:59 --> ErrorException: Undefined array key "missions"
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 506.
+ 1 APPPATH\Views\v_projets.php(506): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "missions"', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 506)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(21): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-27 14:38:00 --> ErrorException: Undefined array key "missions"
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 506.
+ 1 APPPATH\Views\v_projets.php(506): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "missions"', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 506)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(21): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-27 14:41:29 --> ErrorException: Undefined array key "missions"
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 506.
+ 1 APPPATH\Views\v_projets.php(506): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "missions"', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 506)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(21): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-27 14:41:36 --> ErrorException: Undefined array key "missions"
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 506.
+ 1 APPPATH\Views\v_projets.php(506): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "missions"', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 506)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(21): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-27 16:59:31 --> ErrorException: Undefined array key "description_detail"
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 515.
+ 1 APPPATH\Views\v_projets.php(515): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description_detail"', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 515)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(21): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-27 18:55:17 --> ErrorException: Undefined array key "description_detail"
+[Method: GET, Route: /]
+in APPPATH\Views\v_projets.php on line 967.
+ 1 APPPATH\Views\v_projets.php(967): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description_detail"', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php', 967)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_projets.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_projets', [], true)
+ 5 APPPATH\Controllers\c_home.php(21): view('v_projets')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

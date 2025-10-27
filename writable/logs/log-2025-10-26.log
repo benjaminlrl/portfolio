@@ -1,0 +1,26 @@
+CRITICAL - 2025-10-26 12:46:43 --> ErrorException: Attempt to read property "titre" on array
+[Method: GET, Route: /]
+in APPPATH\Views\v_entreprise.php on line 73.
+ 1 APPPATH\Views\v_entreprise.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "titre" on array', 'C:\\wamp64\\www\\portfolio\\app\\Views\\v_entreprise.php', 73)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\portfolio\\app\\Views\\v_entreprise.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_entreprise', [], true)
+ 5 APPPATH\Controllers\c_home.php(23): view('v_entreprise')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-26 14:55:32 --> ParseError: syntax error, unexpected token ";", expecting "]"
+[Method: GET, Route: /]
+in APPPATH\Views\v_entreprise.php on line 48.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_entreprise', [], true)
+ 3 APPPATH\Controllers\c_home.php(23): view('v_entreprise')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
