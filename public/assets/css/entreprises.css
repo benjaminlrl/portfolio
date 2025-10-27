@@ -37,7 +37,6 @@
     height: 80px;
     width: auto;
     object-fit: contain;
-    flex-direction: row;
 }
 
 .cell__header .cell__header--content .cell__content{
@@ -85,7 +84,7 @@
         grid-template-rows: auto;
         grid-template-columns: auto 1fr;
     }
-    #grid__entreprise_header .grid__cell .cell__logos .cell__logos-logo{
+    #grid__entreprise_header .grid__cell .cell__logos{
         flex-direction: column;
     }
 }
