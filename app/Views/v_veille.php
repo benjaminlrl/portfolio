@@ -3,7 +3,7 @@ $veilles = [
     [
         "titre" => "Micode",
         "description" => "Créateur de contenu sur la tech",
-        "img" => ["src"=>"images/micode.jpeg",
+        "img" => ["src"=>"images/logos/micode.jpeg",
             "alt"=>"pp micode",
             "class"=>"cell__logo",
             "title"=>"Logo youtube"],
@@ -13,7 +13,7 @@ $veilles = [
     [
         "titre" => "_Underscore",
         "description" => "Concepts et culture dev",
-        "img" => ["src"=>"images/_underscore.jpg",
+        "img" => ["src"=>"images/logos/_underscore.jpg",
             "alt"=>"pp underscore",
             "class"=>"cell__logo",
             "title"=>"Logo youtube"],
@@ -22,7 +22,7 @@ $veilles = [
     [
         "titre" => "Benjamin Code",
         "description" => "Tips web dev",
-        "img" => ["src"=>"images/benjamincode.jpg",
+        "img" => ["src"=>"images/logos/benjamincode.jpg",
             "alt"=>"pp micode",
             "class"=>"cell__logo",
             "title"=>"Logo youtube"],
