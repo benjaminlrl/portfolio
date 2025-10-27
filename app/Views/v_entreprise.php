@@ -73,8 +73,8 @@ $entreprise = [
                                 </div>
                                 <div class="grid__cell grid__cell--middle g-1">
                                         <h3 class="text--m"> <?= $entreprise["titre"] ?></h3>
-                                        <p class="text--s text--tertiaire">Webmaster (en alternance)</p>
-                                        <p class="text--xxs text--tertiaire"><i class="fa-light fa-calendars text--accent"></i>&nbsp;2024&nbsp;-&nbsp;2026&nbsp;&nbsp;<i class="fa-light fa-location-dot text--accent"></i>&nbsp;Tours,&nbsp;France</p>
+                                        <p class="text--s text--tertiaire">Webmaster (en&nbsp;alternance)</p>
+                                        <p class="text--xxs text--tertiaire"><i class="fa-light fa-calendars text--accent"></i>&nbsp;2024&nbsp;-&nbsp;2026  <i class="fa-light fa-location-dot text--accent"></i>&nbsp;Tours,&nbsp;France</p>
                                 </div>
                             </div>
 
