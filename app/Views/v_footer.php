@@ -47,8 +47,7 @@
             </div>
             <div class="grid__cell" id="footer__cell_5">
                 <div class="cell__content cell__content--center">
-                    <p class="text--xxs text--600 text--white">Tous droits réservés © Benjamin Lorieul</p>
-                    <p class="text--xxs text--800 text--white">Fait avec ❤ | 2025</p>
+                    <p class="text--xxs text--600 text--white">Tous droits réservés | © Benjamin Lorieul 2025</p>
                 </div>
             </div>
         </div>

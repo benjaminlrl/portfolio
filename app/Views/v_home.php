@@ -29,9 +29,9 @@ $portrait = ["src"=>"images/portrait_illustration.png",
                     <p class="text--m text--end text--opacity-900">BTS&nbsp;SIO&nbsp;SLAM&nbsp;2<sup class="text--s">ème</sup>&nbsp;année</p>
                     <p class="text--xs text--end text--secondary">ISCB&nbsp;/&nbsp;Ministère&nbsp;des&nbsp;Armées&nbsp;DRHAT</p>
                     <div class="cell__logos">
-                        <?= img($logo_ISCB)?>
-                        <?= img($logo_MinistereDesArmees)?>
-                        <?= img($logo_DRHAT)?>
+                        <a href="https://iscb.fr/"><?= img($logo_ISCB)?></a>
+                        <a href="https://www.defense.gouv.fr/"><?= img($logo_MinistereDesArmees)?></a>
+                        <a href="https://www.terre.defense.gouv.fr/drhat/"><?= img($logo_DRHAT)?></a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,10 @@ $portrait = ["src"=>"images/portrait_illustration.png",
                 </div>
             </div>
             <div class="grid__cell grid__cell--footer grid__cell--center" id="home_cell_footer">
-                <div class="cell__content cell__content--center">
+                <div class="cell__content cell__content--row cell__content--center g-1">
+                    <a href="<?= base_url("/images/portefeuilledecompetense.pdf")?>" target="_blank"
+                       class="button button--tertiaire button--scale" title="Voir mon portefeuille de compétences - nouvelle fenêtre">&nbsp;Mon CV
+                    </a>
                     <a href="#section__presentation" class="button button--tertiaire button--scale">
                         Me découvrir
                     </a>

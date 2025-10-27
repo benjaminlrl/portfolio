@@ -30,7 +30,9 @@ Règles pour les blocks:
 @import "projets.css";
 @import "langues.css";
 @import "contact.css";
+@import "entreprises.css";
 @import "form.css";
+@import "dialog.css";
 @import "footer.css";
 
 /* ------------------------- */
@@ -156,6 +158,10 @@ section {
     padding: 2vh 2vh;
 }
 
+.p-2-1-vh{
+    padding: 2vh 1vh;
+}
+
 .p-2-5-vh{
     padding: 2vh 5vh;
 }
@@ -178,6 +184,9 @@ section {
     gap: .2rem;
 }
 
+.g-0-4{
+    gap: .4rem;
+}
 
 .g-1{
     gap: 1rem;

@@ -163,7 +163,7 @@ function afficherCompetences(string $titre, array $competences): string {
 <!-- Section compétences -->
 <section id="section__competences" class="my-5-vh">
     <div class="section__container section__container--center">
-        <div class="section__title" id="section__title-skills">
+        <div class="section__title">
             <h2 class="text--m">💻&nbsp;Compétences</h2>
             <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Découvrez mes compétences acquises</p>
         </div>

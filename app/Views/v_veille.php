@@ -77,9 +77,8 @@ function afficherVeilles( array $veilles): string {
 <!-- Section compétences -->
 <section id="section__veille" class="my-5-vh">
     <div class="section__container section__container--center">
-        <div class="section__title my-5-vh" id="section__title-skills">
-            <h2 class="text--m">🔎&nbsp;Veille</h2>
-            <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Découvrez mes sources de veille informatique</p>
+        <div class="section__title section__title--bg my-5-vh">
+            <h2 class="text--m">🔎&nbsp;Veille informatique</h2>
         </div>
     </div>
     <?= afficherVeilles($veilles) ?>

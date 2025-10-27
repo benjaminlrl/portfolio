@@ -1,6 +1,6 @@
 /* Grid des projets */
-#grid__certifications,
-#grid__projets {
+#card__certifications,
+#card__projets {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 2rem;
@@ -8,42 +8,39 @@
 }
 
 /* Cellule de projet */
-#grid__certifications .grid__cell,
-#grid__projets .grid__cell {
+.card .grid__cell {
     background: var(--bg-primary);
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 5px 15px var(--shadow-card);
+
+}
+.grid__cell--hover{
+    box-shadow: 5px 5px 10px var(--shadow-card);
 }
 
-#grid__certifications .grid__cell:hover,
-#grid__projets .grid__cell:hover {
+.grid__cell--hover:hover{
     transform: translateY(-8px);
     border-color: var(--accent-primary);
-    box-shadow: 0 10px 30px var(--shadow-card),
+    box-shadow: 0 10px 15px var(--shadow-card),
     0 0 20px var(--accent-primary-500);
 }
 
-#grid__projets .grid__cell.projet--important{
-    border-color: var(--accent-primary);
-    box-shadow: 0 10px 30px var(--shadow-card),
-    0 0 20px var(--accent-primary-500);
+.grid__cell.grid__cell--hover.projet--important{
+    border: 2px solid var(--white);
 }
 
 /* Header de la cellule (image + titre) */
-#grid__certifications .grid__cell .cell__header,
-#grid__projets .grid__cell .cell__header {
+.card .cell__header {
     position: relative;
     overflow: hidden;
     margin-bottom: 0;
     width: 100%;
-
 }
 
-.grid__cell .cell__header img {
+.card .cell__header img {
     height: 150px;
     width: 100%;
     object-fit: cover;
@@ -51,21 +48,19 @@
     display: block;
     transition: transform 0.4s ease;
 }
-#grid__certifications .grid__cell .cell__header img{
+
+.card .cell__header img{
     object-position: center center;
 }
+
 
 .grid__cell circle{
     filter: drop-shadow(0px 0px 5px var(--box-shadow));
 }
-
-#grid__certifications .grid__cell:hover .cell__header img,
-#grid__projets .grid__cell:hover .cell__header img {
+.card .grid__cell:hover .grid__cell--hover .cell__header img {
     transform: scale(1.08);
 }
-
-#grid__certifications .cell__header h3,
-#grid__projets .cell__header h3 {
+.card .cell__header .cell__header--content{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -83,22 +78,17 @@
 }
 
 /* Contenu de la cellule */
-#grid__certifications .cell__content,
-#grid__projets .cell__content {
+.card .cell__content {
     padding: .5rem 1.5rem;
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-#grid__certifications .cell__content p,
-#grid__projets .cell__content p {
+.card .cell__content p {
     margin: 0;
-    flex: 1;
-    color: var(--text-secondary);
 }
-#grid__certifications .cell__content--footer,
-#grid__projets .cell__content--footer {
+.card  .cell__content--footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -106,9 +96,13 @@
     width: 100%;
 }
 
-.cell__logos-langage{
+.card .cell__logos-langage{
     min-width: 35px;
     height: 40px;
+}
+
+.cell__logos--column{
+    flex-direction: column;
 }
 
 .logo--xs{
@@ -125,8 +119,8 @@
         transform: translateY(0);
     }
 }
-#grid__certifications .grid__cell,
-#grid__projets .grid__cell {
+
+#card__certifications .grid__cell{
     animation: none;
 }
 
@@ -134,4 +128,3 @@
     margin-top: 2rem;
     transition: all 0.3s ease;
 }
-

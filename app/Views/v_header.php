@@ -10,16 +10,16 @@
     <div class="header__responsive" id="header__responsive">
         <nav class="header__nav">
             <div class="header__nav-menu">
-                <?= anchor(base_url(),
+                <?= anchor(base_url("#top"),
                         "Accueil",
                         'class="header__nav-link"'); ?>
-                <?= anchor(base_url("#section__projets"),
-                        "Projets", 'class="header__nav-link"'); ?>
                 <?= anchor(base_url("#section__competences"),
                         "Compétences",
                         'class="header__nav-link"'); ?>
-                <?= anchor(base_url(),
-                        isset($_SESSION['user_email'])?"Se déconnecter":"Se connecter",
+                <?= anchor(base_url("#section__projets"),
+                        "Projets", 'class="header__nav-link"'); ?>
+                <?= anchor(base_url("#section__entreprises"),
+                        "Expériences",
                         'class="header__nav-link"'); ?>
             </div>
             <div class="header__social">

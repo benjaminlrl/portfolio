@@ -1,0 +1,83 @@
+#card__entreprise{
+    width: 100%;
+    height: 100%;
+}
+#card__entreprise .grid__cell{
+    background: var(--bg-card-front);
+}
+
+#card__entreprise .grid__cell .cell__content{
+    padding: 2rem;
+}
+#card__entreprise .grid__cell .cell__header img{
+    height: 350px;
+    width: 100%;
+}
+
+#grid__entreprise_header{
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr;
+    position: absolute;
+}
+
+#grid__entreprise_header{
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+}
+
+#grid__entreprise_header .grid__cell{
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#grid__entreprise_header .grid__cell .cell__logos .cell__logos-logo{
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+.cell__header .cell__header--content .cell__content{
+    height: 50%;
+}
+.grid--competences-projets,
+.grid--missions{
+    grid-template-rows: auto;
+    grid-auto-columns: auto;
+}
+
+#grid__missions_entreprise .grid__cell{
+    background: var(--accent-gradient-500);
+}
+
+.tache {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tache li {
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.tache li::before {
+    content: "\f058"; /* Code Unicode de fa-circle-check */
+    font-family: "Font Awesome 6 Pro"; /* ou "Font Awesome 6 Free" */
+    font-weight: 400; /* 300 pour light, 400 pour regular, 900 pour solid */
+    position: absolute;
+    left: 0;
+    color: green; /* Optionnel : couleur personnalisée */
+}
+
+@media (min-width: 700px) {
+    .grid--missions {
+        grid-template-columns: auto auto;
+    }
+    .grid--competences-projets{
+        grid-auto-columns: auto;
+    }
+}

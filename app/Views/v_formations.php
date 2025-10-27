@@ -27,14 +27,18 @@ $formations=[
 <!-- Section formations -->
 <section id="section__formations">
     <div class="section__container section__container--center">
-        <h2 class="text--l">🎓&nbsp;Formation</h2>
-        <p class="text--xs text--600 text--opacity-900 my-2-vh">Mes formations académiques</p>
+        <div class="section__title">
+            <h2 class="text--l">🎓&nbsp;Formation</h2>
+            <p class="text--xs text--600 text--opacity-900 my-2-vh">Mes formations académiques</p>
+        </div>
+    </div>
+    <div class="section__container section__container--center">
         <div class="grid grid--xl my-5-vh" id="grid__formation">
             <?php $index = 1;
             foreach($formations as $formation): ?>
                 <div class="grid__cell grid__cell--middle">
                     <div class="grid__cell-formation" id="formation_cell_<?= $index ?>">
-                        <div class="cell__logos cell__content--column cell__content--gutter--s">
+                        <div class="cell__logos cell__content--column cell__content--center cell__content--gutter--s">
                             <a href="<?= !empty($formation['lien'])? $formation['lien']:''; ?>">
                             <?php if(!empty($formation['etablissementLogo'])):
                                 $imgEtablissement = ["src"=>"images/logos/".$formation['etablissementLogo'],
@@ -54,7 +58,7 @@ $formations=[
                             endif; ?>
                             </a>
                         </div>
-                        <div class="cell__content cell__content--center cell__content--gutter--s">
+                        <div class="cell__content cell__content--start cell__content--gutter--s">
                             <h4 class="text--m"><?= $formation['diplome']?></h4>
                             <p class="text--xxs text--400 text--opacity-900"><?= $formation['description']?></p>
                         </div>

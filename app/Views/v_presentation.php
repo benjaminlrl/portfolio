@@ -17,7 +17,7 @@ $illustration = ["src"=>"images/illustration_developpement_dos.png",
             </div>
             <div class="grid__cell g-2" id="presentation__cell_2">
                 <div class="cell__header">
-                    <h2 class="text--xl text--center text--white">A propos</h2>
+                    <h2 class="text--xl text--center text--white">À propos</h2>
                 </div
                 <div class="cell__content cell__content--center">
                     <p class="text--xs text--600 text--start text--opacity-900 text--white">Apprenti développeur web spécialisé en développement d'applications, je cultive ma passion pour le code à travers mon alternance au sein de la DRHAT du Ministère des Armées. De la conception à la mise en production, j'apprécie chaque étape du cycle de développement.

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     afficherElement("header__btn--hamburger","header__responsive");
     afficherElement("header__language-toggle","header__language-dropdown");
     //afficherModal("dialog__contact");
-    afficherModal();
+    afficherModalContact();
     changerTheme("header__btn--theme-toggle");
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.dataset.theme = savedTheme;
@@ -99,9 +99,9 @@ function afficherBoutonTop(){
 
 /// Système de chargement progressif des projets
 document.addEventListener('DOMContentLoaded', function() {
-    const gridProjets = document.getElementById('grid__projets');
-    const btnVoirPlus = document.querySelector('#section__projets .button--tertiaire');
-    const projets = gridProjets.querySelectorAll('#section__projets .grid__cell');
+    const cardProjets = document.getElementById('card__projets');
+    const btnVoirPlus = document.getElementById('button_plus_projets');
+    const projets = cardProjets.querySelectorAll('[id^="projet_cell_"]');
 
     let currentState = 'initial'; // initial, intermediate, all
 
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Mettre à jour le texte du bouton
     function updateButton() {
-        const visibleCount = document.querySelectorAll('#grid__projets .grid__cell.visible').length;
+        const visibleCount = document.querySelectorAll('#card__projets .grid__cell.visible').length;
 
         if (currentState === 'initial') {
             btnVoirPlus.innerHTML = 'Voir&nbsp;plus';
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Afficher plus de projets
     function showMore() {
         const config = getDisplayConfig();
-        const visibleProjets = document.querySelectorAll('#grid__projets .grid__cell.visible');
+        const visibleProjets = document.querySelectorAll('#card__projets .grid__cell.visible');
         const visibleCount = visibleProjets.length;
 
         if (currentState === 'initial') {
@@ -188,12 +188,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (index >= visibleCount && index < visibleCount + toShow) {
                     projet.style.display = 'flex';
                     projet.classList.add('visible');
-
-                    // Animation d'apparition
-                    setTimeout(() => {
-                        projet.style.animation = 'fadeInUp 0.5s ease-out';
-                    }, shown * 100);
-
                     shown++;
                 }
             });
@@ -207,12 +201,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (index >= visibleCount) {
                     projet.style.display = 'flex';
                     projet.classList.add('visible');
-
-                    // Animation d'apparition
-                    setTimeout(() => {
-                        projet.style.animation = 'fadeInUp 0.5s ease-out';
-                    }, shown * 100);
-
                     shown++;
                 }
             });
@@ -241,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initDisplay();
 });
 
-function afficherModal() {
+function afficherModalContact() {
     const form = document.getElementById("form__contact");
     const modal = document.getElementById("dialog__contact");
 
@@ -295,4 +283,29 @@ function afficherModal() {
     updateButtonsState();
 }
 
-document.addEventListener("DOMContentLoaded", afficherModal);
+document.addEventListener("DOMContentLoaded", afficherModalContact);
+
+/**
+ * @param idModal id de l amodal
+ */
+let scrollPosition = 0; // Variable globale
+
+function afficherModal(idModal) {
+    const dialog = document.getElementById(idModal);
+    if (dialog) {
+        dialog.showModal();
+        // Focus sur le bouton de fermeture pour l'accessibilité
+        const closeButton = dialog.querySelector('.button__modal--close');
+        if (closeButton) {
+            setTimeout(() => closeButton.focus(), 100);
+        }
+    }
+}
+
+// Fonction pour fermer une modal de projet
+function fermerModal(idModal) {
+    const dialog = document.getElementById(idModal);
+    if (dialog) {
+        dialog.close();
+    }
+}

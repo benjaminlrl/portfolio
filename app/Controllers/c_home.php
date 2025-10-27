@@ -20,6 +20,7 @@ class c_home extends BaseController
             view('v_langues').
             view('v_projets').
             view('v_veille').
+            view('v_entreprise').
             view('v_contact').
             view('v_footer')
             ;

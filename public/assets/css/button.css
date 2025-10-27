@@ -1,5 +1,4 @@
-.button,
-button{
+.button{
     padding: 5px 15px;
     border-radius: 30px;
     font-weight: 600;
@@ -7,7 +6,9 @@ button{
     transition: ease-in-out .3s;
     text-decoration: none;
 }
-
+button{
+    border: none;
+}
 .button:hover,
 button:hover{
     cursor: pointer;
@@ -26,24 +27,30 @@ button:hover{
 
 .button--secondary:hover {
     color: var(--accent-primary);
-    background: var(--text-white);
+    background: var(--white-700);
     transform: scale(1.1);
 }
 
 .button--secondary {
-    border: 2px solid var(--text-white);
-    color: var(--text-white);
+    border: 2px solid var(--white-800);
+    color: var(--white);
     background: transparent;
 }
-
+.button--contact:hover,
 .button--tertiaire:hover {
     transform: scale(1.05);
 }
 
 .button--tertiaire {
-    border: 2px solid var(--accent-primary);
+    border: 2px solid var(--white-800);
     background: var(--accent-gradient);
-    color: var(--text-white);
+    color: var(--white);
+}
+
+.button--contact{
+    border: 2px solid var(--white-800);
+    background: var(--bg-cell-contact);
+    color: var(--white);
 }
 
 .button--scale:hover{

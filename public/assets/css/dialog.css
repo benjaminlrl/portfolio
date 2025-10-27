@@ -1,0 +1,68 @@
+dialog{
+    width: 90%;
+    max-height: 90vh;
+    max-width: 900px;
+    border: none;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-primary);
+    overflow-y: scroll;
+}
+#dialog__contact {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(30, 30, 30, 0.95);
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.dialog--projet{
+    color: var(--text-primary);
+}
+
+.dialog--projet .cell__header img{
+    object-fit: cover;
+    object-position: top center;
+    height: 250px;
+}
+.dialog--projet .card .grid__cell{
+    background: none;
+}
+.dialog--projet .card .grid__cell--header{
+    border-radius: 0;
+}
+/* flouter l’arrière-plan */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+#grid__dialog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+h5{
+    display: flex;
+    align-items: center;
+}
+.valide{
+    display: block;
+    content:'';
+    width: .5rem;
+    height: .5rem;
+    padding: .5rem;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: green;
+    animation: opacityVariation infinite;
+}
+
+.button__modal--close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+}

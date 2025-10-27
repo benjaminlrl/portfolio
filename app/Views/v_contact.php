@@ -80,8 +80,8 @@
                     <div class="grid__cell" id="form__contact__cell_6">
                         <div class="cell__content cell__content--container cell__content--center">
                             <?= form_button([
-                                    'name' => 'submit',
-                                    'id' => 'submit-button',
+                                    'name' => 'consent',
+                                    'id' => 'consent-button',
                                     'type' => 'submit',
                                     'class' => 'button button--secondary button--fit text--xs',
                                     'content' => '<i class="fa-solid fa-paper-plane"></i> Envoyer',
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <a href="<?= base_url("/images/portefeuilledecompetense.pdf")?>" target="_blank"
-               id="contact__cell_4" class="button button--tertiaire text--xs p-2-5-vh" title="Voir mon portefeuille de compétences - nouvelle fenêtre"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;Mon CV
+               id="contact__cell_4" class="button button--contact text--xs p-2-5-vh" title="Voir mon portefeuille de compétences - nouvelle fenêtre"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp;Mon CV
             </a>
         </div>
         

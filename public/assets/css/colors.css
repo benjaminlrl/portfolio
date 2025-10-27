@@ -48,7 +48,8 @@
 
     /* Couleurs neutres */
     --white: #ffffff;
-    --white-700: rgba(255, 255, 255, 0.06);
+    --white-700: rgba(255, 255, 255, 0.7);
+    --white-800: rgba(255, 255, 255, 0.8);
     --grey: #9e9aab;
 }
 

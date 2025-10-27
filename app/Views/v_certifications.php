@@ -10,7 +10,7 @@ $certifications = [
             "alt"=>"ministère des Armées",
             "class"=>"cell__logos-logo logo--xs",
             "title"=>"Certification professionnel"],
-        "lien" => "images/certifications/0250901_moocdelacnil_module_1.pdf"
+        "lien" => "images/certifications/20250901_moocdelacnil_module_1.pdf"
     ],
     [
         "titre" => "PHP",
@@ -25,7 +25,7 @@ $certifications = [
         "lien" => "images/certifications/concevezVotreSiteWebAvecPHPetMySQL.png"
     ],
     [
-        "titre" => "BAC General",
+        "titre" => "BAC Général",
         "img" => ["src"=>"images/logos/diplome_Logo.jpg",
             "alt"=>"",
             "class"=>"cell__projet",
@@ -53,25 +53,29 @@ $certifications = [
 <!-- Section certifications -->
 <section id="section__certifications">
     <div class="section__container section__container--center">
-        <h2 class="text--m">🎖️&nbsp;Certifications</h2>
-        <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Diplômes et certifications obtenues au fil des années</p>
-        <div class="grid my-5-vh" id="grid__certifications">
+        <div class="section__title">
+            <h2 class="text--m">🎖️&nbsp;Certifications</h2>
+            <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Diplômes et certifications obtenues au fil des années</p>
+        </div>
+    </div>
+    <div class="section__container section__container--center">
+        <div class="card grid my-5-vh" id="card__certifications">
             <?php $index = 1;
-            foreach ($certifications as $certification) :?><div class="grid__cell" id="projet_cell_<?= $index ?>">
-                <div class="cell__header">
-                    <?= img($certification["img"]) ?>
-                    <h3 class="text--s"> <?= $certification["titre"] ?></h3>
-                </div>
-                <div class="cell__content cell__content--footer">
-                    <div class="cell__logos cell__logos--start">
-                        <?= img($certification["logoContexte"]) ?>
+            foreach ($certifications as $certification) :?>
+                <a href="<?= $certification["lien"] ?>" target="_blank" class="grid__cell grid__cell--hover" id="projet_cell_<?= $index ?>"
+                title="Voir ma certification - nouvelle fenêtre">
+                    <div class="cell__header">
+                        <?= img($certification["img"]) ?>
+                        <div class="cell__header--content">
+                            <h3 class="text--s"> <?= $certification["titre"] ?></h3>
+                        </div>
                     </div>
-                    <?php if(!empty($certification["lien"])):?>
-                        <a href="<?= $certification["lien"] ?>" class="button button--more text--xs text--end"
-                           target="_blank">Ouvrir&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text--xs"></i></a>
-                    <?php endif; ?>
-                </div>
-                </div>
+                    <div class="cell__content cell__content--footer">
+                        <div class="cell__logos cell__logos--start">
+                            <?= img($certification["logoContexte"]) ?>
+                        </div>
+                    </div>
+                </a>
                 <?php $index++;
             endforeach;?>
         </div>

@@ -41,6 +41,10 @@
     color: var(--text-secondary);
 }
 
+.text--accent{
+    color: var(--accent-primary);
+}
+
 .text--900{
     font-weight: 900;
 }
