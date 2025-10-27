@@ -1,6 +1,6 @@
 <section id="section__footer">
     <span class="section--separator"></span>
-    <div class="section__container section__container--center">
+    <div class="section__container section__container--center p-1-rem">
         <div class="grid grid--fit grid--xl g-4" id="grid__footer">
             <div class="grid__cell" id="footer__cell_1">
                 <div class="cell__header">
