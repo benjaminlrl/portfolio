@@ -8,7 +8,7 @@ $formations=[
                 'lien'=>'https://www.iscb.fr/',
                 'entrepriseLien'=>'https://www.defense.gouv.fr/'
         ],
-        ['etablissementLogo' => 'LEGTA_logo.png',
+        ['etablissementLogo' => 'LEGTA_Logo.png',
                 'diplome'=>'BAC GENERAL',
                 'annee'=>'2021 - 2024',
                 'description'=>'Bac général mention ASSEZ BIEN option mathématiques et biologie/écologie au lycée agricole de Fondettes.',
