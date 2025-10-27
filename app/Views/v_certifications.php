@@ -25,7 +25,7 @@ $certifications = [
         "lien" => "images/certifications/concevezVotreSiteWebAvecPHPetMySQL.png"
     ],
     [
-        "titre" => "BAC Général",
+        "titre" => "BAC Général Maths-Biologie",
         "img" => ["src"=>"images/logos/diplome_Logo.jpg",
             "alt"=>"",
             "class"=>"cell__projet",

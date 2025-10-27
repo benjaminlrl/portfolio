@@ -165,7 +165,7 @@ function afficherCompetences(string $titre, array $competences): string {
     <div class="section__container section__container--center">
         <div class="section__title">
             <h2 class="text--m">💻&nbsp;Compétences</h2>
-            <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Découvrez mes compétences acquises</p>
+            <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Découvrez mes compétences techniques acquises</p>
         </div>
     </div>
     <?= afficherCompetences("🎨&nbsp;Front-end", $langagesFront) ?>

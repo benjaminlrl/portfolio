@@ -16,7 +16,11 @@ $projets = [
                         ["src"=>"images/logos/JavaScript_Logo.png",
                                 "alt"=>"Logo JavaScript",
                                 "class"=>"cell__logos-langage",
-                                "title"=>"Logo JavaScript"]
+                                "title"=>"Logo JavaScript"],
+                        ["src"=>"images/logos/Joomla_Logo.png",
+                                "alt"=>"Logo Joomla",
+                                "class"=>"cell__logos-langage",
+                                "title"=>"Logo Joomla"]
                 ],
                 "logoContexte" => ["src"=>"images/logos/Ministère_des_Armées.png",
                         "alt"=>"ministère des Armées",
@@ -998,7 +1002,7 @@ $projets = [
                                class="button button--more text--xs"
                                target="_blank"
                                aria-label="Voir le projet <?= $projet['titre'] ?> sur le site externe">
-                                Voir&nbsp;plus&nbsp;<i class="fa-solid fa-arrow-up-right-from-square text--xs"></i>
+                                Voir&nbsp;plus&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
                         <?php endif; ?>
                     </div>
