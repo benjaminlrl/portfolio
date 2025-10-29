@@ -119,7 +119,7 @@
 </section>
 <!--  dialog demandant le consentement de l'utilistaeur avant soumissions du formulaire  -->
 <dialog class="dialog" id="dialog__contact" aria-modal="true">
-    <div class="grid" id="grid__dialog">
+    <div class="grid p-1-rem" id="grid__dialog">
         <div class="grid__cell">
             <div class="cell__content cell__content--end">
                 <button type="button" class="button button--close text--xxs">Fermer <i class="fa-solid fa-xmark-large"></i></button>

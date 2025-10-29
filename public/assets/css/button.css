@@ -5,6 +5,7 @@
     font-size: 1.5rem;
     transition: ease-in-out .3s;
     text-decoration: none;
+    width: fit-content;
 }
 button{
     border: none;

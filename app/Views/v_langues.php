@@ -4,17 +4,17 @@ $langues = [
     [
         "langue" => "France",
         "niveau" => "C2",
-        "image" => "images/France_Flag.png"
+        "image" => "images/logos/France_Flag.png"
     ],
     [
         "langue" => "Anglais",
         "niveau" => "B1+",
-        "image" => "images/English_Flag.jpg"
+        "image" => "images/logos/English_Flag.jpg"
     ],
     [
         "langue" => "Espagnol",
         "niveau" => "A2+",
-        "image" => "images/Spain_Flag.jpg"
+        "image" => "images/logos/Spain_Flag.jpg"
     ]
 ];
 

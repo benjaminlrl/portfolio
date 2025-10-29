@@ -18,8 +18,9 @@ label{
     margin-bottom: 3px;
 }
 
-fieldset input, 
-fieldset textarea{
+input,
+select,
+textarea{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -29,7 +30,10 @@ fieldset textarea{
     color: var(--text-primary);
     backdrop-filter: drop-shadow(0 0 3px var(--accent-primary));
 }
-
+.input--secondary{
+    background: var(--white);
+    border: 1px solid var(--accent-primary);
+}
 fieldset input:focus,
 fieldset textarea:focus{
     outline: none;

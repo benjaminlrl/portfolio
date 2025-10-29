@@ -79,5 +79,6 @@ $certifications = [
                 <?php $index++;
             endforeach;?>
         </div>
+        <p class="text--xxs text--secondary">A venir: freeCodeCamp Responsive Web Design, freeCodeCamp JavaScript, Sololearn PHP/SQL</p>
     </div>
 </section>

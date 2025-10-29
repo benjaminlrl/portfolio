@@ -3,7 +3,7 @@ $formations=[
         ['etablissementLogo' => 'iscb.jpg',
                 'diplome'=>'BTS SIO - En cours',
                 'annee'=>'2024 - 2026',
-                'description'=>'Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers (SLAM) réalisé en alternance.',
+                'description'=>'Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers (<strong>SLAM</strong>) et <strong>Maths 2</strong> réaliser en alternance.',
                 'entrepriseLogo'=>'Ministère_des_Armées.png',
                 'lien'=>'https://www.iscb.fr/',
                 'entrepriseLien'=>'https://www.defense.gouv.fr/'
@@ -11,14 +11,14 @@ $formations=[
         ['etablissementLogo' => 'LEGTA_Logo.png',
                 'diplome'=>'BAC GENERAL',
                 'annee'=>'2021 - 2024',
-                'description'=>'Bac général mention ASSEZ BIEN option mathématiques et biologie/écologie au lycée agricole de Fondettes.',
+                'description'=>'Bac général mention <strong>ASSEZ BIEN</strong> option mathématiques et biologie/écologie au lycée agricole de Fondettes.',
                 'lien'=>'https://www.tours-fondettes-agrocampus.fr/',
                 'entrepriseLien'=>''
         ],
         ['etablissementLogo' => '',
                 'diplome'=>'Diplôme Nationale du Brevet',
                 'annee'=>'2018 - 2021',
-                'description'=>'Obtention du DNB au collège Lucie et Raymond Aubrac de Luynes.',
+                'description'=>'Obtention du DNB avec mention <strong>BIEN</strong> au collège Lucie et Raymond Aubrac de Luynes.',
                 'lien'=>'',
                 'entrepriseLien'=>''
         ]

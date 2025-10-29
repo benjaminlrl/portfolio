@@ -53,7 +53,7 @@ function afficherVeilles( array $veilles): string {
 
     $index = 1;
     foreach ($veilles as $veille):
-        $html .= '<a href="'. $veille["lien"] .'" class="langage__container langage__container--competence" id="veille_' . $index . '">
+        $html .= '<a href="'. $veille["lien"] .'" class="langage__container langage__container--competence" id="veille_' . $index . '" title="Voir la source - nouvelle fenêtre">
                 <div class="container__header my-0">
                     <div class="container__logos container__logos--competence">'
             . img($veille["img"]) .

@@ -67,6 +67,11 @@
     border-radius: 5px;
 }
 
+.grid--competences-pro{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: auto;
+}
+
 @media (min-width: 810px) {
     .langages{
         flex-direction: row;
