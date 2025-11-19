@@ -26,14 +26,16 @@ Règles pour les blocks:
 @import "text_size.css";
 @import "presentation.css";
 @import "formations.css";
-@import "competences.css";
-@import "projets.css";
-@import "langues.css";
+@import "tiles.css";
+@import "cards.css";
+@import "langages.css";
 @import "contact.css";
 @import "entreprises.css";
 @import "form.css";
 @import "dialog.css";
 @import "footer.css";
+@import "connexion.css";
+@import "select.css";
 
 /* ------------------------- */
 /* --------BASE - CSS------- */
@@ -147,9 +149,25 @@ section {
     margin: 5vh 0;
 }
 
+.my-15-5-vh{
+    margin: 15vh 0 5vh 0;
+}
+
 .my-1-rem{
-    padding: 1rem 0;
+    margin: 1rem 0;
  }
+
+.my-2-rem{
+    margin: 2rem 0;
+}
+
+.mt-1-rem{
+    margin-top: 1rem;
+}
+
+.my-5-rem{
+    margin: 5rem 0;
+}
 
 /* ------------------------- */
 /* ----------PADDING-------- */
@@ -165,11 +183,10 @@ section {
 .p-2-1-vh{
     padding: 2vh 1vh;
 }
-
 .p-2-5-vh{
     padding: 2vh 5vh;
 }
-.py-100{
+.pt-100{
     padding-top: 100px;
 }
 
@@ -178,6 +195,9 @@ section {
 }
 .p-0-4-rem{
     padding: .4rem;
+}
+.p-3-4-rem{
+    padding: 3rem 4rem;
 }
 /* ------------------------- */
 /* -----------Gap----------- */
@@ -214,5 +234,7 @@ section {
     .section__container{
         max-width: 1200px;
         padding: 0 2rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

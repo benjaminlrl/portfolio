@@ -24,6 +24,10 @@
     --text-black: #0f0d1a;
     --text-placeholder: rgba(196, 181, 214, 0.5);
 
+    /* bouton modal */
+    --bg-btn-close: rgba(64, 64, 64, 0.91);
+    --text-btn-close: rgb(251, 251, 251);
+
     /* Couleurs d'accent - Rose/Bleu doux */
     --accent-primary: #ba68c8;
     --accent-primary-600: #ab47bc;
@@ -31,16 +35,20 @@
     --accent-primary-200: #e1bee7;
     --accent-secondary: #7986cb;
     --accent-gradient: linear-gradient(135deg, #ba68c8 0%, #7986cb 100%);
-    --accent-gradient-500: linear-gradient(135deg, #ba68c850, #7986cb50);
+    --accent-gradient-500: linear-gradient(135deg, #ba68c820, #7986cb20);
 
     /* Ombres */
     --shadow-primary: rgba(186, 104, 200, 0.2);
     --shadow-card: rgba(198, 132, 209, 0.42);
-    --shadow-white: rgba(255, 255, 255, 0.05);
-    --shadow-black: rgba(0, 0, 0, 0.6);
+    --shadow-white: rgba(255, 255, 255, 0.47);
+    --shadow-black: rgba(34, 34, 34, 0.32);
     --shadow-footer: rgba(0, 0, 0, 0.5);
     --box-shadow: rgba(0, 0, 0, 0.3);
     --box-shadow-300: rgba(0, 0, 0, 0.5);
+
+    /*Badge */
+    --bg-badge--1: #241c33;
+    --text-badge--1: #997ae8;
 
     /* Composants */
     --linear-color: #0f0d1a;
@@ -75,6 +83,10 @@
     --text-black: #1f1733;
     --text-placeholder: rgba(94, 84, 112, 0.6);
 
+    /* bouton modal */
+    --bg-btn-close: rgba(64, 64, 64, 0.91);
+    --text-btn-close: rgb(251, 251, 251);
+
     /* Accents - Rose/Bleu pastel élégant */
     --accent-primary: #ba68c8;
     --accent-primary-600: #ab47bc;
@@ -82,13 +94,13 @@
     --accent-primary-200: #f3e5f5;
     --accent-secondary: #9fa8da;
     --accent-gradient: linear-gradient(135deg, rgba(186, 104, 200, 0.6) 0%, rgba(121, 134, 203, 0.6) 100%);
-    --accent-gradient-500: linear-gradient(135deg, #ce93d850, #c5cae950);
+    --accent-gradient-500: linear-gradient(135deg, #ce93d820, #c5cae920);
 
     /* Ombres - Subtiles et élégantes */
     --shadow-primary: rgba(186, 104, 200, 0.12);
     --shadow-card: rgba(198, 132, 209, 0.42);
-    --shadow-white: rgba(255, 255, 255, 0.95);
-    --shadow-black: rgba(31, 23, 51, 0.18);
+    --shadow-white: rgba(255, 255, 255, 0.47);
+    --shadow-black: rgba(34, 34, 34, 0.32);
     --shadow-footer: rgba(0, 0, 0, 0.25);
     --box-shadow: rgba(31, 23, 51, 0.1);
     --box-shadow-300: rgba(176, 92, 216, 0.40);
@@ -101,6 +113,10 @@
     --white: #ffffff;
     --white-700: rgba(31, 23, 51, 0.3);
     --grey: #9e9aab;
+
+    /*Badge */
+    --bg-badge--1: #241c33;
+    --text-badge--1: #997ae8;
 }
 
 /* ============================================ */
@@ -117,6 +133,10 @@
     --bg-input: #221f33;
     --bg-cell-contact: linear-gradient(135deg, #ba68c850 0%, #7986cb50 100%);
 
+    /* bouton modal */
+    --bg-btn-close: rgba(64, 64, 64, 0.91);
+    --text-btn-close: rgb(251, 251, 251);
+
     /* Textes - Clairs avec excellente lisibilité */
     --text-primary: #f5f3f9;
     --text-primary-0: #f5f3f900;
@@ -132,13 +152,17 @@
     --accent-primary-200: #e1bee7;
     --accent-secondary: #7986cb;
     --accent-gradient: linear-gradient(135deg, #ba68c8 0%, #7986cb 100%);
-    --accent-gradient-500: linear-gradient(135deg, #ba68c850, #7986cb50);
+    --accent-gradient-500: linear-gradient(135deg, #ba68c810, #7986cb10);
+
+    /*Badge */
+    --bg-badge--1: #241c33;
+    --text-badge--1: #997ae8;
 
     /* Ombres - Profondes avec lueur douce */
     --shadow-primary: rgba(186, 104, 200, 0.2);
     --shadow-card: rgba(198, 132, 209, 0.42);
-    --shadow-white: rgba(255, 255, 255, 0.05);
-    --shadow-black: rgba(0, 0, 0, 0.6);
+    --shadow-white:  rgba(138, 118, 255, 0.1);
+    --shadow-black: rgb(11, 8, 18);
     --shadow-footer: rgba(0, 0, 0, 0.5);
     --box-shadow: rgba(0, 0, 0, 0.3);
     --box-shadow-300: rgba(176, 92, 216, 0.22);

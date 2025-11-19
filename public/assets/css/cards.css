@@ -2,34 +2,53 @@
 #card__certifications,
 #card__projets {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     width: 100%;
 }
 
-/* Cellule de projet */
 .card .grid__cell {
     background: var(--bg-primary);
-    border-radius: 15px;
+    border-radius: 5px;
     overflow: hidden;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
 
 }
+.card--entreprise .grid__cell {
+    border-radius: 15px;
+}
+
 .grid__cell--hover{
-    box-shadow: 5px 5px 10px var(--shadow-card);
+    box-shadow: 15px 15px 15px  var(--shadow-black), -2px -2px 20px var(--shadow-white);
 }
 
 .grid__cell--hover:hover{
-    transform: translateY(-8px);
-    border-color: var(--accent-primary);
-    box-shadow: 0 10px 15px var(--shadow-card),
-    0 0 20px var(--accent-primary-500);
+    transform: translateY(-0.3rem);
 }
 
-.grid__cell.grid__cell--hover.projet--important{
-    border: 2px solid var(--white);
+#card__projets .grid__cell{
+    position: relative;
+}
+.badge--recent{
+    background: var(--bg-badge--1);
+    color: var(--text-badge--1);
+}
+
+.badge--important{
+    background: var(--bg-badge--1);
+    color: var(--text-badge--1);
+}
+.badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 700;
 }
 
 /* Header de la cellule (image + titre) */
@@ -52,7 +71,9 @@
 .card .cell__header img{
     object-position: top center;
 }
-
+.card--certification .cell__header img{
+    object-position: center center;
+}
 
 .grid__cell circle{
     filter: drop-shadow(0px 0px 5px var(--box-shadow));

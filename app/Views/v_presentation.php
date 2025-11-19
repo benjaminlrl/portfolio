@@ -1,8 +1,7 @@
 <?php
 $illustration = ["src"=>"images/illustration_developpement_dos.png",
     "alt"=>"Illustration du portrait de Benjamin Lorieul",
-    "class"=>"cell__image cell_image--avatar",
-    "title"=>"Portrait de Benjamin Lorieul"];
+    "class"=>"cell__image cell_image--avatar"];
 ?>
 <!-- Section langues -->
 <section id="section__presentation">
@@ -20,10 +19,10 @@ $illustration = ["src"=>"images/illustration_developpement_dos.png",
                     <h2 class="text--xl text--center text--white">À propos</h2>
                 </div
                 <div class="cell__content cell__content--center">
-                    <p class="text--xs text--600 text--start text--opacity-900 text--white">Apprenti développeur web spécialisé en développement d'applications, je cultive ma passion pour le code à travers mon alternance au sein de la DRHAT du Ministère des Armées. De la conception à la mise en production, j'apprécie chaque étape du cycle de développement.
-                        <br>
-                        <br>
-                        Mon objectif : créer des expériences utilisateur fluides grâce à une architecture technique solide.
+                    <p class="text--xs text--600 text--start text--opacity-900 text--white">Apprenti développeur web, j'ai découvert le développement informatique en classe de seconde au cours du programme de SNT (Science Numériques et Technologiques).
+                        <br><br>
+                        Ayant été pris de passion, c'est avec une profonde envie que j'ai décidé naturellement de me diriger vers le BTS SIO SLAM (Service Informatique aux Organisations, Solutions Logicielles et Applications Métier).
+                        <br> <br> Réaliser en alternance pour le Ministère des Armées et des anciens Combattants au sein de la DRHAT (Direction des Ressources Humaines de l'Armée de Terre), me permettant d'allier théorie, pratique et professionnalisme.
                     </p>
                 </div>
             </div>

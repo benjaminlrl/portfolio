@@ -11,25 +11,17 @@ $formations=[
         ['etablissementLogo' => 'LEGTA_Logo.png',
                 'diplome'=>'BAC GENERAL',
                 'annee'=>'2021 - 2024',
-                'description'=>'Bac général mention <strong>ASSEZ BIEN</strong> option mathématiques et biologie/écologie au lycée agricole de Fondettes.',
+                'description'=>'Bac général mention <strong>ASSEZ BIEN</strong> option <strong>mathématiques</strong> et <strong>biologie/écologie</strong> au lycée agricole de Fondettes.',
                 'lien'=>'https://www.tours-fondettes-agrocampus.fr/',
-                'entrepriseLien'=>''
-        ],
-        ['etablissementLogo' => '',
-                'diplome'=>'Diplôme Nationale du Brevet',
-                'annee'=>'2018 - 2021',
-                'description'=>'Obtention du DNB avec mention <strong>BIEN</strong> au collège Lucie et Raymond Aubrac de Luynes.',
-                'lien'=>'',
                 'entrepriseLien'=>''
         ]
 ];
 ?>
 <!-- Section formations -->
 <section id="section__formations">
-    <div class="section__container section__container--center">
+    <div class="section__container section__container--center my-5-rem">
         <div class="section__title">
-            <h2 class="text--l">🎓&nbsp;Formation</h2>
-            <p class="text--xs text--600 text--opacity-900 my-2-vh">Mes formations académiques</p>
+            <h2 class="text--l">🎓&nbsp;Mes&nbsp;Formations</h2>
         </div>
     </div>
     <div class="section__container section__container--center">
@@ -74,34 +66,6 @@ $formations=[
                 </div>
                 <?php $index++;
             endforeach; ?>
-        </div>
-    </div>
-</section>
-<?php
-$illustration = ["src"=>"images/illustration_devenir.png",
-        "alt"=>"Illustration du portrait de Benjamin Lorieul",
-        "class"=>"cell__image cell_image--avatar",
-        "title"=>"Portrait de Benjamin Lorieul"];
-?>
-<section id="section__devenir">
-    <div class="section__container p-1-rem">
-        <div class="grid grid--fit" id="grid__devenir">
-            <div class="grid__cell" id="formation__cell_1">
-                <div class="cell__content cell__content--center">
-                    <div class="cell__images">
-                        <?= img($illustration)?>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__cell g-2" id="formation__cell_2">
-                <div class="cell__header" id="devenir__title">
-                    <h2 class="text--l text--start">Objectifs professionnels</h2>
-                </div
-                <div class="cell__content cell__content--center">
-                    <p class="text--xs text--600 text--start text--opacity-900">A la suite de l'obtention de mon BTS SIO SLAM, je souhaiterais intégrer une école d'ingénieur en alternance dans le domaine de la cybersécurité orienté développement web.
-                    </p>
-                </div>
-            </div>
         </div>
     </div>
 </section>

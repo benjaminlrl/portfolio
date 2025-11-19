@@ -1,11 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-    afficherElement("header__btn--hamburger","header__responsive");
-    afficherElement("header__language-toggle","header__language-dropdown");
-    //afficherModal("dialog__contact");
-    afficherModalContact();
-    changerTheme("header__btn--theme-toggle");
+    // D'ABORD restaurer le thème
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.dataset.theme = savedTheme;
+
+    // ENSUITE initialiser le bouton
+    changerTheme("header__btn--theme-toggle");
+
+    const buttonMenu = document.getElementById("header__btn--hamburger");
+    if (buttonMenu.style.display !== "none") {
+        afficherElement("header__btn--hamburger","header__responsive");
+        afficherElement("header__language-toggle","header__language-dropdown");
+    }
+    afficherModalContact();
+
 });
 
 window.addEventListener('scroll', function() {

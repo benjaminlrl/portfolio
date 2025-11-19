@@ -45,6 +45,7 @@ header {
 /* Modifier: theme-toggle */
 .header__btn--theme-toggle {
     z-index: 1000;
+    position: relative;
 }
 
 .header__btn--theme-toggle i {
@@ -245,7 +246,7 @@ header {
 }
 
 /* Tablet Portrait - 768px et moins (Menu hamburger activé) */
-@media (min-width: 890px) {
+@media (min-width: 1000px) {
     header{
         flex-direction: row;
         padding: 0 10px;

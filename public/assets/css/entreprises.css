@@ -84,7 +84,4 @@
         grid-template-rows: auto;
         grid-template-columns: auto 1fr;
     }
-    #grid__entreprise_header .grid__cell .cell__logos{
-        flex-direction: column;
-    }
 }

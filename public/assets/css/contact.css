@@ -2,6 +2,17 @@
     position: relative;
     display: block;
 }
+#section__contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 1px);
+    background: var(--accent-gradient-500);
+    clip-path: polygon(0 25px, 100% 0, 100% 100%, 0 100%);
+    z-index: -1;
+}
 
 #section__contact::before {
     content: '';

@@ -5,7 +5,7 @@ $langagesFront = [
         "description" => "Conception de page web",
         "img" => ["src"=>"images/logos/HTML5_Logo.png",
                 "alt"=>"Logo HTML5",
-                "class"=>"cell__logo",
+                "class"=>"tile__logo",
                 "title"=>"Logo HTML5"]
     ],
     [
@@ -13,7 +13,7 @@ $langagesFront = [
         "description" => "Stylisation de page web",
         "img" => ["src"=>"images/logos/CSS3_Logo.png",
                 "alt"=>"Logo CSS3",
-                "class"=>"cell__logo",
+                "class"=>"tile__logo",
                 "title"=>"Logo CCS3"]
     ],
     [
@@ -21,7 +21,7 @@ $langagesFront = [
         "description" => "Langage de programmation de scripts",
         "img" => ["src"=>"images/logos/JavaScript_Logo.png",
                 "alt"=>"Logo JavaScript",
-                "class"=>"cell__logo",
+                "class"=>"tile__logo",
                 "title"=>"Logo JavaScript"]
     ]
 ];
@@ -31,7 +31,7 @@ $langagesBack = [
                 "description" => "Langage de programmation libre",
                 "img" => ["src"=>"images/logos/PHP_Logo.png",
                         "alt"=>"Logo PHP",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo PHP"]
         ],
         [
@@ -39,7 +39,7 @@ $langagesBack = [
                 "description" => "Conception de langage informatique",
                 "img" => ["src"=>"images/logos/Csharp_Logo.png",
                         "alt"=>"Logo Csharp",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo Csharp"]
         ],
         [
@@ -47,7 +47,7 @@ $langagesBack = [
                 "description" => "Langage de programmation libre",
                 "img" => ["src"=>"images/logos/MySql_Logo.png",
                         "alt"=>"Logo MySql",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo MySql"]
         ]
 ];
@@ -58,7 +58,7 @@ $langagesFramework = [
                 "description" => "Framework PHP MVC",
                 "img" => ["src"=>"images/logos/CodeIgniter_Logo.png",
                         "alt"=>"Logo CodeIgniter",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo CodeIgniter"]
         ],
         [
@@ -66,7 +66,7 @@ $langagesFramework = [
                 "description" => "Système de gestion de contenu",
                 "img" => ["src"=>"images/logos/Joomla_Logo.png",
                         "alt"=>"Logo Joomla",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo Joomla"]
         ]
 ];
@@ -77,7 +77,7 @@ $langagesAutres = [
                 "description" => "Système d'exploitation open source",
                 "img" => ["src"=>"images/logos/Linux_Logo.png",
                         "alt"=>"Logo Linux",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo Linux"]
         ],
         [
@@ -85,7 +85,7 @@ $langagesAutres = [
                 "description" => "Logiciel de gestion de versions décentralisé",
                 "img" => ["src"=>"images/logos/Git_Logo.png",
                         "alt"=>"Logo Git",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo Git"]
         ],
         [
@@ -93,7 +93,7 @@ $langagesAutres = [
                 "description" => "Environnement de développement",
                 "img" => ["src"=>"images/logos/Phpstorm_Logo.svg",
                         "alt"=>"Logo PHP Storm Jetbrain",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo PHP Storm Jetbrain"]
         ],
         [
@@ -101,7 +101,7 @@ $langagesAutres = [
                 "description" => "Logiciel de virtualisation",
                 "img" => ["src"=>"images/logos/VirtualBox_Logo.png",
                         "alt"=>"Logo Virtual Box",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo Virtual Box"]
         ],
         [
@@ -109,7 +109,7 @@ $langagesAutres = [
                 "description" => "Système de gestion de bases de données",
                 "img" => ["src"=>"images/logos/PhpMyAdmin_Logo.png",
                         "alt"=>"Logo PhpMyAdmin",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo PhpMyAdmin"]
         ],
         [
@@ -117,7 +117,7 @@ $langagesAutres = [
                 "description" => "Environnement de développement",
                 "img" => ["src"=>"images/logos/VsCode_Logo.png",
                         "alt"=>"Logo VsCode",
-                        "class"=>"cell__logo",
+                        "class"=>"tile__logo",
                         "title"=>"Logo VsCode"]
         ],
         [
@@ -125,7 +125,7 @@ $langagesAutres = [
                 "description" => "Environnement de développement",
                 "img" => ["src"=>"images/logos/Visual_Studio_Logo.png",
                         "alt"=>"Logo Visual Studio Community",
-                        "class"=>"cell__logo cell__logo--xs",
+                        "class"=>"tile__logo tile__logo--xs",
                         "title"=>"Logo Visual Studio Community"]
         ]
 ];
@@ -153,7 +153,7 @@ $competencesPro = [
                         "taches"=>[
                                 "Participer à la valorisation de l’image de l’organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques",
                                 "Référencer les services en ligne de l’organisation et mesurer leur visibilité",
-                                "Participer à l’évolution d’un site Web exploitant les données de l’organisation."
+                                "Participer à l’évolution d’un site Web exploitant les données de l’organisation"
                         ]
                 ],
                 "competence4"=>[
@@ -192,13 +192,13 @@ function afficherCompetences(string $titre, array $competences): string {
 
     $index = 1;
     foreach ($competences as $competence):
-        $html .= '<button class="langage__container langage__container--competence" id="langage_front_' . $index . '">
-                <div class="container__header my-0">
-                    <div class="container__logos container__logos--competence">'
+        $html .= '<button class="tile" id="tile_competence_' . $index . '">
+                <div class="tile__header my-0">
+                    <div class="tile__header-logos">'
                 . img($competence["img"]) .
                 '</div>
                 </div>
-                <div class="langage__container langage__container--center">
+                <div class="tile__content">
                     <h1 class="text--s text--800">' . $competence["titre"] . '</h1>
                     <p class="text--xs text--400 text--opacity-900">' . $competence["description"] . '</p>
                 </div>
@@ -214,38 +214,39 @@ function afficherCompetences(string $titre, array $competences): string {
 ?>
 
 <!-- Section compétences -->
-<section id="section__competences" class="my-5-vh">
-    <div class="section__container section__container--center">
+<section id="section__competences">
+    <div class="section__container section__container--center my-5-rem">
         <div class="section__title">
-            <h2 class="text--m">💻&nbsp;Compétences</h2>
-            <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Découvrez mes compétences techniques acquises</p>
+            <h2 class="text--m">💻&nbsp;Mes&nbsp;compétences&nbsp;techniques</h2>
         </div>
     </div>
     <?= afficherCompetences("🎨&nbsp;Front-end", $langagesFront) ?>
     <?= afficherCompetences("🗄️&nbsp;Back-end", $langagesBack) ?>
     <?= afficherCompetences("🏗️&nbsp;Framework & CMS", $langagesFramework) ?>
     <?= afficherCompetences("🧩&nbsp;Complémentaires", $langagesAutres) ?>
+
+    <div class="section__container section__container--center my-5-rem">
+        <div class="section__title my-15-5-vh">
+            <h2 class="text--m">🧑‍💼&nbsp;Mes&nbsp;compétences&nbsp;proffesionnelles</h2>
+        </div>
+    </div>
     <div class="section__container section__container--center">
-        <div class="section__title my-5-vh">
-            <h2 class="text--m">🧑‍💼&nbsp;Compétences</h2>
-            <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Découvrez mes compétences professionnelles acquises</p>
-            <div class="grid grid--competences-pro g-1">
-                <?php foreach($competencesPro["competencesPro"] as $competence): ?>
-                    <div class="grid__cell p-2-1-vh">
-                        <div class="cell__content">
-                            <h5 class="text--s my-1-rem"><?= $competence["titre"]?></h5>
-                            <?php
-                            $list = $competence["taches"];
-                            $attributes = ["class"=>"text--xxs text--500 g-0-4 tache"];
-                            echo ul($list, $attributes);
-                            ?>
-                            <div class="cell__content cell__content--center">
-                                <button class="button button--tertiaire my-2-vh text--xs">Voir les projets</button>
-                            </div>
+        <div class="grid grid--competences-pro g-1">
+            <?php foreach($competencesPro["competencesPro"] as $competence): ?>
+                <div class="grid__cell p-2-1-vh">
+                    <div class="cell__content">
+                        <h5 class="text--s my-1-rem"><?= $competence["titre"]?></h5>
+                        <?php
+                        $list = $competence["taches"];
+                        $attributes = ["class"=>"text--xxs text--500 g-0-4 tache"];
+                        echo ul($list, $attributes);
+                        ?>
+                        <div class="cell__content cell__content--center">
+                            <button class="button button--tertiaire my-2-vh text--xs">Voir les projets</button>
                         </div>
                     </div>
-                <?php endforeach; ?>
-            </div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 

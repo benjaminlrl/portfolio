@@ -58,10 +58,9 @@ function afficherLangue(string $langue, string $niveau, string $langueImage): st
 ?>
 <!-- Section langues -->
 <section id="section__langues">
-    <div class="section__container section__container--center">
+    <div class="section__container section__container--center my-5-rem">
         <div class="section__title">
             <h3 class="text--m">🌍&nbsp;Langues</h3>
-            <p class="text--xs text--600 text--opacity-900 my-2-vh">Maitrise académique des langues</p>
         </div>
     </div>
     <div class="section__container section__container--center">

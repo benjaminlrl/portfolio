@@ -24,7 +24,9 @@
 .grid__cell--column{
     flex-direction: column;
 }
-
+.grid__cell--fit{
+    height: fit-content;
+}
 .cell__content{
     display: flex;
     flex-direction: column;

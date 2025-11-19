@@ -22,6 +22,11 @@
                         "Expériences",
                         'class="header__nav-link"'); ?>
             </div>
+        </nav>
+        <div class="header__tools">
+            <button class="header__btn header__btn--theme-toggle" id="header__btn--theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
             <div class="header__social">
                 <?= anchor('https://github.com/benjaminlrl',
                         '<i class="fa-brands fa-github"></i>',
@@ -30,25 +35,6 @@
                         '<i class="fa-brands fa-linkedin"></i>',
                         'class="header__social-link" target="_blank"'); ?>
             </div>
-        </nav>
-        <div class="header__tools">
-            <button class="header__btn header__btn--theme-toggle" id="header__btn--theme-toggle">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-            <button class="header__language-toggle" id="header__language-toggle" aria-controls="language-list"
-                    type="button">
-                <i class="fa-solid fa-language"></i>
-            </button>
-            <div class="header__language-dropdown" id="header__language-dropdown">
-                <?= anchor('?langue=fr',
-                        'Français',
-                        'class="header__language-option"'); ?>
-                <?= anchor('?langue=en',
-                        'English',
-                        'class="header__language-option"'); ?>
-            </div>
         </div>
-
-
     </div>
 </header>

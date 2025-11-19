@@ -1,9 +1,8 @@
 <!-- Section contact -->
 <section id="section__contact">
-    <div class="section__container section__container--center">
-        <div class="section__title my-5-vh">
+    <div class="section__container section__container--center py-2rem">
+        <div class="section__title my-5-rem">
             <h2 class="text--m text--white">📧&nbsp;Contact</h2>
-            <p class="text--xs text--600 text--white text--center text--opacity-900 my-2-vh">Entrons en contact pour toutes demandes</p>
         </div>
     </div>
     <div class="section__container section__container--center">
@@ -12,13 +11,14 @@
                 <form action="#" method="POST" class="grid grid__cell--center" id="form__contact">
                     <div class="grid__cell" id="form__contact__cell_1">
                         <div class="cell__content cell__content--row">
-                            <h1 class="text--start text--m text--white"><i class="fa-solid fa-messages"></i> Envoyez moi un message</h1>
+                            <h1 class="text--start text--s text--white"><i class="fa-solid fa-messages"></i> Envoyez moi un message</h1>
                         </div>
                     </div>
                     
                     <div class="grid__cell grid__cell--start" id="form__contact__cell_2">
                         <div class="cell__content">
                             <fieldset>
+                                <div class="input-group">
                                 <?= form_label('Nom er Prénom', 'input_contact-name',
                                         ['for'=>'input_contact-name',
                                                 'class' => 'text--xxs text--white']); ?>
@@ -29,12 +29,14 @@
                                         'placeholder' => 'Nom Prénom',
                                         'value' => set_value('name'),
                                         'required' => true]); ?>
+                                </div>
                             </fieldset>
                         </div>
                     </div>
                     <div class="grid__cell" id="form__contact__cell_3">
                         <div class="cell__content">
                             <fieldset>
+                                <div class="input-group">
                                 <?= form_label('Adresse email', 'input_contact-email',
                                         ['for'=>'input_contact-email',
                                                 'class' => 'text--xxs text--white']); ?>
@@ -45,12 +47,14 @@
                                         'placeholder' => 'exmple@domaine.fr',
                                         'value' => set_value('email'),
                                         'required' => true]); ?>
+                                </div>
                             </fieldset>
                         </div>
                     </div>
                     <div class="grid__cell" id="form__contact__cell_4">
                         <div class="cell__content">
                             <fieldset>
+                                <div class="input-group">
                                 <?= form_label('Sujet', 'input_contact-sujet',
                                         ['for'=>'input_contact-sujet',
                                         'class' => 'text--xxs text--white']); ?>
@@ -59,12 +63,14 @@
                                         'placeholder' => 'Sujet de votre message',
                                         'value' => set_value('sujet'),
                                         'required' => true]); ?>
+                                </div>
                             </fieldset>
                         </div>
                     </div>
                     <div class="grid__cell" id="form__contact__cell_5">
                         <div class="cell__content">
                             <fieldset>
+                                <div class="input-group">
                                 <?= form_label('Message', 'input_contact-message',
                                         ['for'=>'input_contact-message',
                                                 'class' => 'text--xxs text--white']); ?>
@@ -74,6 +80,7 @@
                                         'value' => set_value('message'),
                                         'rows' => 5,
                                         'required' => true]); ?>
+                                </div>
                             </fieldset>
                         </div>
                     </div>
@@ -94,7 +101,7 @@
             </div>
             <div class="grid__cell grid__cell--contact g-1" id="contact__cell_2">
                 <div class="cell__header">
-                    <h2 class="text--s  text--white">Suivez-moi</h2>
+                    <h2 class="text--s  text--start text--white">N'hésitez pas à me suivre</h2>
                 </div>
                 <div class="cell_content cell__logos--start cell__content--gutter--xs">
                     <a href="#" class="item--social text--m text--white"><i class="fa-brands fa-github"></i></a>

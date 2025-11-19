@@ -25,18 +25,6 @@ $certifications = [
         "lien" => "images/certifications/concevezVotreSiteWebAvecPHPetMySQL.png"
     ],
     [
-        "titre" => "BAC Général Maths-Biologie",
-        "img" => ["src"=>"images/logos/diplome_Logo.jpg",
-            "alt"=>"",
-            "class"=>"cell__projet",
-            "title"=>""],
-        "logoContexte" => ["src"=>"images/logos/ministere_education_Logo.png",
-            "alt"=>"Avatar",
-            "class"=>"cell__logos-logo logo--xs",
-            "title"=>"Certification nationale"],
-        "lien" => "images/certifications/Releve_de_Notes_BAC.pdf"
-    ],
-    [
         "titre" => "Pix",
         "img" => ["src"=>"images/logos/PIX_Logo.png",
             "alt"=>"",
@@ -52,17 +40,16 @@ $certifications = [
 ?>
 <!-- Section certifications -->
 <section id="section__certifications">
-    <div class="section__container section__container--center">
+    <div class="section__container section__container--center my-5-rem">
         <div class="section__title">
-            <h2 class="text--m">🎖️&nbsp;Certifications</h2>
-            <p class="text--xs text--600 text--center text--opacity-900 my-2-vh">Diplômes et certifications obtenues au fil des années</p>
+            <h2 class="text--m">🎖️&nbsp;Mes&nbsp;certifications</h2>
         </div>
     </div>
     <div class="section__container section__container--center">
-        <div class="card grid my-5-vh" id="card__certifications">
+        <div class="card card--certification grid my-5-vh" id="card__certifications">
             <?php $index = 1;
             foreach ($certifications as $certification) :?>
-                <a href="<?= $certification["lien"] ?>" target="_blank" class="grid__cell grid__cell--hover" id="projet_cell_<?= $index ?>"
+                <a href="<?= $certification["lien"] ?>" target="_blank" class="grid__cell grid__cell--hover" id="certification_cell_<?= $index ?>"
                 title="Voir ma certification - nouvelle fenêtre">
                     <div class="cell__header">
                         <?= img($certification["img"]) ?>

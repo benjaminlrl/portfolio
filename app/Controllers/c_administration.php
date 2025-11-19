@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 
-class c_contact extends BaseController
+class c_administration extends BaseController
 {
     public function index(): string{
         $data['titre_page'] = 'Contact';

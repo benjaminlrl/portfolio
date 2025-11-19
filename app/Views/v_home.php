@@ -13,8 +13,7 @@ $logo_ISCB = ["src"=>"images/logos/iscb.jpg",
         "title"=>"Logo ISCB"];
 $portrait = ["src"=>"images/portrait_illustration.png",
         "alt"=>"Illustration",
-        "class"=>"cell__image cell_image--avatar",
-        "title"=>"Portrait de Benjamin Lorieul"];
+        "class"=>"cell__image cell_image--avatar"];
 ?>
 <!-- Section accueil -->
 <section id="section__home">

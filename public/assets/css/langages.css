@@ -5,3 +5,9 @@
 #grid__langues .grid__cell{
     display: flex;
 }
+
+.tiles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
