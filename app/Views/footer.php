@@ -37,6 +37,7 @@
                     <a href="#" class="item--social text--m text--white"><i class="fa-brands fa-github"></i></a>
                     <a href="#" class="item--social text--m text--white"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
+                <a href="" class="text--secondary text--xs">contact@benjaminlorieul.fr</a>
             </div>
             <div class="grid__cell" id="footer__cell_4">
                 <div class="cell__content cell__content--row cell__content--start g-1">

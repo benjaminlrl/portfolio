@@ -108,13 +108,13 @@
                     <a href="#" class="item--social text--m text--white"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-            <div class="grid__cell grid__cell--contact g-1" id="contact__cell_3">
+            <div class="grid__cell grid__cell--contact grid__cell--highlight  g-1" id="contact__cell_3">
                 <div class="cell__header">
                     <span class="valide"></span>
                     <h5 class="text--xs text--600 text--white text--start">Recherche&nbsp;d'alternance&nbsp;3&nbsp;ans - Septembre&nbsp;2026</h5>
                 </div>
                 <div class="cell_content cell__content--row">
-                    <p class="text--xxs text--400 text--white">Je réponds généralement dans l'heure. N'hésitez pas à laisser un message pour discuter d'opportunités.</p>
+                    <p class="text--xxs text--400 text--white">Dans le but d'obtenir un diplôme d'ingénieur en <span>cybersécurité</span></p>
                 </div>
             </div>
             <a href="<?= base_url("/images/portefeuilledecompetense.pdf")?>" target="_blank"

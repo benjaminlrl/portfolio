@@ -1,7 +1,7 @@
 <!-- Section entreprise actuelle -->
 <?php
 $entreprise = [
-        "titre" => "Ministères des Armées /&nbsp;DRHAT",
+        "titre" => "Ministères des Armées et des anciens Combattants /&nbsp;DRHAT",
         "missions"=>[
                 "mission1"=>[
                         "titre"=>'<i class="fa-light fa-laptop text--accent"></i>&nbsp;Refonte du site RH-Terre',
@@ -76,7 +76,7 @@ $entreprise = [
                 </div>
                 <div class="cell__content p-2-vh">
                     <h4 class="text--s"><i class="fa-light fa-building-memo text--accent"></i>&nbsp;Mon&nbsp;poste</h4>
-                    <p class="text--xxs">En tant que webmaster en alternance avec le ministère des Armées à la Direction des Ressources Humaines de l'Armée de Terre, je participe activement au développement et à la maintenance du site RH-Terre.</p>
+                    <p class="text--xxs">En tant que webmaster en alternance avec le ministère des Armées à la Direction des Ressources Humaines de l'Armée de Terre, je participe activement aux évolutions et à la maintenance du site RH-Terre.</p>
                     <div class="grid grid--missions g-1 " id="grid__missions_entreprise">
                     <?php foreach($entreprise["missions"] as $mission): ?>
                         <div class="grid__cell">

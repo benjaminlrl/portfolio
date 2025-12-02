@@ -962,8 +962,9 @@ $projets = [
 <!-- Section projets -->
 <section id="section__projets">
     <div class="section__container section__container--center my-2-rem">
-        <div class="section__title">
+        <div class="section__title g-1">
             <h2 class="text--m">🚀&nbsp;Mes&nbsp;projets</h2>
+            <p class="text--xxs text--secondary">Pour en savoir plus sur un projet, cliquez sur celui-ci</p>
         </div>
     </div>
     <div class="section__container section__container--center">
@@ -1052,6 +1053,7 @@ $projets = [
                     </div>
                     <div class="cell__content cell__content--start">
                         <p class="text--xxs text--start text--opacity-900 text--500 text--secondary"> <?= $projet["description"] ?></p>
+                        <p class="text--xxs text--start text--opacity-900 text--300 text--secondary">décembre 2024</p>
                         <div class="cell__logos cell__logos--start">
                             <?php foreach($projet["logoLangages"] as $lang):?>
                                 <?= img($lang) ?>
@@ -1121,7 +1123,7 @@ $projets = [
                             <?php if(!empty($projet["lien"])):?>
                                 <div class="cell__content cell__content--center p-2-vh my-2-vh">
                                     <a href="<?= $projet["lien"] ?>"
-                                       class="button button--tertiaire text--s"
+                                       class="button button--tertiaire text--xs"
                                        target="_blank">
                                         Accéder au projet&nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     </a>

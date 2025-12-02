@@ -1,0 +1,36 @@
+CRITICAL - 2025-10-29 20:42:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_connexion.php"
+[Method: GET, Route: connection]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_connexion.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_connexion', [], true)
+ 3 APPPATH\Controllers\c_connection.php(15): view('v_connexion')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_connection->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_connection))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 21:24:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_connexion.php"
+[Method: GET, Route: connection]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_connexion.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_connexion', [], true)
+ 3 APPPATH\Controllers\c_connection.php(15): view('v_connexion')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_connection->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_connection))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 21:24:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_connexion.php"
+[Method: GET, Route: connection]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_connexion.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_connexion', [], true)
+ 3 APPPATH\Controllers\c_connection.php(15): view('v_connexion')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_connection->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_connection))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -29,8 +29,8 @@
 #grid__contact{
     grid-template-areas: 
             "contact"
-            "social"
             "recherche"
+            "social"
             "cv";
     grid-template-columns: 1fr;
 }
@@ -53,6 +53,11 @@
     border-radius: 15px;
     padding: 2rem;
     background: var(--bg-cell-contact);
+}
+
+.grid__cell--highlight{
+    background: rgba(0, 156, 6, 0.16);
+    border: 2px solid rgba(2, 237, 11, 0.68);
 }
 
 .item--social{
@@ -116,8 +121,8 @@
 @media (min-width: 950px){
     #grid__contact{
         grid-template-areas: 
-            "contact social"
             "contact recherche"
+            "contact social"
             "contact cv";
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto minmax(100px, 1fr) 100px;

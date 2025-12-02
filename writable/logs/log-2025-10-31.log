@@ -1,0 +1,60 @@
+CRITICAL - 2025-10-31 12:47:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_creer-user.php"
+[Method: GET, Route: connection]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_creer-user.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_creer-user', [], true)
+ 3 APPPATH\Controllers\c_connexion.php(15): view('v_creer-user')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_connexion->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_connexion))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-31 12:48:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_creer-user.php"
+[Method: GET, Route: connexion]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_creer-user.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_creer-user', [], true)
+ 3 APPPATH\Controllers\c_connexion.php(15): view('v_creer-user')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_connexion->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_connexion))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-31 12:50:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_creer-user.php"
+[Method: GET, Route: connexion]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_creer-user.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_creer-user', [], true)
+ 3 APPPATH\Controllers\c_connexion.php(15): view('v_creer-user')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_connexion->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_connexion))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-31 12:51:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_creer-user.php"
+[Method: GET, Route: connexion]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_creer-user.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_creer-user', [], true)
+ 3 APPPATH\Controllers\c_connexion.php(15): view('v_creer-user')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_connexion->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_connexion))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-31 14:24:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_creer-user.php"
+[Method: GET, Route: connexion]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_creer-user.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('v_creer-user', [], true)
+ 3 APPPATH\Controllers\c_connexion.php(15): view('v_creer-user')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\c_connexion->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_connexion))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

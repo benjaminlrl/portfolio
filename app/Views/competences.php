@@ -132,7 +132,7 @@ $langagesAutres = [
 $competencesPro = [
         "competencesPro" => [
                 "competence1"=>[
-                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>&nbsp;Gérer le patrimoine informatique',
+                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>Gérer le patrimoine informatique',
                         "taches"=>[
                                 "Recenser et identifier les ressources numériques",
                                 "Mettre en place et vérifier les niveaux d’habilitation associés à un service",
@@ -142,14 +142,14 @@ $competencesPro = [
                         ]
                 ],
                 "competence2"=>[
-                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>&nbsp;Répondre aux incidents et aux demandes d’assistance et d’évolution',
+                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>Répondre aux incidents et aux demandes d’assistance et d’évolution',
                         "taches"=>[
                                 "Collecter, suivre et orienter des demandes",
                                 "Traiter des demandes concernant les applications"
                         ]
                 ],
                 "competence3"=>[
-                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>&nbsp;Développer la présence en ligne de l’organisation',
+                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>Développer la présence en ligne de l’organisation',
                         "taches"=>[
                                 "Participer à la valorisation de l’image de l’organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques",
                                 "Référencer les services en ligne de l’organisation et mesurer leur visibilité",
@@ -157,7 +157,7 @@ $competencesPro = [
                         ]
                 ],
                 "competence4"=>[
-                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>&nbsp;Travailler en mode projet',
+                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>Travailler en mode projet',
                         "taches"=>[
                                 "Analyser les objectifs et les modalités d’organisation d’un projet",
                                 "Planifier les activités",
@@ -165,7 +165,7 @@ $competencesPro = [
                         ]
                 ],
                 "competence5"=>[
-                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>&nbsp;Mettre à disposition des utilisateurs un service informatique',
+                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>Mettre à disposition des utilisateurs un service informatique',
                         "taches"=>[
                                 "Réaliser les tests d’intégration et d’acceptation d’un service",
                                 "Déployer un service",
@@ -173,7 +173,7 @@ $competencesPro = [
                         ]
                 ],
                 "competence6"=>[
-                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>&nbsp;Organiser son développement professionnel',
+                        "titre"=>'<i class="fa-light fa-tag text--accent"></i>Organiser son développement professionnel',
                         "taches"=>[
                                 "Mettre en place son environnement d’apprentissage personnel",
                                 "Mettre en œuvre des outils et stratégies de veille informationnelle",
@@ -235,7 +235,7 @@ function afficherCompetences(string $titre, array $competences): string {
             <?php foreach($competencesPro["competencesPro"] as $competence): ?>
                 <div class="grid__cell p-2-1-vh">
                     <div class="cell__content">
-                        <h5 class="text--s my-1-rem"><?= $competence["titre"]?></h5>
+                        <h5 class="text--s my-1-rem g-1"><?= $competence["titre"]?></h5>
                         <?php
                         $list = $competence["taches"];
                         $attributes = ["class"=>"text--xxs text--500 g-0-4 tache"];
@@ -251,7 +251,7 @@ function afficherCompetences(string $titre, array $competences): string {
     </div>
 
     <div class="section__container section__container--center">
-        <a href="<?= base_url("/images/portefeuilledecompetense.pdf")?>" target="_blank"
+        <a href="<?= base_url("/portefeuille_de_competences")?>" target="_blank"
            class="button button--tertiaire text--xs p-2-vh my-5-vh" title="Voir mon portefeuille de compétences - nouvelle fenêtre"><i class="fa-solid fa-table"></i>&nbsp;Portefeuille&nbsp;de&nbsp;compétences
         </a>
     </div>
