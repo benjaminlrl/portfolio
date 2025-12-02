@@ -1,48 +1,6 @@
 <!-- Section entreprise actuelle -->
 <?php
-$entreprise = [
-        "titre" => "Ministères des Armées et des anciens Combattants /&nbsp;DRHAT",
-        "missions"=>[
-                "mission1"=>[
-                        "titre"=>'<i class="fa-light fa-laptop text--accent"></i>&nbsp;Refonte du site RH-Terre',
-                        "taches"=>["Prise en main du système design de l'État (DSFR)",
-                                "Travail sur l'accessibilité afin que le site soit utilisable par tous (RGAA)",
-                                "Création d'un template compatible avec le DSFR utilisable par le CMS",
-                        ]
-                ],
-                "mission2"=>[
-                        "titre"=>'<i class="fa-light fa-shield-check text--accent"></i>&nbsp;Sécurité',
-                        "taches"=>["Création d'un plugin CRON afin de pallier une erreur critique",
-                                "Gestion des droits utilisateurs en fonction des groupes attribués"
-                        ]
-                ],
-                "mission3"=>[
-                        "titre"=>'<i class="fa-light fa-users text--accent"></i>&nbsp;Travail d\'équipe',
-                        "taches"=>["Collaboration avec notre designeuse UX/UI pour l'interface du site RH-Terre",
-                                "Collaboration avec l'équipe des développeurs afin de rendre compatible leurs travaux avec le DSFR"
-                        ]
-                ]
-        ],
-        "img" => ["src"=>"images/siege_mda.webp",
-                "alt"=>"Logo CSS3",
-                "class"=>"cell__logo",
-                "title"=>"Logo CCS3"],
-        "logos"=> [
-                "logo1"=>[
-                        "src"=>"images/logos/Ministère_des_Armées.png",
-                        "alt"=>"Logo CSS3",
-                        "class"=>"cell__logos-logo",
-                        "title"=>"Logo CCS3"
-                ],
-                "logo2" => [
-                        "src"=>"images/logos/DRHAT.png",
-                        "alt"=>"Logo CSS3",
-                        "class"=>"cell__logos-logo",
-                        "title"=>"Logo CCS3"
-                ]
-
-        ]
-];?>
+?>
 <section id="section__entreprises">
     <div class="section__container section__container--center my-2-rem">
         <div class="section__title">

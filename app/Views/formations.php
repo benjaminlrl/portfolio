@@ -1,21 +1,4 @@
-<?php
-$formations=[
-        ['etablissementLogo' => 'iscb.jpg',
-                'diplome'=>'BTS SIO - En cours',
-                'annee'=>'2024 - 2026',
-                'description'=>'Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers (<strong>SLAM</strong>) et <strong>Maths 2</strong> réaliser en alternance.',
-                'entrepriseLogo'=>'Ministère_des_Armées.png',
-                'lien'=>'https://www.iscb.fr/',
-                'entrepriseLien'=>'https://www.defense.gouv.fr/'
-        ],
-        ['etablissementLogo' => 'LEGTA_Logo.png',
-                'diplome'=>'BAC GENERAL',
-                'annee'=>'2021 - 2024',
-                'description'=>'Bac général mention <strong>ASSEZ BIEN</strong> option <strong>mathématiques</strong> et <strong>biologie/écologie</strong> au lycée agricole de Fondettes.',
-                'lien'=>'https://www.tours-fondettes-agrocampus.fr/',
-                'entrepriseLien'=>''
-        ]
-];
+
 ?>
 <!-- Section formations -->
 <section id="section__formations">

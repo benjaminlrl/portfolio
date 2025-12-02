@@ -1,23 +1,4 @@
 <?php
-
-$langues = [
-    [
-        "langue" => "France",
-        "niveau" => "C2",
-        "image" => "images/logos/France_Flag.png"
-    ],
-    [
-        "langue" => "Anglais",
-        "niveau" => "B1+",
-        "image" => "images/logos/English_Flag.jpg"
-    ],
-    [
-        "langue" => "Espagnol",
-        "niveau" => "A2+",
-        "image" => "images/logos/Spain_Flag.jpg"
-    ]
-];
-
 /**
  * afficherLangue génère le code html pour afficher une langue
  * @param string $langue La langue
